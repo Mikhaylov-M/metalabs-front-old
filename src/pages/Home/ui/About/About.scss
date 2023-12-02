@@ -1,0 +1,37 @@
+.about {
+  padding: 113px 0 89px;
+  background: #F7F7F7;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 79px;
+  }
+
+  &__col:first-child {
+    padding-top: 10px;
+  }
+
+  &__title {
+    margin-bottom: 77px;
+  }
+
+  &__content {
+    box-shadow: -4px 0px 0px #6FBFF2, 0px 63px 50px -26px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 660px;
+    padding: 31px 50px;
+    background: var(--color-light);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    &_mb {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__img {
+    padding-left: 44px;
+  }
+}

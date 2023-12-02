@@ -1,0 +1,149 @@
+.contacts {
+  position: relative;
+  background: linear-gradient(to right, transparent 50%, rgba(17, 55, 113, 0.12) 50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../../../../../public/images/contacts-bg.png") no-repeat center/cover;
+    z-index: -1;
+  }
+
+  img {
+    z-index: -99;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__left {
+    width: 100%;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+  }
+
+  &__sale {
+    display: inline-block;
+    position: relative;
+    line-height: 180px;
+    margin-left: 100px;
+
+    &::after {
+      content: "%";
+      position: absolute;
+      right: -80px;
+      top: -20px;
+      font-weight: 600;
+      font-size: 80px;
+      color: var(--color-blue);
+    }
+  }
+
+  &__desc {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.3em;
+    margin-top: 60px;
+    color: var(--color-black);
+    max-width: 542px;
+  }
+
+  &__right {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+// - reg
+.reg-form {
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 694px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 64px;
+  }
+
+  &__inp {
+    height: 80px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    border: 1px solid #EDEEEF;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  &-availibility {
+    font-size: 24px;
+    line-height: 66px;
+    margin-bottom: 12px;
+  }
+
+  &__bool {
+    justify-content: flex-start;
+    display: flex;
+    column-gap: 26px;
+    margin-bottom: 38px;
+  }
+
+  &__radio {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-light);
+    border-radius: 5px;
+
+    &::before {
+      position: absolute;
+      left: 3px;
+      right: 0;
+      top: 0;
+      bottom: 7px;
+      margin: auto;
+      width: 26px;
+      height: 13px;
+      border-left: 2px solid var(--color-black);
+      border-bottom: 2px solid var(--color-black);
+      border-radius: 2px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__lbl {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41px;
+  }
+}
+
+#reg-form-y:checked+.reg-form__radio::before {
+  content: "";
+}
+
+#reg-form-n:checked+.reg-form__radio::before {
+  content: "";
+}

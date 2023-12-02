@@ -1,0 +1,151 @@
+.cities {
+  padding: 128px 0 20px;
+  background: url('../../../../../public/images/cities.jpg') no-repeat center/cover;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  &__title {
+    text-align: center;
+    color: var(--color-light);
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--color-light);
+    text-align: center;
+    margin: 25px 0 148px;
+  }
+
+  &__lg-slider .swiper-container {
+    height: 70px;
+  }
+
+  &__md-slider {
+    margin: 18px 0;
+
+    .swiper-container {
+      height: 52px;
+    }
+  }
+
+  &__sm-slider .swiper-container {
+    height: 33px;
+  }
+}
+
+// ниже не получилось перевсти в scss до CITIES -- end
+
+.mySwiper1 .swiper-slide {
+  width: auto;
+  color: #fff;
+}
+
+.mySwiper .swiper-slide {
+  width: auto;
+  color: #fff;
+}
+
+.mySwiper1 {
+  max-width: 100vw;
+}
+
+.mySwiper1 .swiper-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 300%;
+  /* make the wrapper 3 times wider than the container */
+  animation: scroll1 80s linear infinite;
+  /* add a continuous scrolling animation */
+}
+
+.mySwiper .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  /* make the wrapper 3 times wider than the container */
+  animation: scroll2 80s linear infinite;
+  /* add a continuous scrolling animation */
+}
+
+/* @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-66.6666%); } /* move the wrapper left by 2 slides (33.3333%) */
+/* } */
+@keyframes scroll1 {
+  100% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(-66.6666%);
+  }
+
+  /* move the wrapper left by 2 slides (33.3333%) */
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-66.6666%);
+  }
+
+  /* move the wrapper left by 2 slides (33.3333%) */
+}
+
+.cities .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.cities__lg-slider,
+.cities__md-slider,
+.cities__sm-slider {
+  background: rgba(92, 125, 209, 0.2);
+  backdrop-filter: blur(1.5px);
+}
+
+.cities__lg-slider .swiper-slide {
+  font-weight: 500;
+  font-size: 49.4px;
+  line-height: 39px;
+  color: rgba(254, 254, 254, 0.8);
+}
+
+.cities__md-slider .swiper-slide {
+  font-weight: 500;
+  font-size: 32.9333px;
+  line-height: 26px;
+  color: rgba(254, 254, 254, 0.8);
+}
+
+.cities__sm-slider .swiper-slide {
+  font-weight: 500;
+  font-size: 21.5333px;
+  line-height: 17px;
+  /* identical to box height, or 79% */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(254, 254, 254, 0.8);
+}
+
+.cities__md-slider .swiper-slide::before {
+  content: "•";
+  margin-right: 20px;
+}
+
+.cities__lg-slider .swiper-slide::before {
+  content: "•";
+  margin-right: 30px;
+}
+
+.cities__sm-slider .swiper-slide::before {
+  content: "•";
+  margin-right: 30px;
+}

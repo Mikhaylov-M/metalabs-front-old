@@ -1,0 +1,127 @@
+.courses {
+  padding: 166px 0 147px;
+
+  &__title {
+    margin-bottom: 131px;
+    text-align: center;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__card {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: linear-gradient(218deg, rgba(245, 247, 250, 0.5) -8.34%, rgba(195, 207, 226, 0.5) 63.99%);
+    height: 770px;
+    padding: 104px 64px;
+
+    svg {
+      z-index: 4;
+      position: absolute;
+      width: 100%;
+      left: -21px;
+      top: -82px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__content {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__topic {
+    color: #161525;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    margin-bottom: 44px;
+
+    &-dark {
+      color: var(--color-light);
+      letter-spacing: 0.6px;
+      text-transform: capitalize;
+      margin-bottom: 44px;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    color: #171626;
+    font-weight: 400;
+    margin-bottom: 43px;
+    font-size: 22px;
+
+    &-dark {
+      text-align: center;
+      color: var(--color-light);
+      font-weight: 400;
+      margin-bottom: 43px;
+      font-size: 22px;
+    }
+  }
+
+  &__skill {
+    display: block;
+    border-radius: 25px;
+    border: 1px solid #0E7DBB;
+    background: #D9E5F9;
+    color: var(--color-black);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 5px 25px;
+
+    &-dark {
+      display: block;
+      border-radius: 25px;
+      border: 1px solid #09BA8F;
+      background: rgba(253, 253, 253, 0.08);
+      color: var(--color-light);
+      text-align: center;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      padding: 5px 25px;
+    }
+  }
+
+  &__btn {
+    z-index: 5;
+    color: var(--color-light);
+    border-radius: 50px;
+    width: 70%;
+    height: 64px;
+  }
+}
+
+.card-dark {
+  background: #161525;
+  box-shadow: 0px 63px 50px -26px rgba(0, 0, 0, 0.10);
+
+  svg {
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    left: -105px;
+    top: -126px;
+  }
+}
