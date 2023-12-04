@@ -5,7 +5,6 @@ import './Author.scss'
 export const Author = () => {
   return (
     <section className="author" id="author">
-{/* 
       <div className="container">
         <div className="author__top">
           <div className="author__content">
@@ -48,7 +47,6 @@ export const Author = () => {
           </div>
         </div>
       </div>
-       */}
     </section>
   )
 }
