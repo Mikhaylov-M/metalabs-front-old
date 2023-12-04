@@ -5,7 +5,6 @@ import './Salary.scss'
 export const Salary = () => {
   return (
     <section className="salary" id="salary">
-{/* 
       <div className="salary__content">
         <svg
           width={662}
@@ -848,8 +847,7 @@ export const Salary = () => {
           </div>
           <div className="salary__fog" />
         </div>
-      </div> */}
-
+      </div>
     </section>
   )
 }

@@ -7,7 +7,6 @@ import './Courses.scss'
 export const Courses = () => {
   return (
     <section className="courses" id="courses">
-{/* 
       <div className="container">
         <h2 className="courses__title section__title">Наши курсы</h2>
         <div className="courses__row">
@@ -133,7 +132,6 @@ export const Courses = () => {
           </div>
         </div>
       </div>
-       */}
     </section>
   )
 }

@@ -5,7 +5,6 @@ import Footer from '@/global/components/Footer/Footer'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
-import '../global/styles/media.scss'
 
 const raleway = Raleway({ subsets: ['latin', 'cyrillic'] })
 

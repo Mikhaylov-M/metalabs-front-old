@@ -3,7 +3,6 @@ import './Advantages.scss'
 export const Advantages = () => {
   return (
     <section className="advantages" id="advantages">
-{/* 
       <div className="container">
         <div className="advantages__container">
           <div className="advantages__block">
@@ -116,7 +115,7 @@ export const Advantages = () => {
             </svg>
             <div className="advantages__text">
               <h4 className="advantages__title">Формат</h4>
-              <p className="advantages__desc">Онлайн в удобное время</p>
+              <p className="advantages__desc">online & offline</p>
             </div>
           </div>
           <div className="advantages__block">
@@ -230,7 +229,6 @@ export const Advantages = () => {
           </div>
         </div>
       </div>
-       */}
     </section>
   )
 }
