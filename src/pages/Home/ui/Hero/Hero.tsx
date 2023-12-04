@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import airImg from "../../../../../public/images/air.png"
+import airVid from "../../../../../public/images/lt-video.mp4" 
 import './Hero.scss'
 
 export const Hero = () => {
@@ -48,8 +51,8 @@ export const Hero = () => {
             <div className="hero__lt">
               <Image src={airImg} alt="" />
             </div>
-            <video className="hero__video" autoPlay muted loop>
-              {/* <source src="../../../../../public/images/lt-video.mp4" type="video/mp4;" /> */}
+            <video className="hero__video">
+              <source src={airVid} type="video/mp4" />
             </video>
           </div>
           <div className="hero__light" />
