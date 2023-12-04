@@ -1,9 +1,10 @@
+import Image from 'next/image'
+import airImg from "../../../../../public/images/air.png"
 import './Hero.scss'
 
 export const Hero = () => {
   return (
     <section className="hero" id="hero">
-{/* 
       <div className="container">
         <div className="hero__container">
           <div className="hero__start">
@@ -41,25 +42,20 @@ export const Hero = () => {
               <button className="hero__btn btn-oval btn-enroll">
                 Записаться на курс
               </button>
-
-               */}
-              {/* <button id="test-starter" class="hero__btn btn-oval hero__btn_sunny">Пройти тест</button> */}
-            {/* </div>
+            </div>
           </div>
           <div className="hero__note">
             <div className="hero__lt">
-              <img src="./assets/images/air.png" alt="" />
+              <Image src={airImg} alt="" />
             </div>
             <video className="hero__video" autoPlay muted loop>
-              <source src="./assets/images/lt-video.mp4" type="video/mp4;" />
+              {/* <source src="../../../../../public/images/lt-video.mp4" type="video/mp4;" /> */}
             </video>
           </div>
           <div className="hero__light" />
         </div>
-      </div> */}
-
-      
-      {/* убрал задний фон из html, поставил через css потому что это не контентое изображение */}
+      </div>
+      {/* /* убрал задний фон из html, поставил через css потому что это не контентое изображение */}
     </section>
   )
 }

@@ -3,7 +3,6 @@ import './Cities.scss'
 export const Cities = () => {
   return (
     <section className="cities">
-{/*       
       <h2 className="section__title cities__title">Не важно где вы живете</h2>
       <p className="cities__desc">
         Учитесь из любой страны, города и в любое время
@@ -182,8 +181,7 @@ export const Cities = () => {
             <div className="swiper-slide">Осло</div>
           </div>
         </div>
-      </div> */}
-
+      </div>
     </section>
   )
 }
