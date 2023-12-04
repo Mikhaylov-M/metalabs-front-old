@@ -1,8 +1,11 @@
+import Image from 'next/image'
+import icon1 from '../../../../../public/images/s1.png'
 import './Salary.scss'
 
 export const Salary = () => {
   return (
     <section className="salary" id="salary">
+{/* 
       <div className="salary__content">
         <svg
           width={662}
@@ -816,7 +819,7 @@ export const Salary = () => {
               </h4>
               <p className="salary__price">10 000 $</p>
               <div className="salary__img">
-                <img src="./assets/images/s1.png" alt="" />
+                <Image src={icon1} alt="" />
               </div>
             </div>
             <div className="salary__grade">
@@ -845,7 +848,8 @@ export const Salary = () => {
           </div>
           <div className="salary__fog" />
         </div>
-      </div>
+      </div> */}
+
     </section>
   )
 }

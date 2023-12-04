@@ -3,6 +3,7 @@ import './Advantages.scss'
 export const Advantages = () => {
   return (
     <section className="advantages" id="advantages">
+{/* 
       <div className="container">
         <div className="advantages__container">
           <div className="advantages__block">
@@ -229,6 +230,7 @@ export const Advantages = () => {
           </div>
         </div>
       </div>
+       */}
     </section>
   )
 }

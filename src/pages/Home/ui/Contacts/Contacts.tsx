@@ -3,6 +3,7 @@ import './Contacts.scss'
 export const Contacts = () => {
   return (
     <section className="contacts" id="contacts">
+{/* 
       <img
         src="./assets/images/contacts-bg.png"
         alt="contacts section bacground"
@@ -44,6 +45,7 @@ export const Contacts = () => {
           </form>
         </div>
       </div>
+       */}
     </section>
   )
 }

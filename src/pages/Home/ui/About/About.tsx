@@ -3,6 +3,7 @@ import './About.scss'
 export const About = () => {
   return (
     <section className="about" id="about">
+{/* 
       <div className="container about__grid">
         <div className="about__col">
           <h2 className="section__title about__title">О курсе</h2>
@@ -47,6 +48,7 @@ export const About = () => {
           </p>
         </div>
       </div>
+       */}
     </section>
   )
 }

@@ -3,6 +3,7 @@ import './Hero.scss'
 export const Hero = () => {
   return (
     <section className="hero" id="hero">
+{/* 
       <div className="container">
         <div className="hero__container">
           <div className="hero__start">
@@ -40,8 +41,10 @@ export const Hero = () => {
               <button className="hero__btn btn-oval btn-enroll">
                 Записаться на курс
               </button>
+
+               */}
               {/* <button id="test-starter" class="hero__btn btn-oval hero__btn_sunny">Пройти тест</button> */}
-            </div>
+            {/* </div>
           </div>
           <div className="hero__note">
             <div className="hero__lt">
@@ -53,7 +56,9 @@ export const Hero = () => {
           </div>
           <div className="hero__light" />
         </div>
-      </div>
+      </div> */}
+
+      
       {/* убрал задний фон из html, поставил через css потому что это не контентое изображение */}
     </section>
   )

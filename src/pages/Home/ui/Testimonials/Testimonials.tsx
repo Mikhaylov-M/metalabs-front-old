@@ -3,6 +3,7 @@ import './Testimonials.scss'
 export const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
+{/* 
       <div className="container">
         <h2 className="section__title testimonials__title">
           Отзывы об авторе курса
@@ -89,6 +90,7 @@ export const Testimonials = () => {
           <div className="swiper-pagination" />
         </div>
       </div>
+       */}
     </section>
   )
 }

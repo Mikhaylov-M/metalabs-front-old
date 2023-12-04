@@ -3,6 +3,7 @@ import './Steps.scss'
 export const Steps = () => {
   return (
     <section className="steps" id="steps">
+{/* 
       <div className="container">
         <h2 className="section__title">Курс подойдет вам, если:</h2>
         <div className="steps__container">
@@ -26,6 +27,7 @@ export const Steps = () => {
           </div>
         </div>
       </div>
+       */}
     </section>
   )
 }

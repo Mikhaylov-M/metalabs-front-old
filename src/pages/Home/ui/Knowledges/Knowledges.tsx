@@ -3,6 +3,7 @@ import './Knowledges.scss'
 export const Knowledges = () => {
   return (
     <section className="knowledges">
+{/* 
       <div className="container">
         <h2 className="section__title knowledges__title">
           Набор знаний, который вы получите
@@ -58,6 +59,7 @@ export const Knowledges = () => {
           <img src="./assets/images/tech.svg" alt="" />
         </div>
       </div>
+       */}
     </section>
   )
 }
