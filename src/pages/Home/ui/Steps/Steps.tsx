@@ -4,7 +4,7 @@ export const Steps = () => {
   return (
     <section className="steps" id="steps">
       <div className="container">
-        <h2 className="section__title steps__title">Курс подойдет вам, если:</h2>
+        <h2 className="section__title steps__title">Курс подойдет вам, если</h2>
         <div className="steps__container">
           <div className="steps__block">
             <h2 className="steps__num">1</h2>

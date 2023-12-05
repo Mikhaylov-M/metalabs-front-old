@@ -1,30 +1,30 @@
 .courses {
-  padding: 166px 0 147px;
+  padding: 80px 0;
 
   &__title {
-    margin-bottom: 131px;
+    margin-bottom: 40px;
     text-align: center;
   }
 
   &__row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__card {
-    overflow: hidden;
     position: relative;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    max-width: 420px;
     border-radius: 30px;
+    padding: 40px;
     background: linear-gradient(218deg, rgba(245, 247, 250, 0.5) -8.34%, rgba(195, 207, 226, 0.5) 63.99%);
-    height: 770px;
-    padding: 104px 64px;
 
     svg {
       z-index: 4;
@@ -67,14 +67,14 @@
     color: #171626;
     font-weight: 400;
     margin-bottom: 43px;
-    font-size: 22px;
+    font-size: 20px;
 
     &-dark {
       text-align: center;
       color: var(--color-light);
       font-weight: 400;
       margin-bottom: 43px;
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 
@@ -85,7 +85,7 @@
     background: #D9E5F9;
     color: var(--color-black);
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
     padding: 5px 25px;
@@ -97,7 +97,7 @@
       background: rgba(253, 253, 253, 0.08);
       color: var(--color-light);
       text-align: center;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 400;
       margin-bottom: 15px;
       padding: 5px 25px;
@@ -105,11 +105,12 @@
   }
 
   &__btn {
-    z-index: 5;
+    width: 80%;
     color: var(--color-light);
+    padding: 1px 20px;
     border-radius: 50px;
-    width: 70%;
-    height: 64px;
+    text-align: center;
+    z-index: 5;
   }
 }
 

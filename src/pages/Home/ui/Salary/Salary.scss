@@ -22,16 +22,31 @@
   }
 
   &__container {
+    gap: 40px;
     display: flex;
+    align-items: center;
     justify-content: start;
     max-width: 1382px;
-    padding: 82px 10px 0;
+    padding-top: 50px;
     margin: 0 auto;
   }
 
   &__blocks {
     position: relative;
-    width: 386px;
+    z-index: 5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 781.31px;
+      height: 675.25px;
+      top: 0;
+      left: -400px;
+      background: rgba(154, 206, 244, 0.18);
+      filter: blur(200px);
+      transform: rotate(12.27deg);
+    }
   }
 
   &__right {
@@ -69,47 +84,27 @@
 
   &__grade {
     width: 100%;
-    padding-left: 36px;
-    height: 115px;
+    padding: 10px 20px;
     position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
     background: linear-gradient(180deg, #6FBFF2 0%, #3A48AC 100%);
     border-radius: 10px;
+    z-index: 5;
     transition: .3s;
 
     &:not(:last-child) {
-      margin-bottom: 60px;
+      margin-bottom: 35px;
     }
-  }
-
-  &__fog {
-    position: absolute;
-    z-index: 1;
-    width: 781.31px;
-    height: 675.25px;
-    left: 200px;
-    right: 0;
-    top: 100px;
-    bottom: 0;
-    margin: auto;
-    background: rgba(154, 206, 244, 0.18);
-    filter: blur(200px);
-    transform: rotate(12.27deg);
-  }
-
-  &__img {
-    position: absolute;
-    right: -15px;
-    bottom: 0;
   }
 
   &__sm-title {
     max-width: 240px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1.3em;
     text-align: center;
     color: var(--color-light);
   }
@@ -125,16 +120,16 @@
   }
 
   &__info {
+    position: relative;
     max-width: 50%;
-    margin-right: 115px;
-    padding-top: 116px;
+    z-index: 5;
   }
 
   &__title {
     font-family: 'Prosto One', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 54px;
-    line-height: 70px;
+    font-size: 45px;
+    line-height: 1.3em;
     letter-spacing: 0.01em;
     color: var(--color-light);
     max-width: 735px;
@@ -143,13 +138,12 @@
   &__desc {
     display: inline-block;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 54px;
-    letter-spacing: 0.01em;
+    font-size: 25px;
+    line-height: 1.3em;
     color: var(--color-light);
     background: rgba(61, 115, 255, 0.2);
     border-radius: 5px;
-    padding: 0 24px;
+    padding: 10px 20px;
     margin-top: 28px;
   }
 }
