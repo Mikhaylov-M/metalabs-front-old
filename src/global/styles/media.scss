@@ -23,38 +23,12 @@
     line-height: 28px;
   }
 
-  .hero {
-    padding: 45px 0 40px;
-  }
-
-  .hero__title {
-    font-size: 70px;
-    line-height: 75px;
-  }
-
-  .advantages__title {
-    font-size: 24px;
-  }
-
-  .advantages__desc {
-    font-size: 19px;
-  }
-
-  .salary__grade {
-    &:not(:last-child) {
-      margin-bottom: 35px;
-    }
-  }
-
   .salary__img {
     width: 165px;
   }
 }
 
 @media (max-width: 1441px) {
-  .courses {
-    padding: 100px 0;
-  }
 
   .container {
     max-width: 1200px;
@@ -64,36 +38,6 @@
     a {
       font-size: 19px;
     }
-  }
-
-  .hero__container {
-    padding: 47px 0 55px 58px;
-  }
-
-  .hero__title {
-    font-size: 59px;
-    line-height: 69px;
-  }
-
-  .hero__desc {
-    font-size: 24px;
-  }
-
-  .hero__list {
-    margin: 26px 0 33px;
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .hero__btn {
-    font-size: 22px;
-    line-height: 23px;
-  }
-
-  .hero__video {
-    width: 374px;
-    height: 256px;
-    right: 87px;
   }
 
   .advantages__block {
@@ -149,10 +93,6 @@
     bottom: 22vh;
   }
 
-  .salary__title {
-    font-size: 46px;
-  }
-
   .contacts__bg {
     top: 0;
     left: 50%;
@@ -182,55 +122,10 @@
 
 @media (max-width: 1220px) {
 
-  .courses {
-    padding: 80px 0;
-  }
-
-  .hero__video {
-    width: 392px;
-    height: 214px;
-    right: 35px;
-  }
-
-  .hero__title {
-    font-size: 46px;
-    line-height: 56px;
-    margin: 13px 0;
-  }
-
-  .hero__desc {
-    font-size: 21px;
-    font-size: 21px;
-    max-width: 367px;
-  }
-
-  .hero__item {
-    &:not(:last-child) {
-      margin-bottom: 2px;
-    }
-  }
-
-  .hero__start {
-    padding: 9px 19px;
-  }
-
-  .advantages__desc {
-    font-size: 16px;
-    font-size: 13px;
-    line-height: 18px;
-  }
-
   .advantages__block {
     svg {
       width: 53px;
     }
-  }
-
-  .advantages__title {
-    font-size: 20px;
-    line-height: 25px;
-    font-size: 18px;
-    line-height: 20px;
   }
 
   .author__desc {
@@ -242,17 +137,20 @@
     line-height: 25px;
   }
 
-  .salary__info {
-    margin-right: 46px;
-    padding-top: 43px;
+  .salary__title {
+    font-size: 35px;
+  }
+
+  .salary__desc {
+    font-size: 18px;
+  }
+
+  .salary__grade {
+    height: 90px;
   }
 
   .salary__container {
     padding: 82px 10px 0 118px;
-  }
-
-  .salary__title {
-    line-height: 59px;
   }
 
   .salary__right {
@@ -261,11 +159,6 @@
 
   .salary__bottom {
     display: none;
-  }
-
-  .salary__grade {
-    padding-left: 24px;
-    height: 87px;
   }
 
   .salary__price {
@@ -282,11 +175,6 @@
 
   .salary__content {
     padding-bottom: 61px;
-  }
-
-  .courses__card {
-    height: 740px;
-    padding: 65px 45px;
   }
 
   .card-dark {
@@ -367,12 +255,40 @@
 }
 
 @media (max-width: 876px) {
-  .container {
-    max-width: 800px;
+  .hero {
+    padding: 60px 0;
+
+    &__wrapper {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    &__item {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__list {
+      font-size: 16px;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+
+    &__img-laptop {
+      max-width: 300px;
+      height: 250px;
+    }
   }
 
-  .courses {
-    padding: 70px 0;
+  .container {
+    max-width: 800px;
   }
 
   .courses__title {
@@ -395,66 +311,10 @@
     display: none;
   }
 
-  .hero__start {
-    position: relative;
-    z-index: 2;
-    top: auto;
-    left: 0;
-    right: 0;
-    margin: 0 auto 31px;
-    width: fit-content;
-  }
-
-  .hero__container {
-    padding: 47px 58px 0px 58px;
-  }
-
-  .hero__lt {
-    position: relative;
-    z-index: 2;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-  }
-
-  .hero__video {
-    top: 23px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    bottom: auto;
-  }
-
-  .hero__note {
-    margin-top: 40px;
-    position: relative;
-  }
-
-  .hero__title {
-    br {
-      display: none;
-    }
-  }
-
-  .hero__desc {
-    max-width: none;
-  }
-
   .advantages__block {
     svg {
       width: 62px;
     }
-  }
-
-  .advantages__title {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .advantages__desc {
-    font-size: 20px;
-    line-height: 27px;
   }
 
   .author {
@@ -512,17 +372,18 @@
     padding: 82px 10px 60px 118px;
   }
 
-  .salary__title {
-    font-size: 38px;
-    line-height: 45px;
-  }
-
   .salary__info {
     max-width: 100%;
+    text-align: center;
   }
 
   .salary__right {
     display: block;
+    right: -40px;
+
+    &::before {
+      right: -13px;
+    }
   }
 
   .salary__bottom {
@@ -531,12 +392,16 @@
     width: 126%;
   }
 
-  .salary__blocks {
-    margin: 50px 80px 0;
+  .courses__row {
+    flex-direction: column;
   }
 
-  .courses__card {
-    height: 620px;
+  .courses__topic {
+    margin-bottom: 20px;
+
+    &-dark {
+      margin-bottom: 20px;
+    }
   }
 
   .courses__desc {
@@ -656,72 +521,13 @@
 }
 
 @media (max-width: 670px) {
-  .courses {
-    padding: 55px 0;
-  }
 
   .courses__btn {
     font-size: 17px;
-    height: 45px;
   }
 
   .container {
     padding: 0 20px;
-  }
-
-  .hero__text {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  .hero__num {
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .hero__word {
-    font-size: 9px;
-    line-height: 11px;
-  }
-
-  .hero__uptitle {
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .hero__title {
-    font-size: 42px;
-    line-height: 41px;
-  }
-
-  .hero__desc {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .hero__item {
-    font-size: 17px;
-    line-height: 23px;
-  }
-
-  .hero__container {
-    padding: 28px 12px 0px 12px;
-  }
-
-  .hero__start {
-    padding: 9px 10px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .hero__days {
-    text-align: center;
-    margin-right: 15px;
-  }
-
-  .hero__video {
-    width: 100%;
-    height: 195px;
   }
 
   .author__img {
@@ -754,6 +560,7 @@
   .salary__content {
     bottom: auto;
     left: auto;
+    border-radius: 0px;
 
     svg {
       top: auto;
@@ -763,32 +570,23 @@
   }
 
   .salary__container {
-    padding: 0 20px;
-  }
-
-  .salary__info {
-    margin-right: 0;
+    padding: 35px;
   }
 
   .salary__title {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 27px;
   }
 
   .salary__desc {
-    font-size: 18px;
-    line-height: 53px;
+    font-size: 16px;
   }
 
   .salary__blocks {
-    margin: 50px 0 0;
     width: 292px;
   }
 
   .salary__sm-title {
-    margin-right: 60px;
     font-size: 15.125px;
-    line-height: 15px;
   }
 
   .courses__title {
@@ -798,10 +596,6 @@
   .courses__row {
     place-items: center;
     grid-template-columns: 1fr;
-  }
-
-  .courses__card {
-    width: 70%;
   }
 
   .student {
@@ -944,14 +738,6 @@
     font-size: 20px;
   }
 
-  .advantages__title {
-    font-size: 18px;
-  }
-
-  .advantages__desc {
-    font-size: 16px;
-  }
-
   .reg-form__inp {
     font-size: 20px;
   }
@@ -975,9 +761,10 @@
 }
 
 @media (max-width: 491px) {
-  .salary__title {
-    font-size: 22px;
-    line-height: 35px;
+  .hero {
+    &__wrapper {
+      padding: 20px;
+    }
   }
 
   .header__logo {
@@ -997,11 +784,6 @@
     font-size: 22px;
   }
 
-  .courses__card {
-    width: 100%;
-    padding: 40px 20px;
-  }
-
   .contacts__desc {
     text-align: center;
     font-size: 20px;
@@ -1015,19 +797,37 @@
   .author__sm-desc {
     font-size: 16px;
   }
+
+  .salary__desc {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .salary__title {
+    font-size: 25px;
+  }
+
+  .salary__price {
+    font-size: 18px;
+  }
+
+  .salary__grade {
+    height: 70px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 472px) {
-  .hero {
-    padding: 25px 0 40px;
-  }
-
-  .courses {
-    padding: 40px 0;
-  }
 
   .courses__title {
     margin-bottom: 40px;
+  }
+
+  .steps__container {
+    gap: 45px;
   }
 
   .steps__num {
@@ -1039,33 +839,8 @@
     line-height: 20px;
   }
 
-  .hero__title {
-    font-size: 31px;
-  }
-
-  .hero__item {
-    font-size: 14px;
-
-    span {
-      margin: 0 2px;
-    }
-  }
-
-  .hero__btn {
-    font-size: 15px;
-    padding: 8px 35px;
-    display: block;
-    margin: 0 auto;
-  }
-
   .reg-form__lbl {
     font-size: 18px;
-  }
-
-  .salary__desc {
-    font-size: 16px;
-    line-height: 25px;
-    padding: 20px;
   }
 
   .footer {
@@ -1099,9 +874,6 @@
 }
 
 @media (max-width: 416px) {
-  .hero__start {
-    border-radius: 22px;
-  }
 
   .contacts__left {
     padding-right: 0;

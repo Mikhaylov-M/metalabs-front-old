@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import icon1 from '../../../../../public/images/s1.png'
 import './Salary.scss'
 
 export const Salary = () => {
@@ -817,35 +816,22 @@ export const Salary = () => {
                 Senior-специалист в иностранной компании
               </h4>
               <p className="salary__price">10 000 $</p>
-              <div className="salary__img">
-                <Image src={icon1} alt="" />
-              </div>
             </div>
             <div className="salary__grade">
               <h4 className="salary__sm-title">Senior-специалист</h4>
               <p className="salary__price">4 400 $</p>
-              <div className="salary__img">
-                <img src="./assets/images/s2.png" alt="" />
-              </div>
             </div>
             <div className="salary__grade">
               <h4 className="salary__sm-title">Middle-специалист</h4>
               <p className="salary__price">2 500 $</p>
-              <div className="salary__img">
-                <img src="./assets/images/s3.png" alt="" />
-              </div>
             </div>
             <div className="salary__grade">
               <h4 className="salary__sm-title">Junior-специалист</h4>
               <p className="salary__price">500 $</p>
-              <div className="salary__img">
-                <img src="./assets/images/s4.png" alt="" />
-              </div>
             </div>
             <div className="salary__right" />
             <div className="salary__bottom" />
           </div>
-          <div className="salary__fog" />
         </div>
       </div>
     </section>
