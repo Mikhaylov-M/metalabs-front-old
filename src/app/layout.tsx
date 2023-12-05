@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Raleway, Nunito, Prosto_One, Rubik } from 'next/font/google'
-import Header from '../global/components/Header/Header'
-import Footer from '../global/components/Footer/Footer'
+import { Header } from '../global/components/Header'
+import { Footer } from '../global/components/Footer'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
@@ -41,7 +41,7 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   title: 'MetaLabs - Твой путь к успеху',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, architecto?',
+  description: 'Курсы программирования в Бишкеке. Обучения с нуля. Гарантированное трудоустройство и полная подготовка к собеседованию'
 }
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {

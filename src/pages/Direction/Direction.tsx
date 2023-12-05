@@ -1,21 +1,42 @@
 import { FC } from 'react'
 import './Direction.scss'
+import { Course } from './ui/Course'
+import Image, { StaticImageData } from 'next/image'
+
+import costImg from '@/public/images/frontend-abstract.png'
+import costIcon from '@/public/images/tick-white.svg'
 
 export interface DirectionContentProps {
-  title: string;
-  desc: string;
-  aboutDesc: [string, string];
+  bannerTitle: string,
+  bannerDesc: string,
+  aboutTitle: string,
+  aboutText: string[],
+  aboutList: string[],
+  aboutImg: StaticImageData,
+  aboutImgAlt: string,
+  benefitsTitle: string,
+  skills: string[],
+  costPrice: string
 }
 
-export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) => {
+export const Direction: FC<DirectionContentProps> = (
+  {
+    bannerTitle, bannerDesc,
+    aboutTitle, aboutText, aboutList, aboutImg, aboutImgAlt,
+    benefitsTitle,
+    skills,
+    costPrice,
+  }
+  ) => {
+
   return (
     <>
       {/* BANNER */}
       <section className="banner" id="banner">
         <div className="container">
           <div className="banner__content">
-            <h1 className="banner__title">{title}</h1>
-            <p className="banner__desc">{desc}</p>
+            <h1 className="banner__title">{bannerTitle}</h1>
+            <p className="banner__desc">{bannerDesc}</p>
             <button className="banner__btn reg-form__popup registration__btn">
               Записаться на курс
             </button>
@@ -266,37 +287,16 @@ export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) =
       <section className="about" id="about">
         <div className="container">
           <div className="about__left">
-            <h2 className="about__title">Чем занимаются фронтенд-разработчики</h2>
-            {/* <p className="about__text">
-              Фронтендеры разрабатывают то, что мы видим на экранах смартфонов и
-              компьютеров.
-            </p>
-            <p className="about__text">
-              Главная задача фронтенд разработчика — перевести готовый дизайн-макет
-              в код так, чтобы все работало правильно.
-            </p>
-            <p className="about__text">
-              Зарплата зависит от сферы, профессиональных умений и опыта работы. На
-              сайтах по поиску работы в Москве предлагают:
-            </p> */}
-            {aboutDesc.map(el => <p className='about__text'>{el}</p>)}
+            <h2 className="about__title">{aboutTitle}</h2>
+            {aboutText.map(el => <p className='about__text'>{el}</p>)}
             <ul className="about__text">
-              <li className="about__list-item">
-                от 45 тыс. до 70 тыс. рублей начинающим специалистам;
-              </li>
-              <li className="about__list-item">
-                от 90 тыс. до 200 тыс. на уровне middle (обычно от трех-пяти лет
-                опыта);
-              </li>
-              <li className="about__list-item">
-                до 350 тыс. рублей на позиции senior.
-              </li>
+              {aboutList.map(el => <li className="about__list-item">{el}</li>)}
             </ul>
           </div>
           <div className="about__right">
-            <img
-              src="./assets/images/abstract-frontend.png"
-              alt="abstract frontend image"
+            <Image
+              src={aboutImg}
+              alt={aboutImgAlt}
               className="about__image"
             />
           </div>
@@ -306,7 +306,7 @@ export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) =
       {/* BENEFITS */}
       <section className="benefits" id="benefits">
         <div className="container">
-          <h2 className="benefits__title">Почему фронтенд-разработка?</h2>
+          <h2 className="benefits__title">{benefitsTitle}</h2>
           <div className="benefits__grid">
             <div className="benefits__item">
               <div className="benfits__icon">
@@ -361,7 +361,7 @@ export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) =
               <p className="benefits__text">Низкий порог входа в профессию</p>
             </div>
             <div className="benefits__item">
-              <div className="benfits__icon">
+              <div className="benefits__icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={64}
@@ -565,150 +565,22 @@ export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) =
         <div className="container">
           <h2 className="skills__title">Чему вы научитесь</h2>
           <div className="skills__content">
-            <span className="skills__item">HTML/CSS</span>
-            <span className="skills__item">Flexbox</span>
-            <span className="skills__item">Git</span>
-            <span className="skills__item">JavaScript</span>
-            <span className="skills__item">TypeScript</span>
-            <span className="skills__item">Grid Layout</span>
-            <span className="skills__item">Webpack</span>
-            <span className="skills__item">React</span>
-            <span className="skills__item">Redux</span>
+            {skills.map(el => <span className="skills__item">{el}</span>)}
           </div>
         </div>
       </section>
       {/* SKILLS - END */}
       {/* COURSE */}
-      <section className="course" id="course">
-        <div className="container">
-          <div className="course__grid">
-            <button
-              className="course__navbutton"
-              role="tab"
-              aria-selected="true"
-              tabIndex={0}
-              data-tab="tab1"
-            >
-              Программа курса
-            </button>
-            <button
-              className="course__navbutton"
-              role="tab"
-              aria-selected="false"
-              tabIndex={-1}
-              data-tab="tab2"
-            >
-              График обучения
-            </button>
-            <button
-              className="course__navbutton"
-              role="tab"
-              aria-selected="false"
-              tabIndex={-1}
-              data-tab="tab3"
-            >
-              Ментор
-            </button>
-            <div className="course__content">
-              <div
-                id="tab1"
-                className="tabpanel"
-                role="tabpanel"
-                aria-hidden="false"
-              >
-                <div className="program">
-                  <div className="program__left">
-                    <p className="program__text">HTML, CSS, JavaScript:</p>
-                    <p className="program__text">Базовый JavaScript</p>
-                    <p className="program__text">Продвинутый JavaScript</p>
-                    <p className="program__text">Подтема</p>
-                    <p className="program__text">Подтема</p>
-                    <p className="program__text">Подтема</p>
-                  </div>
-                  <div className="program__right">
-                    <p className="program__text program__text-rigth">
-                      -24 практических занятия
-                    </p>
-                    <p className="program__text program__text-rigth">
-                      -Доступ ко всем материалам курса{" "}
-                    </p>
-                    <p className="program__text program__text-rigth">
-                      -Общий чат с участниками курса
-                    </p>
-                    <p className="program__text program__text-rigth">
-                      -Промежуточное тестирование
-                    </p>
-                    <p className="program__text program__text-rigth">
-                      -Проверка домашних заданий
-                    </p>
-                    <p className="program__text program__text-rigth">
-                      -Сертификат об окончании курса
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="tab2"
-                className="tabpanel"
-                role="tabpanel"
-                aria-hidden="true"
-              >
-                <div className="schedule">
-                  <h2 className="schedule__title">Оффлайн / Онлайн</h2>
-                  <div className="schedule__content">
-                    <p className="schedule__text">
-                      Длительность: <br />6 месяцев
-                    </p>
-                    <p className="schedule__text">
-                      Дни:
-                      <br /> Пн/Ср/Пт
-                    </p>
-                    <p className="schedule__text">
-                      Время:
-                      <br />{" "}
-                      <span className="schedule__text-time">19:00-21:00</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="tab3"
-                className="tabpanel"
-                role="tabpanel"
-                aria-hidden="true"
-              >
-                <div className="mentor">
-                  <div className="mentor__desc">
-                    <p className="mentor__text">
-                      Меня зовут Азат, я являюсь автором курса Meta School. Мой опыт
-                      в программировании более 3х лет, работал в американском
-                      стартапе, китайской компании Richfit, а также в банке веб
-                      разработчиком.
-                    </p>
-                    <p className="mentor__text">
-                      Выпустил более 100+ учеников. Мои студенты трудоустроились,
-                      как в кыргызские компании, так и в зарубежные.
-                    </p>
-                  </div>
-                  <div className="mentor__photo">
-                    <img src="./assets/images/azat.jpg" alt="azat mentor photo" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Course />
       {/* COURSE - END */}
       {/* COST */}
       <section className="cost" id="cost">
         <div className="container">
           <div className="cost__content">
             <h2 className="cost__title">Стоимость курса</h2>
-            <h3 className="cost__price">12 000 сом в месяц</h3>
+            <h3 className="cost__price">{costPrice}</h3>
             <div className="cost__advantage">
-              <img src="./assets/images/tick-white.svg" alt="tick icon" /> Можно
-              оформить в рассрочку
+              <Image src={costIcon} alt="tick icon" /> Можно оформить в рассрочку
             </div>
             <ul className="cost__benefis">
               <li className="cost__item">Запись видео уроков</li>
@@ -721,7 +593,7 @@ export const Direction: FC<DirectionContentProps> = ({title, desc, aboutDesc}) =
             </button>
           </div>
           <div className="cost__img">
-            <img src="./assets/images/frontend-abstract.png" alt="abstract image" />
+            <Image src={costImg} alt="abstract image" />
           </div>
         </div>
       </section>
