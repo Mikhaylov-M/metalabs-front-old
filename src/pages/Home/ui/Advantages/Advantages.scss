@@ -5,24 +5,25 @@
     background: #F7F7F7;
     box-shadow: 0px 80.7009px 63.4079px -35.5468px rgba(29, 32, 33, 0.15);
     border-radius: 15px;
-    padding: 36px 57px 31px 64px;
+    // padding: 36px 57px 31px 64px;
+    padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 40px;
   }
 
   &__block {
-    display: flex;
     gap: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 140px;
 
     &.ml-50 {
       margin-left: 50px;
     }
-  }
-
-  &__text {
-    margin-left: 20px;
   }
 
   &__title {

@@ -7,1177 +7,1139 @@
 	} */
 
 
-  @media (min-width: 876px) {
-    .header__white-logo {
-      display: block;
+@media (min-width: 876px) {
+  .header__white-logo {
+    display: block;
+  }
+}
+
+@media (max-width: 1921px) {
+  .header {
+    height: 65px;
+  }
+
+  .header__phone {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .hero {
+    padding: 45px 0 40px;
+  }
+
+  .hero__title {
+    font-size: 70px;
+    line-height: 75px;
+  }
+
+  .advantages__title {
+    font-size: 24px;
+  }
+
+  .advantages__desc {
+    font-size: 19px;
+  }
+
+  .salary__grade {
+    &:not(:last-child) {
+      margin-bottom: 35px;
     }
   }
-  
-  @media (max-width: 1921px) {
-    .header {
-      height: 65px;
-    }
-  
-    .header__phone {
+
+  .salary__img {
+    width: 165px;
+  }
+}
+
+@media (max-width: 1441px) {
+  .courses {
+    padding: 100px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .header__item {
+    a {
       font-size: 19px;
-      line-height: 28px;
-    }
-  
-    .hero {
-      padding: 45px 0 40px;
-    }
-  
-    .hero__title {
-      font-size: 70px;
-      line-height: 75px;
-    }
-  
-    .advantages__title {
-      font-size: 24px;
-    }
-  
-    .advantages__desc {
-      font-size: 19px;
-    }
-  
-    .author__desc {
-      font-size: 22px;
-    }
-  
-    .section__title {
-      font-size: 50px;
-    }
-  
-    .salary__grade {
-      &:not(:last-child) {
-        margin-bottom: 35px;
-      }
-    }
-  
-    .salary__img {
-      width: 165px;
     }
   }
-  
-  @media (max-width: 1441px) {
-    .courses {
-      padding: 100px 0;
-    }
-  
-    .container {
-      max-width: 1200px;
-    }
-  
-    .header__item {
-      a {
-        font-size: 19px;
-      }
-    }
-  
-    .hero__container {
-      padding: 47px 0 55px 58px;
-    }
-  
-    .hero__title {
-      font-size: 59px;
-      line-height: 69px;
-    }
-  
-    .hero__desc {
-      font-size: 24px;
-    }
-  
-    .hero__list {
-      margin: 26px 0 33px;
-      font-size: 20px;
-      line-height: 27px;
-    }
-  
-    .hero__btn {
-      font-size: 22px;
-      line-height: 23px;
-    }
-  
-    .hero__lt {
-      width: 500px;
-      height: 353px;
-    }
-  
-    .hero__video {
-      width: 374px;
-      height: 256px;
-      right: 87px;
-    }
-  
-    .advantages__block {
-      svg {
-        width: 60px;
-      }
-    }
-  
-    .author__desc {
-      max-width: 600px;
-    }
-  
-    .author__bottom {
-      column-gap: 40px;
-    }
-  
-    .author__block {
-      max-width: 33.33333%;
-    }
-  
-    .salary__container {
-      padding: 82px 10px 0 80px;
-    }
-  
-    .cost__item {
-      font-size: 18px;
-    }
-  
-    .cost__btn {
-      width: 100%;
-    }
-  
-    .cost__oval {
-      font-size: 20px;
-      line-height: 29px;
-    }
-  
-    .about__content {
-      font-size: 20px;
-      line-height: 26px;
-    }
-  
-    .about__content_mb {
-      margin-bottom: 60px;
-    }
-  
-    .knowledges__sm-desc {
-      font-size: 20px;
-    }
-  
-    .knowledges__sm-title {
-      font-size: 24px;
-      line-height: 47px;
-    }
-  
-    .knowledges__bg {
-      img {
-        height: 40vh;
-      }
-  
-      bottom: 22vh;
-    }
-  
-    .salary__title {
-      font-size: 46px;
-    }
-  
-    .contacts__bg {
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 70%;
-    }
-  
-    .sales__desc {
-      font-size: 24px;
-      line-height: 38px;
-    }
-  
-    .sales__oval {
-      font-size: 23px;
-    }
-  
-    .reg-form {
-      padding: 20px;
-    }
-  
-    .footer {
-      &__contacts {
-        font-size: 17px;
-      }
+
+  .hero__container {
+    padding: 47px 0 55px 58px;
+  }
+
+  .hero__title {
+    font-size: 59px;
+    line-height: 69px;
+  }
+
+  .hero__desc {
+    font-size: 24px;
+  }
+
+  .hero__list {
+    margin: 26px 0 33px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .hero__btn {
+    font-size: 22px;
+    line-height: 23px;
+  }
+
+  .hero__video {
+    width: 374px;
+    height: 256px;
+    right: 87px;
+  }
+
+  .advantages__block {
+    svg {
+      width: 60px;
     }
   }
-  
-  @media (max-width: 1220px) {
-    .courses {
-      padding: 80px 0;
+
+  .author__desc {
+    max-width: 600px;
+  }
+
+  .salary__container {
+    padding: 82px 10px 0 80px;
+  }
+
+  .cost__item {
+    font-size: 18px;
+  }
+
+  .cost__btn {
+    width: 100%;
+  }
+
+  .cost__oval {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .about__content {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about__content_mb {
+    margin-bottom: 60px;
+  }
+
+  .knowledges__sm-desc {
+    font-size: 20px;
+  }
+
+  .knowledges__sm-title {
+    font-size: 24px;
+    line-height: 47px;
+  }
+
+  .knowledges__bg {
+    img {
+      height: 40vh;
     }
-  
-    .hero__lt {
-      width: 414px;
-      height: 314px;
-    }
-  
-    .hero__video {
-      width: 392px;
-      height: 214px;
-      right: 35px;
-    }
-  
-    .hero__title {
-      font-size: 46px;
-      line-height: 56px;
-      margin: 13px 0;
-    }
-  
-    .hero__desc {
-      font-size: 21px;
-      font-size: 21px;
-      max-width: 367px;
-    }
-  
-    .hero__item {
-      &:not(:last-child) {
-        margin-bottom: 2px;
-      }
-    }
-  
-    .hero__start {
-      padding: 9px 19px;
-    }
-  
-    .advantages__desc {
-      font-size: 16px;
-      font-size: 13px;
-      line-height: 18px;
-    }
-  
-    .advantages__block {
-      svg {
-        width: 53px;
-      }
-    }
-  
-    .advantages__title {
-      font-size: 20px;
-      line-height: 25px;
-      font-size: 18px;
-      line-height: 20px;
-    }
-  
-    .author__desc {
-      font-size: 19px;
-      line-height: 34px;
-      max-width: 516px;
-    }
-  
-    .author__sm-desc {
+
+    bottom: 22vh;
+  }
+
+  .salary__title {
+    font-size: 46px;
+  }
+
+  .contacts__bg {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+  }
+
+  .sales__desc {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .sales__oval {
+    font-size: 23px;
+  }
+
+  .reg-form {
+    padding: 20px;
+  }
+
+  .footer {
+    &__contacts {
       font-size: 17px;
-      line-height: 20px;
-  
-      &:not(:last-child) {
-        margin-bottom: 15px;
-      }
     }
-  
-    .author__sm-title {
-      font-size: 26px;
-      line-height: 30px;
-      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1220px) {
+
+  .courses {
+    padding: 80px 0;
+  }
+
+  .hero__video {
+    width: 392px;
+    height: 214px;
+    right: 35px;
+  }
+
+  .hero__title {
+    font-size: 46px;
+    line-height: 56px;
+    margin: 13px 0;
+  }
+
+  .hero__desc {
+    font-size: 21px;
+    font-size: 21px;
+    max-width: 367px;
+  }
+
+  .hero__item {
+    &:not(:last-child) {
+      margin-bottom: 2px;
     }
-  
-    .steps__desc {
-      font-size: 18px;
-      line-height: 25px;
+  }
+
+  .hero__start {
+    padding: 9px 19px;
+  }
+
+  .advantages__desc {
+    font-size: 16px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .advantages__block {
+    svg {
+      width: 53px;
     }
-  
-    .section__title {
-      font-size: 40px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .author__desc {
+    max-width: 516px;
+  }
+
+  .steps__desc {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .salary__info {
+    margin-right: 46px;
+    padding-top: 43px;
+  }
+
+  .salary__container {
+    padding: 82px 10px 0 118px;
+  }
+
+  .salary__title {
+    line-height: 59px;
+  }
+
+  .salary__right {
+    display: none;
+  }
+
+  .salary__bottom {
+    display: none;
+  }
+
+  .salary__grade {
+    padding-left: 24px;
+    height: 87px;
+  }
+
+  .salary__price {
+    font-size: 21px;
+  }
+
+  .salary__sm-title {
+    font-size: 18px;
+  }
+
+  .salary__img {
+    width: 129px;
+  }
+
+  .salary__content {
+    padding-bottom: 61px;
+  }
+
+  .courses__card {
+    height: 740px;
+    padding: 65px 45px;
+  }
+
+  .card-dark {
+    svg {
+      width: 180%;
+      left: -226px;
+      top: -170px;
     }
-  
-    .salary__info {
-      margin-right: 46px;
-      padding-top: 43px;
+  }
+
+  .knowledges__technologies {
+    max-width: 768px;
+  }
+
+  .cities__desc {
+    margin: 25px 0 87px;
+  }
+
+  .advantages__block.ml-50 {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 920px;
+  }
+
+  .cost__item {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cost__oval {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .btn__oval {
+    border-radius: 50px;
+    padding: 11px 35px;
+  }
+
+  .cost__btn {
+    font-size: 23px;
+    height: 46px;
+  }
+
+  .about__content {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .contacts {
+    background: linear-gradient(to bottom, transparent 30%, rgba(17, 55, 113, 0.12) 70%);
+
+    &__wrapper {
+      flex-direction: column;
     }
-  
-    .salary__container {
-      padding: 82px 10px 0 118px;
-    }
-  
-    .salary__title {
-      line-height: 59px;
-    }
-  
-    .salary__right {
-      display: none;
-    }
-  
-    .salary__bottom {
-      display: none;
-    }
-  
-    .salary__grade {
-      padding-left: 24px;
-      height: 87px;
-    }
-  
-    .salary__price {
-      font-size: 21px;
-    }
-  
-    .salary__sm-title {
-      font-size: 18px;
-    }
-  
-    .salary__img {
-      width: 129px;
-    }
-  
-    .salary__content {
-      padding-bottom: 61px;
-    }
-  
-    .courses__card {
-      height: 740px;
-      padding: 65px 45px;
-    }
-  
-    .card-dark {
-      svg {
-        width: 180%;
-        left: -226px;
-        top: -170px;
-      }
-    }
-  
-    .knowledges__technologies {
-      max-width: 768px;
-    }
-  
-    .cities__desc {
-      margin: 25px 0 87px;
-    }
-  
-    .advantages__block.ml-50 {
-      margin: 0;
-    }
-  
-    .container {
-      max-width: 920px;
-    }
-  
-    .cost__item {
-      font-size: 15px;
-      line-height: 24px;
-    }
-  
-    .cost__oval {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  
-    .btn__oval {
-      border-radius: 50px;
-      padding: 11px 35px;
-    }
-  
-    .cost__btn {
+
+    &__desc {
       font-size: 23px;
-      height: 46px;
+      margin: 0 auto;
+      text-align: center;
     }
-  
-    .about__content {
-      font-size: 16px;
-      line-height: 26px;
+
+    &__left {
+      text-align: center;
     }
-  
-    .contacts {
-      background: linear-gradient(to bottom, transparent 30%, rgba(17, 55, 113, 0.12) 70%);
-  
-      &__wrapper {
-        flex-direction: column;
+
+    &__sale {
+      margin-left: 0;
+
+      &::after {
+        top: -10px;
+        right: -60px;
       }
-  
-      &__desc {
-        font-size: 23px;
-        margin: 0 auto;
-        text-align: center;
-      }
-  
-      &__left {
-        text-align: center;
-      }
-  
-      &__sale {
-        margin-left: 0;
-  
-        &::after {
-          top: -10px;
-          right: -60px;
+    }
+  }
+}
+
+@media (max-width: 876px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .courses {
+    padding: 70px 0;
+  }
+
+  .courses__title {
+    margin-bottom: 60px;
+  }
+
+  .header {
+    background-color: #0B0B0B;
+  }
+
+  .header__black-logo {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .hero__start {
+    position: relative;
+    z-index: 2;
+    top: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto 31px;
+    width: fit-content;
+  }
+
+  .hero__container {
+    padding: 47px 58px 0px 58px;
+  }
+
+  .hero__lt {
+    position: relative;
+    z-index: 2;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .hero__video {
+    top: 23px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: auto;
+  }
+
+  .hero__note {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .hero__title {
+    br {
+      display: none;
+    }
+  }
+
+  .hero__desc {
+    max-width: none;
+  }
+
+  .advantages__block {
+    svg {
+      width: 62px;
+    }
+  }
+
+  .advantages__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .advantages__desc {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .author {
+    padding-top: 0;
+  }
+
+  .author__top {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+
+  .author__bottom {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .author__block {
+    padding: 20px;
+  }
+
+  .author__desc {
+    max-width: none;
+    margin-top: 20px;
+  }
+
+  .author__content {
+    padding-top: 0;
+  }
+
+  .author__img {
+    max-height: 300px;
+  }
+
+  .steps__container {
+    flex-direction: column;
+  }
+
+  .steps__block:nth-child(2) {
+    align-self: center;
+  }
+
+  .steps__block:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .steps__desc {
+    max-width: none;
+  }
+
+  .salary__container {
+    flex-direction: column;
+    padding: 82px 10px 60px 118px;
+  }
+
+  .salary__title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .salary__info {
+    max-width: 100%;
+  }
+
+  .salary__right {
+    display: block;
+  }
+
+  .salary__bottom {
+    display: block;
+    bottom: -44px;
+    width: 126%;
+  }
+
+  .salary__blocks {
+    margin: 50px 80px 0;
+  }
+
+  .courses__card {
+    height: 620px;
+  }
+
+  .courses__desc {
+    font-size: 16px;
+  }
+
+  .courses__desc-dark {
+    font-size: 16px;
+  }
+
+  .courses__skill {
+    font-size: 14px;
+  }
+
+  .courses__skill-dark {
+    font-size: 14px;
+  }
+
+  .cost {
+    padding-top: 60px;
+    background: none;
+  }
+
+  .cost__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cost__col {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .cost__item {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .cost__oval {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .about {
+    padding-top: 77px;
+    padding-bottom: 60px;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__content {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+
+  .testimonials {
+    padding-top: 60px;
+  }
+
+  .student {
+    max-width: 665px;
+  }
+
+  .student__content {
+    max-width: 280px;
+  }
+
+  .student__video {
+    max-height: 399px;
+  }
+
+  .knowledges__bg {
+    display: none;
+  }
+
+  .salary {
+    overflow: hidden;
+  }
+
+  .contacts {
+
+    .sales__num {
+      font-size: 130px;
+    }
+  }
+
+  .footer {
+    padding: 45px 0;
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__logo-wrapper {
+      width: 147px;
+      height: 30px;
+    }
+
+    &__contacts {
+
+      &--location {
+
+        & svg {
+          left: 53px;
         }
       }
     }
+
   }
-  
-  @media (max-width: 876px) {
-    .courses {
-      padding: 70px 0;
+}
+
+@media (max-width: 670px) {
+  .courses {
+    padding: 55px 0;
+  }
+
+  .courses__btn {
+    font-size: 17px;
+    height: 45px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .hero__num {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .hero__word {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .hero__uptitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+    line-height: 41px;
+  }
+
+  .hero__desc {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .hero__item {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .hero__container {
+    padding: 28px 12px 0px 12px;
+  }
+
+  .hero__start {
+    padding: 9px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hero__days {
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  .hero__video {
+    width: 100%;
+    height: 195px;
+  }
+
+  .author__img {
+    width: 100%;
+
+    img {
+      border-radius: 10px;
     }
-  
-    .courses__title {
-      margin-bottom: 60px;
-    }
-  
-    .header {
-      background: #0B0B0B;
-    }
-  
-    .header__black-logo {
-      display: none;
-    }
-  
-    .burger {
-      display: block;
-    }
-  
-    .header__nav {
-      display: none;
-    }
-  
-    .hero__start {
-      position: relative;
-      z-index: 2;
+  }
+
+  .author__desc {
+    font-size: 18px;
+  }
+
+  .author__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author__block {
+    width: 100%;
+    max-width: 295px;
+  }
+
+  .steps__desc {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .salary__content {
+    bottom: auto;
+    left: auto;
+
+    svg {
       top: auto;
-      left: 0;
-      right: 0;
-      margin: 0 auto 31px;
-      width: fit-content;
-    }
-  
-    .hero__container {
-      padding: 47px 58px 0px 58px;
-    }
-  
-    .hero__lt {
-      position: relative;
-      z-index: 2;
-      bottom: auto;
-      right: 0;
-      left: 0;
-      margin: 0 auto;
-    }
-  
-    .hero__video {
-      top: 23px;
-      right: 0;
-      left: 0;
-      margin: 0 auto;
-      bottom: auto;
-    }
-  
-    .hero__note {
-      margin-top: 40px;
-      position: relative;
-    }
-  
-    .hero__title {
-      br {
-        display: none;
-      }
-    }
-  
-    .hero__desc {
-      max-width: none;
-    }
-  
-    .advantages__container {
-      gap: 30px;
-      align-items: center;
-      justify-content: space-around;
-    }
-  
-    .advantages__block {
-      svg {
-        width: 62px;
-      }
-    }
-  
-    .advantages__title {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  
-    .advantages__desc {
-      font-size: 20px;
-      line-height: 27px;
-    }
-  
-    .author {
-      padding-top: 0;
-    }
-  
-    .author__top {
-      flex-direction: column-reverse;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 40px;
-      gap: 40px;
-    }
-  
-    .author__desc {
-      max-width: none;
-      margin-top: 20px;
-    }
-  
-    .container {
-      max-width: 800px;
-    }
-  
-    .author__content {
-      padding-top: 0;
-    }
-  
-    .author__img {
-      max-width: 350px;
-      max-height: 350px;
-    }
-  
-    .author__bottom {
-      flex-direction: column;
-    }
-  
-    .author__block {
-      max-width: none;
-  
-      &:not(:last-child) {
-        margin-bottom: 40px;
-      }
-    }
-  
-    .author__sm-title {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  
-    .author__sm-desc {
-      font-size: 20px;
-      line-height: 23px;
-    }
-  
-    .steps__container {
-      flex-direction: column;
-    }
-  
-    .steps__desc {
-      max-width: none;
-    }
-  
-    .steps__block {
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
-    }
-  
-    .salary__container {
-      flex-direction: column;
-      padding: 82px 10px 60px 118px;
-    }
-  
-    .salary__title {
-      font-size: 38px;
-      line-height: 45px;
-    }
-  
-    .salary__info {
-      max-width: 100%;
-    }
-  
-    .salary__right {
-      display: block;
-    }
-  
-    .salary__bottom {
-      display: block;
-      bottom: -44px;
-      width: 126%;
-    }
-  
-    .salary__blocks {
-      margin: 50px 80px 0;
-    }
-  
-    .courses__card {
-      height: 620px;
-    }
-  
-    .courses__desc {
-      font-size: 16px;
-    }
-  
-    .courses__desc-dark {
-      font-size: 16px;
-    }
-  
-    .courses__skill {
-      font-size: 14px;
-    }
-  
-    .courses__skill-dark {
-      font-size: 14px;
-    }
-  
-    .cost {
-      padding-top: 60px;
-      background: none;
-    }
-  
-    .cost__grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-  
-    .cost__col {
-      max-width: 450px;
-      margin: 0 auto;
-    }
-  
-    .cost__item {
-      font-size: 20px;
-      line-height: 33px;
-    }
-  
-    .cost__oval {
-      font-size: 22px;
-      line-height: 33px;
-    }
-  
-    .about {
-      padding-top: 77px;
-      padding-bottom: 60px;
-    }
-  
-    .about__grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .about__content {
-      font-size: 20px;
-      line-height: 23px;
-      margin-bottom: 30px;
-      max-width: none;
-    }
-  
-    .testimonials {
-      padding-top: 60px;
-    }
-  
-    .student {
-      max-width: 665px;
-    }
-  
-    .student__content {
-      max-width: 280px;
-    }
-  
-    .student__video {
-      max-height: 399px;
-    }
-  
-    .knowledges__bg {
-      display: none;
-    }
-  
-    .salary {
-      overflow: hidden;
-    }
-  
-    .contacts {
-  
-      .sales__num {
-        font-size: 130px;
-      }
-    }
-  
-    .footer {
-      padding: 45px 0;
-  
-      &__list {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-  
-      &__logo-wrapper {
-        width: 147px;
-        height: 30px;
-      }
-  
-      &__contacts {
-  
-        &--location {
-  
-          & svg {
-            left: 53px;
-          }
-        }
-      }
-  
+      bottom: 0;
+      width: 100%;
     }
   }
-  
-  @media (max-width: 670px) {
-    .courses {
-      padding: 55px 0;
+
+  .salary__container {
+    padding: 0 20px;
+  }
+
+  .salary__info {
+    margin-right: 0;
+  }
+
+  .salary__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .salary__desc {
+    font-size: 18px;
+    line-height: 53px;
+  }
+
+  .salary__blocks {
+    margin: 50px 0 0;
+    width: 292px;
+  }
+
+  .salary__sm-title {
+    margin-right: 60px;
+    font-size: 15.125px;
+    line-height: 15px;
+  }
+
+  .courses__title {
+    margin-bottom: 70px;
+  }
+
+  .courses__row {
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .courses__card {
+    width: 70%;
+  }
+
+  .student {
+    max-width: 390px;
+  }
+
+  .student__testimonial {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .student__content {
+    padding: 13px;
+    max-width: 220px;
+  }
+
+  .student__video {
+    height: 150px;
+    width: 150px;
+  }
+
+  .testimonials {
+    .swiper-wrapper {
+      padding: 60px 10px;
     }
-  
-    .courses__btn {
-      font-size: 17px;
-      height: 45px;
-    }
-  
-    .advantages__container {
-      flex-direction: column;
-      align-items: start;
-      padding: 30px;
-    }
-  
-    .container {
-      padding: 0 20px;
-    }
-  
-    .hero__text {
-      font-size: 14px;
-      line-height: 19px;
-    }
-  
-    .hero__num {
-      font-size: 22px;
-      line-height: 30px;
-    }
-  
-    .hero__word {
-      font-size: 9px;
-      line-height: 11px;
-    }
-  
-    .hero__uptitle {
-      font-size: 16px;
-      line-height: 19px;
-    }
-  
-    .hero__title {
-      font-size: 42px;
-      line-height: 41px;
-    }
-  
-    .hero__desc {
-      font-size: 18px;
-      line-height: 21px;
-    }
-  
-    .hero__item {
-      font-size: 17px;
-      line-height: 23px;
-    }
-  
-    .hero__container {
-      padding: 28px 12px 0px 12px;
-    }
-  
-    .hero__start {
-      padding: 9px 10px;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-  
-    .hero__days {
-      text-align: center;
-      margin-right: 15px;
-    }
-  
-    .hero__lt {
-      width: 100%;
-      height: 285px;
-    }
-  
-    .hero__video {
-      width: 100%;
-      height: 195px;
-    }
-  
-    .author__img {
-      width: 100%;
-  
-      img {
-        border-radius: 10px;
-      }
-    }
-  
-    .author__desc {
+  }
+
+  .knowledges__sm-desc {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .cities__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cities__desc {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 20px;
+  }
+
+  .cities__lg-slider {
+    .swiper-slide {
       font-size: 20px;
-      line-height: 25px;
-    }
-  
-    .steps__desc {
-      font-size: 24px;
-      line-height: 30px;
-    }
-  
-    .salary__content {
-      bottom: auto;
-      left: auto;
-  
-      svg {
-        top: auto;
-        bottom: 0;
-        width: 100%;
-      }
-    }
-  
-    .salary__container {
-      padding: 0 20px;
-    }
-  
-    .salary__info {
-      margin-right: 0;
-    }
-  
-    .salary__title {
-      font-size: 28px;
-      line-height: 35px;
-    }
-  
-    .salary__desc {
-      font-size: 18px;
-      line-height: 53px;
-    }
-  
-    .salary__blocks {
-      margin: 50px 0 0;
-      width: 292px;
-    }
-  
-    .salary__sm-title {
-      margin-right: 60px;
-      font-size: 15.125px;
-      line-height: 15px;
-    }
-  
-    .courses__title {
-      margin-bottom: 70px;
-    }
-  
-    .courses__row {
-      place-items: center;
-      grid-template-columns: 1fr;
-    }
-  
-    .courses__card {
-      width: 70%;
-    }
-  
-    .student {
-      max-width: 390px;
-    }
-  
-    .student__testimonial {
-      font-size: 14px;
       line-height: 16px;
-    }
-  
-    .student__content {
-      padding: 13px;
-      max-width: 220px;
-    }
-  
-    .student__video {
-      height: 150px;
-      width: 150px;
-    }
-  
-    .testimonials {
-      .swiper-wrapper {
-        padding: 60px 10px;
+      padding-left: 20px;
+
+      &::before {
+        content: "•";
+        margin-right: 5px;
       }
     }
-  
-    .knowledges__sm-desc {
-      font-size: 18px;
-      line-height: 21px;
-      margin-bottom: 20px;
-    }
-  
-    .section__title {
-      font-size: 32px;
-      line-height: 27px;
-    }
-  
-    .cities__title {
-      text-align: center;
-      margin: 0 auto;
-    }
-  
-    .cities__desc {
-      font-size: 16px;
-      line-height: 19px;
-      padding: 0 20px;
-    }
-  
-    .cities__lg-slider {
-      .swiper-slide {
-        font-size: 20px;
-        line-height: 16px;
-        padding-left: 20px;
-  
-        &::before {
-          content: "•";
-          margin-right: 5px;
-        }
-      }
-  
-      .swiper-container {
-        height: 34px;
-      }
-    }
-  
-    .cities__md-slider {
-      .swiper-slide {
-        font-size: 14px;
-        line-height: 11px;
-        padding-left: 20px;
-  
-        &::before {
-          content: "•";
-          margin-right: 5px;
-        }
-      }
-  
-      .swiper-container {
-        height: 22px;
-      }
-    }
-  
-    .cities__sm-slider {
-      .swiper-slide {
-        font-size: 10px;
-        line-height: 7px;
-        padding-left: 20px;
-  
-        &::before {
-          content: "•";
-          margin-right: 5px;
-        }
-      }
-  
-      .swiper-container {
-        height: 14px;
-      }
-    }
-  
-    .sales {
-      position: relative;
-      padding: 48px 0 38px;
-    }
-  
-    .sales__percent {
-      position: absolute;
-      font-size: 52.6829px;
-      line-height: 74px;
-      right: 26px;
-      bottom: 187px;
-    }
-  
-    .sales__desc {
-      margin-right: 0;
-      margin-bottom: 132px;
-      font-size: 20px;
-      line-height: 23px;
-    }
-  
-    .sales__oval {
-      width: 100%;
-      font-size: 20px;
-      line-height: 28px;
-    }
-  
-    .contacts__bg {
-      width: 100%;
-      top: auto;
+
+    .swiper-container {
+      height: 34px;
     }
   }
-  
-  @media (max-width: 577px) {
-    .steps__block {
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-    }
-  
-    .steps__container {
-      margin-top: 40px;
-    }
-  
-    .steps__num {
-      font-size: 100px;
-    }
-  
-    .steps__desc {
-      font-size: 20px;
-    }
-  
-    .advantages__title {
-      font-size: 20px;
-    }
-  
-    .advantages__desc {
-      font-size: 18px;
-    }
-  
-    .reg-form__inp {
-      font-size: 20px;
-    }
-  }
-  
-  @media (max-width: 545px) {
-    .reg-form__inp {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 491px) {
-    .salary__title {
-      font-size: 22px;
-      line-height: 35px;
-    }
-  
-    .header__logo {
-      width: 100px;
-      height: 40px;
-    }
-  
-    .reg-form {
-      padding: 43px 50px;
-    }
-  
-    .reg-form__inp {
-      font-size: 15px;
-    }
-  
-    .reg-form__lbl {
-      font-size: 22px;
-    }
-  
-    .courses__card {
-      width: 100%;
-      padding: 40px 20px;
-    }
-  
-    .contacts__desc {
-      text-align: center;
-      font-size: 20px;
-      line-height: normal;
-    }
-  }
-  
-  @media (max-width: 472px) {
-    .courses {
-      padding: 40px 0;
-    }
-  
-    .courses__title {
-      margin-bottom: 40px;
-    }
-  
-    .steps__container {
-      margin-top: 25px;
-    }
-  
-    .steps__num {
-      font-size: 80px;
-    }
-  
-    .steps__desc {
-      font-size: 15px;
-      line-height: 20px;
-    }
-  
-    .author__block {
-      padding: 30px;
-    }
-  
-    .hero__title {
-      font-size: 31px;
-    }
-  
-    .hero__item {
+
+  .cities__md-slider {
+    .swiper-slide {
       font-size: 14px;
-  
-      span {
-        margin: 0 2px;
+      line-height: 11px;
+      padding-left: 20px;
+
+      &::before {
+        content: "•";
+        margin-right: 5px;
       }
     }
-  
-    .hero__btn {
-      font-size: 15px;
-      padding: 8px 35px;
-      display: block;
-      margin: 0 auto;
+
+    .swiper-container {
+      height: 22px;
     }
-  
-    .reg-form__lbl {
-      font-size: 18px;
+  }
+
+  .cities__sm-slider {
+    .swiper-slide {
+      font-size: 10px;
+      line-height: 7px;
+      padding-left: 20px;
+
+      &::before {
+        content: "•";
+        margin-right: 5px;
+      }
     }
-  
-    .salary__desc {
-      font-size: 16px;
-      line-height: 25px;
-      padding: 20px;
+
+    .swiper-container {
+      height: 14px;
     }
-  
-    .footer {
-  
-      &__links {
-        font-size: 14px;
-  
-        &:not(:last-child) {
-          margin-bottom: 10px;
-        }
+  }
+
+  .sales {
+    position: relative;
+    padding: 48px 0 38px;
+  }
+
+  .sales__percent {
+    position: absolute;
+    font-size: 52.6829px;
+    line-height: 74px;
+    right: 26px;
+    bottom: 187px;
+  }
+
+  .sales__desc {
+    margin-right: 0;
+    margin-bottom: 132px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .sales__oval {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contacts__bg {
+    width: 100%;
+    top: auto;
+  }
+}
+
+@media (max-width: 577px) {
+  .steps__block {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .steps__num {
+    font-size: 100px;
+  }
+
+  .steps__desc {
+    font-size: 20px;
+  }
+
+  .advantages__title {
+    font-size: 18px;
+  }
+
+  .advantages__desc {
+    font-size: 16px;
+  }
+
+  .reg-form__inp {
+    font-size: 20px;
+  }
+
+  .author__img {
+    max-width: 220px;
+    max-height: 200px;
+  }
+
+  .author__sm-desc {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 545px) {
+  .reg-form__inp {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 491px) {
+  .salary__title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .header__logo {
+    width: 100px;
+    height: 40px;
+  }
+
+  .reg-form {
+    padding: 43px 50px;
+  }
+
+  .reg-form__inp {
+    font-size: 15px;
+  }
+
+  .reg-form__lbl {
+    font-size: 22px;
+  }
+
+  .courses__card {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .contacts__desc {
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .author__desc {
+    font-size: 16px;
+  }
+
+  .author__sm-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 472px) {
+  .hero {
+    padding: 25px 0 40px;
+  }
+
+  .courses {
+    padding: 40px 0;
+  }
+
+  .courses__title {
+    margin-bottom: 40px;
+  }
+
+  .steps__num {
+    font-size: 80px;
+  }
+
+  .steps__desc {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hero__title {
+    font-size: 31px;
+  }
+
+  .hero__item {
+    font-size: 14px;
+
+    span {
+      margin: 0 2px;
+    }
+  }
+
+  .hero__btn {
+    font-size: 15px;
+    padding: 8px 35px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .reg-form__lbl {
+    font-size: 18px;
+  }
+
+  .salary__desc {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
+  }
+
+  .footer {
+
+    &__links {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
       }
     }
   }
-  
-  @media (max-width: 416px) {
-    .hero__start {
-      border-radius: 22px;
-    }
-  
-    .contacts__left {
-      padding-right: 0;
-    }
-  
-    .reg-form {
-      padding: 30px;
-    }
-  
-    .reg-form__inp {
-      height: 70px;
-      font-size: 15px;
-    }
-  
-    .reg-form__lbl {
-      font-size: 22px;
-    }
-  
-    .about__img {
-      display: none;
-    }
-  
-    .contacts__sale {
-      margin-left: 26px;
-    }
-  
-    .sales__oval {
-      font-size: 25px;
-      margin-top: 10px;
-    }
+
+  .burger__line {
+    height: 2px;
+    width: 30px;
   }
-  
-  @media (max-width: 390px) {
-    .reg-form__lbl {
-      font-size: 20px;
-    }
+
+  .burger__lbl::before,
+  .burger__lbl::after {
+    height: 2px;
   }
+
+  .burger__lbl::before {
+    top: 4px;
+  }
+
+  .burger__lbl::after {
+    bottom: 4px;
+  }
+}
+
+@media (max-width: 416px) {
+  .hero__start {
+    border-radius: 22px;
+  }
+
+  .contacts__left {
+    padding-right: 0;
+  }
+
+  .reg-form {
+    padding: 30px;
+  }
+
+  .reg-form__inp {
+    height: 70px;
+    font-size: 15px;
+  }
+
+  .reg-form__lbl {
+    font-size: 22px;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .contacts__sale {
+    margin-left: 26px;
+  }
+
+  .sales__oval {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .author__sm-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .reg-form__lbl {
+    font-size: 20px;
+  }
+}

@@ -5,7 +5,6 @@ import './Footer.scss'
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
-{/* 
       <div className="container footer__flex">
         <ul className="footer__list">
           <li className="footer__items">
@@ -62,7 +61,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-       */}
     </footer>
   )
 }
