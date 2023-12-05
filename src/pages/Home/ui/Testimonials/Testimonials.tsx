@@ -1,3 +1,7 @@
+'use client'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import './Testimonials.scss'
 
 export const Testimonials = () => {
@@ -7,9 +11,9 @@ export const Testimonials = () => {
         <h2 className="section__title testimonials__title">
           Отзывы об авторе курса
         </h2>
-        <div className="swiper testimonials__swiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
+        <Swiper className="swiper testimonials__swiper">
+          {/* <div className="swiper-wrapper"> */}
+            <SwiperSlide className="swiper-slide">
               <div className="student">
                 <div className="student__video">
                   <video
@@ -27,8 +31,8 @@ export const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
               <div className="student">
                 <div className="student__video">
                   <video
@@ -46,8 +50,8 @@ export const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
               <div className="student">
                 <div className="student__video">
                   <video
@@ -65,8 +69,8 @@ export const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
               <div className="student">
                 <div className="student__video">
                   <video
@@ -84,10 +88,10 @@ export const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="swiper-pagination" />
-        </div>
+            </SwiperSlide>
+          {/* </div> */}
+          {/* <div className="swiper-pagination" /> */}
+        </Swiper>
       </div>
     </section>
   )

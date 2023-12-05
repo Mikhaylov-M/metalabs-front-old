@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Raleway } from 'next/font/google'
 import Header from '../global/components/Header/Header'
-import Footer from '@/global/components/Footer/Footer'
+import Footer from '../global/components/Footer/Footer'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
