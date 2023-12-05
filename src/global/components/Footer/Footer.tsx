@@ -2,7 +2,7 @@ import Image from 'next/image'
 import metaLogo from '../../../../public/images/new-logo-white.svg'
 import './Footer.scss'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className="container footer__flex">
@@ -64,5 +64,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

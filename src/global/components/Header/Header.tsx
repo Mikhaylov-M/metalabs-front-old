@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import blackLogo from '../../../../public/images/new-logo-black.svg'
-import whiteLogo from '../../../../public/images/new-logo-white.svg'
+import blackLogo from '@/public/images/new-logo-black.svg'
+import whiteLogo from '@/public/images/new-logo-white.svg'
 
 import './Header.scss'
 
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="header" id="header">
       <div className="container">
@@ -76,5 +76,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
