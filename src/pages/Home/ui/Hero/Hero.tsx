@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import airImg from "../../../../../public/images/air.png"
-import airVid from "../../../../../public/images/lt-video.mp4" 
+// import airVid from "../../../../../public/images/lt-video.mp4"
 import './Hero.scss'
 
 export const Hero = () => {
@@ -52,7 +52,7 @@ export const Hero = () => {
               <Image src={airImg} alt="" />
             </div>
             <video className="hero__video">
-              <source src={airVid} type="video/mp4" />
+              {/* <source src={airVid} type="video/mp4" /> */}
             </video>
           </div>
           <div className="hero__light" />
