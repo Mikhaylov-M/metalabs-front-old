@@ -1,21 +1,19 @@
 import { FC } from 'react'
 import './Direction.scss'
-import { Course } from './ui/Course'
+import { Course, CourseProps } from './ui/Course'
 import Image, { StaticImageData } from 'next/image'
 
 import costImg from '@/public/images/frontend-abstract.png'
 import costIcon from '@/public/images/tick-white.svg'
 
+
 export interface DirectionContentProps {
-  bannerTitle: string,
-  bannerDesc: string,
-  aboutTitle: string,
-  aboutText: string[],
-  aboutList: string[],
-  aboutImg: StaticImageData,
-  aboutImgAlt: string,
+  bannerTitle: string, bannerDesc: string,
+  aboutTitle: string, aboutText: string[], aboutList: string[],
+  aboutImg: StaticImageData, aboutImgAlt: string,
   benefitsTitle: string,
   skills: string[],
+  course: CourseProps,
   costPrice: string
 }
 
@@ -25,6 +23,7 @@ export const Direction: FC<DirectionContentProps> = (
     aboutTitle, aboutText, aboutList, aboutImg, aboutImgAlt,
     benefitsTitle,
     skills,
+    course,
     costPrice,
   }
   ) => {
@@ -571,7 +570,7 @@ export const Direction: FC<DirectionContentProps> = (
       </section>
       {/* SKILLS - END */}
       {/* COURSE */}
-      <Course />
+      <Course {...course} />
       {/* COURSE - END */}
       {/* COST */}
       <section className="cost" id="cost">

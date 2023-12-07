@@ -2,8 +2,21 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import './Course.scss'
+import { FC } from 'react'
 
-export const Course = () => {
+export interface CourseProps {
+  programLeft: string[], programRight: string[],
+  scheduleDuration: string[],
+  scheduleDays: string[],
+  scheduleTime: string[],
+}
+
+export const Course:FC<CourseProps> = ({
+  programLeft, programRight,
+  scheduleDuration,
+  scheduleDays,
+  scheduleTime,
+}) => {
   return (
     <section className="course" id="course">
       <div className="container">
@@ -16,32 +29,10 @@ export const Course = () => {
             <TabPanel className="tabpanel">
               <div className="program">
                 <div className="program__left">
-                  <p className="program__text">HTML, CSS, JavaScript:</p>
-                  <p className="program__text">Базовый JavaScript</p>
-                  <p className="program__text">Продвинутый JavaScript</p>
-                  <p className="program__text">Подтема</p>
-                  <p className="program__text">Подтема</p>
-                  <p className="program__text">Подтема</p>
+                  {programLeft.map(el => <p className="program__text">{el}</p>)}
                 </div>
                 <div className="program__right">
-                  <p className="program__text program__text-rigth">
-                    -24 практических занятия
-                  </p>
-                  <p className="program__text program__text-rigth">
-                    -Доступ ко всем материалам курса{" "}
-                  </p>
-                  <p className="program__text program__text-rigth">
-                    -Общий чат с участниками курса
-                  </p>
-                  <p className="program__text program__text-rigth">
-                    -Промежуточное тестирование
-                  </p>
-                  <p className="program__text program__text-rigth">
-                    -Проверка домашних заданий
-                  </p>
-                  <p className="program__text program__text-rigth">
-                    -Сертификат об окончании курса
-                  </p>
+                  {programRight.map(el => <p className="program__text program__text-rigth">{el}</p>)}
                 </div>
               </div>
             </TabPanel>
@@ -50,16 +41,19 @@ export const Course = () => {
                 <h2 className="schedule__title">Оффлайн / Онлайн</h2>
                 <div className="schedule__content">
                   <p className="schedule__text">
-                    Длительность: <br />6 месяцев
+                    Длительность:
+                    {scheduleDuration.map(el => 
+                    <><br />el</>)}
                   </p>
                   <p className="schedule__text">
                     Дни:
-                    <br /> Пн/Ср/Пт
+                    {scheduleDays.map(el => 
+                    <><br />el</>)}
                   </p>
                   <p className="schedule__text">
                     Время:
-                    <br />{" "}
-                    <span className="schedule__text-time">19:00-21:00</span>
+                    {scheduleTime.map(el => 
+                    <><br /><span className="schedule__text-time">{el}</span></>)}
                   </p>
                 </div>
               </div>
