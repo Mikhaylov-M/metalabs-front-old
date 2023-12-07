@@ -1,12 +1,3 @@
-/* .sales__num {
-    position: absolute;
-		font-size: 113.268px;
-		line-height: 97px;
-		right: 79px;
-		bottom: 167px;
-	} */
-
-
 @media (min-width: 876px) {
   .header__white-logo {
     display: block;
@@ -76,23 +67,6 @@
     margin-bottom: 60px;
   }
 
-  .knowledges__sm-desc {
-    font-size: 20px;
-  }
-
-  .knowledges__sm-title {
-    font-size: 24px;
-    line-height: 47px;
-  }
-
-  .knowledges__bg {
-    img {
-      height: 40vh;
-    }
-
-    bottom: 22vh;
-  }
-
   .contacts__bg {
     top: 0;
     left: 50%;
@@ -113,6 +87,10 @@
     padding: 20px;
   }
 
+  .knowledges__technologies {
+    max-width: 750px;
+  }
+
   .footer {
     &__contacts {
       font-size: 17px;
@@ -121,6 +99,10 @@
 }
 
 @media (max-width: 1220px) {
+
+  .section__title {
+    font-size: 29px;
+  }
 
   .advantages__block {
     svg {
@@ -183,10 +165,6 @@
       left: -226px;
       top: -170px;
     }
-  }
-
-  .knowledges__technologies {
-    max-width: 768px;
   }
 
   .cities__desc {
@@ -482,15 +460,16 @@
     display: none;
   }
 
-  .salary {
-    overflow: hidden;
+  .knowledges__sm-title {
+    font-size: 22px;
   }
 
-  .contacts {
+  .knowledges__sm-desc {
+    font-size: 16px;
+  }
 
-    .sales__num {
-      font-size: 130px;
-    }
+  .salary {
+    overflow: hidden;
   }
 
   .footer {
@@ -623,12 +602,6 @@
     }
   }
 
-  .knowledges__sm-desc {
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 20px;
-  }
-
   .cities__title {
     text-align: center;
     margin: 0 auto;
@@ -721,6 +694,18 @@
     width: 100%;
     top: auto;
   }
+
+  .knowledges__block {
+    padding: 20px;
+  }
+
+  .knowledges__sm-title {
+    font-size: 18px;
+  }
+
+  .knowledges__sm-desc {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 577px) {
@@ -761,6 +746,15 @@
 }
 
 @media (max-width: 491px) {
+  .section__title {
+    font-size: 25px;
+  }
+
+  .knowledges__title {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
   .hero {
     &__wrapper {
       padding: 20px;
