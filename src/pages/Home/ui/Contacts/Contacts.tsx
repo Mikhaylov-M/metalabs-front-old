@@ -1,6 +1,4 @@
 import './Contacts.scss'
-import Image from 'next/image'
-import contactsBg from '../../../../../public/images/contacts-bg.png'
 
 export const Contacts = () => {
   return (
@@ -31,12 +29,12 @@ export const Contacts = () => {
               <input
                 className="reg-form__inp"
                 id="reg-form-phone"
-                placeholder="Номер"
+                placeholder="+996"
                 type="tel"
                 maxLength={13}
                 required
               />
-              <button className="reg-form__btn btn-oval sales__oval" type="submit">
+              <button className="reg-form__btn" type="submit">
                 Оставить заявку
               </button>
             </form>

@@ -41,7 +41,7 @@
 
     &:hover {
       text-decoration: underline;
-      color: #70B7FF;
+      color: var(--color-blue);
     }
 
     &:not(:last-child) {
@@ -62,7 +62,7 @@
     transition: all .3s;
 
     &:hover {
-      color: #70B7FF;
+      color: var(--color-blue);
     }
 
     &:focus {

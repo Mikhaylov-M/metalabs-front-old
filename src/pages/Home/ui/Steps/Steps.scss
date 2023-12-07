@@ -1,6 +1,6 @@
 .steps {
   padding: 63px 0 85px;
-  background: #F7F7F7;
+  background: var(--color-grey);
 
   &__container {
     margin-top: 20px;
@@ -47,7 +47,7 @@
   }
 
   &__num {
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 100px;
     line-height: 1.3em;
@@ -64,7 +64,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3em;
-    color: #000000;
+    color: var(--color-black);
     max-width: 379px;
   }
 }

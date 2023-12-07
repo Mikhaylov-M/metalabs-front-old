@@ -110,7 +110,7 @@
   }
 
   &__price {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
     font-weight: 600;
     max-width: 240px;
     font-size: 26px;
@@ -126,7 +126,7 @@
   }
 
   &__title {
-    font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+    font-family: var(--font-prosto-one), Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 1.3em;

@@ -1,5 +1,5 @@
 .contacts {
-  padding: 40px 0;
+  padding: 100px 0;
   position: relative;
   background: linear-gradient(to right, transparent 50%, rgba(17, 55, 113, 0.12) 50%);
 
@@ -42,7 +42,7 @@
     display: inline-block;
     position: relative;
     font-size: 120px;
-    line-height: 180px;
+    line-height: 1.3em;
     margin: 0 0 0 100px;
 
     &::after {
@@ -52,13 +52,14 @@
       top: -20px;
       font-weight: 600;
       font-size: 55px;
+      font-family: serif;
       color: var(--color-blue);
     }
   }
 
   &__desc {
     max-width: 542px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.3em;
     color: var(--color-black);
@@ -78,13 +79,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 694px;
-  border-radius: 20px;
-  // background-color: var(--color-blue);
+  max-width: 400px;
+  border-radius: 15px;
+  background-color: #151624;
+  color: var(--color-light);
 
   &__title {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.3em;
   }
 
@@ -93,7 +95,7 @@
     border-radius: 10px;
     background-color: var(--color-light);
     border: 1px solid #EDEEEF;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.3em;
     padding: 0 20px;
 
@@ -104,6 +106,10 @@
 
   &__btn {
     margin-top: 0;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #4AA3E1 0%, #9573F5 100%);
+    color: var(--color-light);
 
     &:focus {
       outline: 2px solid var(--color-blue);

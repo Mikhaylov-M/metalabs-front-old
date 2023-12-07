@@ -33,7 +33,7 @@ button {
 }
 
 .section__title {
-  font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+  font-family: var(--font-prosto-one), Arial, Helvetica, sans-serif;
   color: var(--color-violet);
   font-size: 32px;
   font-weight: 700;

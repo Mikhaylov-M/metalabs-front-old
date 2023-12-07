@@ -25,17 +25,14 @@ export const Home = () => {
       {/* 
       <About />
        */}
-{/* 
+      {/*   
       <Testimonials />
        */}
-
       <Knowledges />
-{/*       
+      {/*       
       <Cities />
        */}
-
       <Contacts />
-      
     </>
   )
 }
