@@ -111,6 +111,10 @@
     border-radius: 50px;
     text-align: center;
     z-index: 5;
+
+    &:focus {
+      outline: 2px solid var(--color-blue);
+    }
   }
 }
 

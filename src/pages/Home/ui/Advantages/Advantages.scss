@@ -2,7 +2,7 @@
   padding: 73px 0;
 
   &__container {
-    background: #F7F7F7;
+    background: var(--color-grey);
     box-shadow: 0px 80.7009px 63.4079px -35.5468px rgba(29, 32, 33, 0.15);
     border-radius: 15px;
     // padding: 36px 57px 31px 64px;
@@ -41,15 +41,15 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 1.3em;
-    color: #1E1E1E;
+    color: var(--color-dark);
   }
 
   &__desc {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3em;
-    color: #1E1E1E;
+    color: var(--color-dark);
   }
 }

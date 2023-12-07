@@ -1,4 +1,6 @@
 import './Knowledges.scss'
+import Image from 'next/image'
+import knowledgesBg from '../../../../../public/images/tech.svg'
 
 export const Knowledges = () => {
   return (
@@ -55,7 +57,8 @@ export const Knowledges = () => {
           </div>
         </div>
         <div className="knowledges__bg">
-          <img src="./assets/images/tech.svg" alt="" />
+          {/* <img src="./assets/images/tech.svg" alt="" /> */}
+          <Image src={knowledgesBg} alt="" />
         </div>
       </div>
     </section>
