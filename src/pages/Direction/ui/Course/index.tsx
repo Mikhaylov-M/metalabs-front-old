@@ -1,1 +1,1 @@
-export { Course } from './Course' 
+export { Course, type CourseProps } from './Course' 
