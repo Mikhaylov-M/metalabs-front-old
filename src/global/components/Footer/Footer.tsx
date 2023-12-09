@@ -17,20 +17,14 @@ export const Footer = () => {
             </a>
           </li>
           <li className="footer__items">
-            <a className="footer__links" href="#courses">
-              Курсы
-            </a>
-            <a className="footer__links" href="#testimonials">
-              Отзывы
-            </a>
-          </li>
-          <li className="footer__items">
             <a className="footer__contacts" href="tel:+996705311113">
               + 996 705 311 113
             </a>
             <a className="footer__contacts" href="tel:+996990311113">
               + 996 990 311 113
             </a>
+          </li>
+          <li className="footer__items">
             <a
               className="footer__contacts footer__contacts--location"
               href="https://go.2gis.com/tccgg"

@@ -261,10 +261,6 @@
     max-width: 800px;
   }
 
-  .courses__title {
-    margin-bottom: 60px;
-  }
-
   .header {
     background-color: var(--color-black);
   }
@@ -362,8 +358,12 @@
     width: 126%;
   }
 
-  .courses__row {
-    flex-direction: column;
+  .courses {
+    padding: 60px 0;
+  }
+
+  .courses__title {
+    margin-bottom: 60px;
   }
 
   .courses__topic {
@@ -465,6 +465,8 @@
   }
 
   .reg-form {
+    padding: 20px;
+
     &__title {
       font-size: 18px;
     }
@@ -501,9 +503,7 @@
     padding: 45px 0;
 
     &__list {
-      flex-direction: column;
       align-items: center;
-      text-align: center;
     }
 
     &__logo-wrapper {
@@ -514,6 +514,7 @@
     &__contacts {
 
       &--location {
+        text-align: center;
 
         & svg {
           left: 53px;
@@ -595,11 +596,6 @@
 
   .courses__title {
     margin-bottom: 70px;
-  }
-
-  .courses__row {
-    place-items: center;
-    grid-template-columns: 1fr;
   }
 
   .student {
@@ -772,7 +768,36 @@
   }
 }
 
-@media (max-width: 545px) {}
+@media (max-width: 545px) {
+  .courses {
+    padding: 40px 0;
+
+    &__row {
+      grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+    }
+
+    &__card {
+      padding: 20px;
+    }
+
+    &__skill {
+      width: 100%;
+      padding: 5px;
+      border-radius: 10px;
+
+      &-dark {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+      }
+    }
+
+    &__btn {
+      border-radius: 10px;
+    }
+  }
+
+}
 
 @media (max-width: 491px) {
   .section__title {
@@ -894,10 +919,6 @@
     padding-right: 0;
   }
 
-  .reg-form {
-    padding: 20px;
-  }
-
   .reg-form__lbl {
     font-size: 22px;
   }
@@ -907,7 +928,7 @@
   }
 
   .sales__oval {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 10px;
   }
 
