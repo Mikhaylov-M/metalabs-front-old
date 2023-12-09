@@ -806,7 +806,7 @@ export const Salary = () => {
         <div className="salary__container">
           <div className="salary__info">
             <h2 className="salary__title">
-              Стань разработчиком с нуля и зарабатывай много!
+              <span className="salary__title salary__title-bold">Обучись у лучших</span><br /> и стань самым востребованным специалистом!
             </h2>
             <p className="salary__desc">Развивайте навыки и растите в цене</p>
           </div>

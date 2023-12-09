@@ -126,13 +126,19 @@
   }
 
   &__title {
-    font-family: var(--font-prosto-one), Arial, Helvetica, sans-serif;
+    font-family: var(--font-prosto-one), sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 1.3em;
     letter-spacing: 0.01em;
     color: var(--color-light);
     max-width: 735px;
+    // text-align: center;
+    &-bold {
+      font-weight: 500;
+      font-size: 50px;
+      color: var(--color-blue)
+    }
   }
 
   &__desc {

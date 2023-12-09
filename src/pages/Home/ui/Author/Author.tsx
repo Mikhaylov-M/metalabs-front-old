@@ -10,12 +10,10 @@ export const Author = () => {
           <div className="author__content">
             <h2 className="section__title author__title">Об авторе курса</h2>
             <p className="author__desc">
-              Меня зовут Азат, я являюсь автором курса MetaLabs. Мой опыт в
-              программировании более 3х лет, работал в американском стартапе,
-              китайской компании Richfit, а также в банке веб-разработчиком.
+              Меня зовут Азат Байсынов, я являюсь автором курса MetaLabs. Мой опыт в программировании более 3х лет и я хочу поделиться теми практическими знаниями, которые систематизировал в этом курсе для Вас. 
               <br />
               <br />
-              Выпустил более 100+ учеников. Мои студенты трудоустроились, как в
+              Мои студенты трудоустроились, как в
               кыргызские компании, так и в зарубежные.
             </p>
           </div>
@@ -27,17 +25,17 @@ export const Author = () => {
         <div className="author__bottom">
           <div className="author__block">
             <h4 className="author__sm-title">Опыт работы</h4>
-            <p className="author__sm-desc">Китайская компания Ричфит</p>
+            <p className="author__sm-desc">Китайская компания Richfit</p>
             <p className="author__sm-desc">Американский стартап</p>
             <p className="author__sm-desc">Банк Компаньон</p>
           </div>
           <div className="author__block">
             <h4 className="author__sm-title">Опыт преподавания</h4>
             <p className="author__sm-desc">
-              Обучаю 2 года в двух разных IT школах
+            Опыт преподавания более 2 лет
             </p>
             <p className="author__sm-desc">
-              Преподавал по методике Американского bootcamp колледжа
+            Выпустил 100+ учеников
             </p>
           </div>
           <div className="author__block">

@@ -58,8 +58,10 @@
   }
 
   &__desc {
+    text-align: center;
+    font-family: var(--font-raleway );
     max-width: 542px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.3em;
     color: var(--color-black);
@@ -88,6 +90,11 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3em;
+    &-bold {
+      font-weight: 700;
+      font-size: 36px;
+      color: var(--color-blue);
+    }
   }
 
   &__inp {

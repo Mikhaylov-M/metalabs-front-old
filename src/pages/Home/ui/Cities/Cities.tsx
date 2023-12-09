@@ -3,11 +3,9 @@ import './Cities.scss'
 export const Cities = () => {
   return (
     <section className="cities">
-      <h2 className="section__title cities__title">Не важно где вы живете</h2>
+      <h2 className="section__title cities__title">Учитесь из любой страны, города и в любое время<br /> Развивайте свои профессиональные навыки в удобном онлайн-формате</h2>
       <p className="cities__desc">
-        Учитесь из любой страны, города и в любое время
-        <br />
-        Развивайте свои профессиональные навыки в удобном онлайн-формате
+        
       </p>
       <div className="cities__lg-slider">
         <div className="swiper mySwiper">

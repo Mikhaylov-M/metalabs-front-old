@@ -8,15 +8,13 @@ export const Contacts = () => {
           <div className="contacts__left">
             <h2 className="contacts__sale sales__num">-15</h2>
             <p className="contacts__desc">
-              «Научитесь программировать и раскройте свой потенциал —
-              присоединяйтесь к нашему курсу программирования сегодня и получите
-              скидку!»
+              Не знаешь программирование твоё или нет? Тогда приходи на бесплатное пробное занятие!
             </p>
           </div>
           <div className="contacts__right">
             <form id="reg-form" className="reg-form">
               <h4 className="reg-form__title">
-                Оставьте заявку
+                <span className="reg-form__title reg-form__title-bold">Оставьте заявку</span>
                 <br />и мы обязательно свяжемся с Вами
               </h4>
               <input

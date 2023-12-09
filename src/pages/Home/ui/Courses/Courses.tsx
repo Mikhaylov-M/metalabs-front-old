@@ -8,7 +8,7 @@ export const Courses = () => {
   return (
     <section className="courses" id="courses">
       <div className="container">
-        <h2 className="courses__title section__title">Наши курсы</h2>
+        <h2 className="courses__title section__title">Наши направления</h2>
         <div className="courses__row">
           <div className="courses__card">
             <svg
@@ -116,15 +116,17 @@ export const Courses = () => {
             <div className="courses__content">
               <h2 className="courses__topic-dark section__title">backend</h2>
               <p className="courses__desc-dark">
-                Создание современного веб-интерфейса с помощью бэкенд-разработки
+                Создание оптимизированных серверов для нагруженных приложений с помощью backend-разработки
               </p>
               <span className="courses__skill-dark">
-                освоить PHP и JavaScript с нуля
+                Освоить C# и SQL с нуля
               </span>
               <span className="courses__skill-dark">
-                создавать свои веб-проекты
+                Научиться создавать отказоустойчивые приложения
               </span>
-              <span className="courses__skill-dark">найти стабильную работу</span>
+              <span className="courses__skill-dark">
+                Стать востребованным специалистом на рынке
+              </span>
             </div>
             <Link href='/backend' className="courses__btn sales__oval" id="right-btn">
               Подробнее
