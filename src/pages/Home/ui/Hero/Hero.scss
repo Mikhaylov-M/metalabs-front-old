@@ -50,6 +50,7 @@
     font-size: 45px;
     line-height: 1em;
   }
+
   &__cards {
     display: flex;
     align-items: center;
@@ -74,6 +75,7 @@
   &__item {
     font-size: 18px;
     height: 200px;
+
     & img {
       aspect-ratio: 1;
       width: 100%;
@@ -115,9 +117,11 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+
   &__photo {
     border-radius: 50%;
     overflow: hidden;
+
     & img {
       aspect-ratio: 1;
       width: 100%;
@@ -126,9 +130,11 @@
       object-position: center;
     }
   }
+
   &__name {
     text-align: center;
   }
+
   &__desc {
     text-align: center;
   }

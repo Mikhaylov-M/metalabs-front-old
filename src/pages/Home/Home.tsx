@@ -16,6 +16,12 @@ import { Contacts } from './ui/Contacts'
 export const Home = () => {
   return (
     <>
+
+    <div className="social">
+      <a className="social__links social__links-telegram" href="https://t.me/MetaLabs23" target='_blank'></a>
+      <a className="social__links social__links-whatsapp" href="https://wa.me/996705311113" target='_blank'></a>
+    </div>
+
       <Hero />
       <Advantages />
       <Author />
@@ -27,11 +33,8 @@ export const Home = () => {
        */}
         
       <Testimonials />
-      
       <Knowledges />
-            
       <Cities />
-      
       <Contacts />
     </>
   )
