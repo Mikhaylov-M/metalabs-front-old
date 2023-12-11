@@ -9,7 +9,7 @@ import { About } from './ui/About'
 import { Testimonials } from './ui/Testimonials'
 import { Knowledges } from './ui/Knowledges'
 import { Cities } from './ui/Cities'
-import { Contacts } from './ui/Contacts'
+import { Contacts } from '@/src/global/components/Contacts'
 
 // import Hero from './ui/Hero'
 
