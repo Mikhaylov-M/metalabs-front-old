@@ -4,10 +4,10 @@
 
 /* BANNER SECTION */
 .banner {
-  padding: 116px 0;
+  padding: 60px 0;
 
   &__content {
-    padding: 102px 114px;
+    padding: 40px 60px;
     border-radius: 30px;
     background: var(--banner-bg);
     box-shadow: 34px 63px 50px -38px rgba(0, 0, 0, 0.10);
@@ -21,7 +21,7 @@
     color: var(--color-black);
     font-size: 60px;
     font-weight: 400;
-    line-height: 63px;
+    line-height: 1.3em;
     letter-spacing: 0.6px;
     margin-bottom: 41px;
   }
@@ -32,6 +32,14 @@
     font-weight: 400;
     margin-bottom: 43px;
     font-size: 22px;
+  }
+
+  &__btn {
+    max-width: 300px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #4AA3E1 0%, #9573F5 100%);
+    color: var(--color-light);
   }
 
   &__advantages {
@@ -74,6 +82,8 @@
 
 /* BANNER SECTION */
 
+
+
 /* ABOUT SECTION */
 .about {
   padding: 44px 0;
@@ -112,6 +122,8 @@
 }
 
 /* ABOUT SECTION */
+
+
 
 /* BENEFITS SECTON */
 .benefits {
@@ -154,6 +166,8 @@
 
 /* BENEFITS SECTON */
 
+
+
 /* SKILLS SECTION */
 .skills {
   padding: 60px 0;
@@ -191,6 +205,8 @@
 }
 
 /* SKILLS SECTION */
+
+
 
 /* COST SECTION */
 .cost {
@@ -281,6 +297,8 @@
 
 /* COST SECTION */
 
+
+
 /* REGISTRATION-FORM */
 .registration {
   padding-top: 91px;
@@ -290,151 +308,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-.reg-form {
-  padding: 58px 88px 142px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 854px;
-  height: 709px;
-  border-radius: 40px;
-  background: var(--color-light);
-
-  &__step-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__title {
-    text-align: center;
-    color: var(--color-dark);
-    font-size: 26px;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 45px;
-  }
-
-  &__inp {
-    width: 80%;
-    height: 80px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(139, 152, 248, 0.56);
-    background: var(--color-light);
-    margin-bottom: 30px;
-    color: #738188;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  &__spec {
-    &+label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #738188;
-      font-size: 26px;
-      font-weight: 400;
-      line-height: normal;
-      width: 315px;
-      height: 68px;
-      border-radius: 10px;
-      border: 1px solid rgba(139, 152, 248, 0.56);
-      background: var(--color-light);
-      margin-bottom: 17px;
-    }
-
-    &:checked+label {
-      color: var(--color-light);
-      background: var(--color-darkblue);
-      font-weight: 500;
-    }
-  }
-
-  &__whom {
-    &+label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #738188;
-      font-size: 26px;
-      font-weight: 400;
-      line-height: normal;
-      width: 200px;
-      height: 80px;
-      border-radius: 10px;
-      border: 1px solid rgba(139, 152, 248, 0.56);
-      background: var(--color-light);
-      margin-bottom: 17px;
-    }
-
-    &:checked+label {
-      color: var(--color-light);
-      background: var(--color-darkblue);
-      border: 1px solid rgba(139, 152, 248, 0.56);
-    }
-  }
-
-  &__radio {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-light);
-    border-radius: 5px;
-    border: 1px solid rgba(139, 152, 248, 0.56);
-    border-radius: 5px;
-  }
-
-  &__lbl {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 41px;
-    margin-right: 10px;
-  }
-
-  &__radio::before {
-    position: absolute;
-    left: 3px;
-    right: 0;
-    top: 0;
-    bottom: 7px;
-    margin: auto;
-    width: 26px;
-    height: 13px;
-    border-left: 2px solid var(--color-light);
-    border-bottom: 2px solid var(--color-light);
-    border-radius: 2px;
-    transform: rotate(-45deg);
-  }
-
-  #reg-form-y:checked+.reg-form__radio {
-    background-color: var(--color-darkblue);
-
-    &::before {
-      content: "";
-    }
-  }
-
-  #reg-form-n:checked+.reg-form__radio {
-    background-color: var(--color-darkblue);
-
-    &::before {
-      content: "";
-    }
-  }
-
-  &__img {
-    height: 194px;
   }
 }
 
@@ -483,6 +356,8 @@
 }
 
 /* REGISTRATION-FORM */
+
+
 
 /* FOOTER */
 .footer {
@@ -540,6 +415,8 @@
 
 /* FOOTER */
 
+
+
 /* MEDIA */
 @media (max-width: 1441px) {
   .course__content {
@@ -548,8 +425,14 @@
 }
 
 @media (max-width: 1220px) {
+  .banner {
+    &__title {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+  }
+
   .banner__content {
-    padding: 102px 85px;
     border-radius: 30px;
     grid-template-columns: 55% 1fr;
     column-gap: 50px;
@@ -596,12 +479,12 @@
 }
 
 @media (max-width: 876px) {
-  .registration__btn {
-    font-size: 22px;
-  }
+  .advantages__item {
+    margin-bottom: 20px;
 
-  .banner__title {
-    font-size: 42px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .banner__desc {
@@ -681,15 +564,6 @@
     font-size: 18px;
   }
 
-  .reg-form__title {
-    font-size: 20px;
-  }
-
-  .reg-form__inp {
-    height: 70px;
-    font-size: 20px;
-  }
-
   .step-indicator__item {
     font-size: 26px;
     width: 46px;
@@ -698,7 +572,16 @@
 }
 
 @media (max-width: 670px) {
+
+  .banner {
+    &__title {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+
   .banner__content {
+
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -755,10 +638,10 @@
 @media (max-width: 577px) {
   .banner {
     padding: 56px 0;
-  }
 
-  .banner__content {
-    padding: 60px 20px;
+    &__content {
+      padding: 20px;
+    }
   }
 
   .benefits__item {
@@ -784,22 +667,6 @@
 }
 
 @media (max-width: 545px) {
-  .reg-form {
-    padding: 16px;
-    height: 84vh;
-
-    &__title {
-      margin-bottom: 34px;
-    }
-
-    &__inp {
-      height: 60px;
-    }
-  }
-
-  .reg-form__whom+label {
-    height: 60px;
-  }
 
   .d-flex {
     margin-bottom: 24px;
@@ -823,8 +690,14 @@
 }
 
 @media (max-width: 491px) {
-  .banner__content {
-    padding: 40px 18px;
+  .banner {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 14px;
+    }
   }
 }
 
@@ -850,9 +723,6 @@
 }
 
 @media (max-width: 391px) {
-  .registration__btn {
-    width: 300px;
-  }
 
   .skills__content {
     gap: 16px;
@@ -883,17 +753,9 @@
 }
 
 @media (max-width: 361px) {
-  .registration__btn {
-    width: 240px;
-    height: 96px;
-  }
 
   .course__navbutton {
     height: 64px;
-  }
-
-  .reg-form {
-    height: 790px;
   }
 }
 
