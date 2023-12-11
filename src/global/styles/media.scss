@@ -86,12 +86,6 @@
   .knowledges__technologies {
     max-width: 750px;
   }
-
-  .footer {
-    &__contacts {
-      font-size: 17px;
-    }
-  }
 }
 
 @media (max-width: 1220px) {
@@ -498,31 +492,6 @@
       }
     }
   }
-
-  .footer {
-    padding: 45px 0;
-
-    &__list {
-      align-items: center;
-    }
-
-    &__logo-wrapper {
-      width: 147px;
-      height: 30px;
-    }
-
-    &__contacts {
-
-      &--location {
-        text-align: center;
-
-        & svg {
-          left: 53px;
-        }
-      }
-    }
-
-  }
 }
 
 @media (max-width: 670px) {
@@ -766,6 +735,36 @@
       margin-bottom: 10px;
     }
   }
+
+  .footer {
+    &__list {
+      flex-wrap: wrap-reverse;
+      justify-content: space-around;
+    }
+  }
+
+  .social {
+    &__links {
+      width: 35px;
+      height: 35px;
+
+      &-telegram {
+
+        &::after {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &-whatsapp {
+
+        &::after {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 545px) {
@@ -883,17 +882,6 @@
     font-size: 18px;
   }
 
-  .footer {
-
-    &__links {
-      font-size: 14px;
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-    }
-  }
-
   .burger__line {
     height: 2px;
     width: 30px;
@@ -910,6 +898,12 @@
 
   .burger__lbl::after {
     bottom: 4px;
+  }
+
+  .footer {
+    &__list {
+      flex-direction: column;
+    }
   }
 }
 
@@ -934,10 +928,6 @@
 
   .author__sm-desc {
     font-size: 14px;
-  }
-
-  .footer__contacts--location svg {
-    left: 40px;
   }
 }
 
