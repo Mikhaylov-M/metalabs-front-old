@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import './Direction.scss'
 import { Course, CourseProps } from './ui/Course'
+import { Contacts } from '@/src/global/components/Contacts'
 import Image, { StaticImageData } from 'next/image'
 
 import costImg from '@/public/images/frontend-abstract.png'
@@ -597,38 +598,7 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* COST - END */}
-      {/* REGISTRATION */}
-      <section className="registration" id="registration">
-        <div className="container">
-          <form className="reg-form" id="reg-form">
-            <div className="reg-form__step-container" id="step-container">
-              <div className="step" data-step={1}>
-                <h3 className="reg-form__title">
-                  Оставьте заявку и мы обязательно свяжемся с Вами)
-                </h3>
-                <input
-                  className="reg-form__inp"
-                  type="text"
-                  id="reg-form-name"
-                  placeholder="ФИО"
-                  required
-                />
-                <input
-                  className="reg-form__inp"
-                  type="phone"
-                  id="reg-form-phone"
-                  placeholder="Номер телефона"
-                  required
-                />
-              </div>
-            </div>
-            <button id="submit-btn" className="registration__btn">
-              Отправить
-            </button>
-          </form>
-        </div>
-      </section>
-      {/* REGISTRATION - END */}
+      <Contacts />
     </>
   )
 }
