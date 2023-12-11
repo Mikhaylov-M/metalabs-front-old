@@ -12,7 +12,6 @@ export const Header = () => {
     <header className="header" id="header">
       <div className="container">
         <Link href="/" className="header__logo">
-          {/* поменял лого, заполнил alt */}
           <Image
             className="header__black-logo"
             src={blackLogo}
@@ -36,12 +35,6 @@ export const Header = () => {
               <a href="#footer">Контакты</a>
             </li>
           </ul>
-          {/* Решили что номера будут только в footer
-        <div class="header__contacts">
-          <a href="tel:+996705311113" class="header__phone">+ 996 705 311 113</a>
-          <a href="tel:+996990311113" class="header__phone">+ 996 990 311 113</a>
-        </div>
-        */}
         </nav>
         <button className="burger">
           <input type="checkbox" id="burger" hidden />
@@ -53,8 +46,6 @@ export const Header = () => {
               <li className="burger__item">
                 <a href="#courses">Курсы</a>
               </li>
-              {/* <li class="burger__item"><a href="#">Методика</a></li>
-                <li class="burger__item"><a href="#">Стоимость</a></li> */}
               <li className="burger__item">
                 <a href="#testimonials">Отзывы</a>
               </li>

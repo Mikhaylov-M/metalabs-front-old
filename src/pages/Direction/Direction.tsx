@@ -283,6 +283,7 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* BANNER - END */}
+
       {/* ABOUT */}
       <section className="about" id="about">
         <div className="container">
@@ -303,6 +304,7 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* ABOUT - END */}
+
       {/* BENEFITS */}
       <section className="benefits" id="benefits">
         <div className="container">
@@ -560,6 +562,7 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* BENEFITS - END */}
+
       {/* SKILLS */}
       <section className="skills" id="skills">
         <div className="container">
@@ -570,9 +573,11 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* SKILLS - END */}
+
       {/* COURSE */}
       <Course {...course} />
       {/* COURSE - END */}
+      
       {/* COST */}
       <section className="cost" id="cost">
         <div className="container">
@@ -598,6 +603,7 @@ export const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* COST - END */}
+
       <Contacts />
     </>
   )

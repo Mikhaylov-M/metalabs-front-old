@@ -1,19 +1,4 @@
-@media (min-width: 876px) {
-  .header__white-logo {
-    display: block;
-  }
-}
-
 @media (max-width: 1921px) {
-  .header {
-    height: 65px;
-  }
-
-  .header__phone {
-    font-size: 19px;
-    line-height: 28px;
-  }
-
   .salary__img {
     width: 165px;
   }
@@ -23,12 +8,6 @@
 
   .container {
     max-width: 1200px;
-  }
-
-  .header__item {
-    a {
-      font-size: 19px;
-    }
   }
 
   .advantages__block {
@@ -65,13 +44,6 @@
 
   .about__content_mb {
     margin-bottom: 60px;
-  }
-
-  .contacts__bg {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 70%;
   }
 
   .sales__desc {
@@ -193,29 +165,6 @@
     font-size: 16px;
     line-height: 26px;
   }
-
-  .contacts {
-    background: linear-gradient(to bottom, transparent 30%, rgba(17, 55, 113, 0.12) 70%);
-
-    &__desc {
-      font-size: 18px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    &__left {
-      text-align: center;
-    }
-
-    &__sale {
-      margin-left: 0;
-
-      &::after {
-        top: -10px;
-        right: -60px;
-      }
-    }
-  }
 }
 
 @media (max-width: 876px) {
@@ -253,22 +202,6 @@
 
   .container {
     max-width: 800px;
-  }
-
-  .header {
-    background-color: var(--color-black);
-  }
-
-  .header__black-logo {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .header__nav {
-    display: none;
   }
 
   .advantages__block {
@@ -458,44 +391,14 @@
     overflow: hidden;
   }
 
-  .reg-form {
-    padding: 20px;
-
-    &__title {
-      font-size: 18px;
-    }
-
-    &__inp {
-      height: 35px;
-    }
-
-    &__btn {
-      padding: 5px 20px;
-    }
-  }
-
   .sales {
     &__num {
       font-size: 80px;
     }
   }
-
-  .contacts {
-    padding: 60px 0;
-
-    &__sale {
-      &::after {
-        font-size: 35px;
-        line-height: 1.3em;
-        top: 18px;
-        right: -28px;
-      }
-    }
-  }
 }
 
 @media (max-width: 670px) {
-
   .courses__btn {
     font-size: 17px;
   }
@@ -680,23 +583,6 @@
     line-height: 28px;
   }
 
-  .contacts {
-    padding: 40px 0;
-
-    &__wrapper {
-      flex-direction: column;
-    }
-
-    &__bg {
-      width: 100%;
-      top: auto;
-    }
-
-    &__desc {
-      font-size: 18px;
-    }
-  }
-
   .knowledges__block {
     padding: 20px;
   }
@@ -733,13 +619,6 @@
   .author__sm-desc {
     &:not(:last-child) {
       margin-bottom: 10px;
-    }
-  }
-
-  .footer {
-    &__list {
-      flex-wrap: wrap-reverse;
-      justify-content: space-around;
     }
   }
 
@@ -795,7 +674,6 @@
       border-radius: 10px;
     }
   }
-
 }
 
 @media (max-width: 491px) {
@@ -812,15 +690,6 @@
     &__wrapper {
       padding: 20px;
     }
-  }
-
-  .header__logo {
-    width: 100px;
-    height: 40px;
-  }
-
-  .reg-form__lbl {
-    font-size: 22px;
   }
 
   .author__desc {
@@ -851,12 +720,6 @@
       margin-bottom: 20px;
     }
   }
-
-  .contacts {
-    &__desc {
-      font-size: 14px;
-    }
-  }
 }
 
 @media (max-width: 472px) {
@@ -877,46 +740,9 @@
     font-size: 15px;
     line-height: 20px;
   }
-
-  .reg-form__lbl {
-    font-size: 18px;
-  }
-
-  .burger__line {
-    height: 2px;
-    width: 30px;
-  }
-
-  .burger__lbl::before,
-  .burger__lbl::after {
-    height: 2px;
-  }
-
-  .burger__lbl::before {
-    top: 4px;
-  }
-
-  .burger__lbl::after {
-    bottom: 4px;
-  }
-
-  .footer {
-    &__list {
-      flex-direction: column;
-    }
-  }
 }
 
 @media (max-width: 416px) {
-
-  .contacts__left {
-    padding-right: 0;
-  }
-
-  .reg-form__lbl {
-    font-size: 22px;
-  }
-
   .about__img {
     display: none;
   }
@@ -928,11 +754,5 @@
 
   .author__sm-desc {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 390px) {
-  .reg-form__lbl {
-    font-size: 20px;
   }
 }

@@ -16,15 +16,18 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3em;
+
     &-bold {
       font-weight: 700;
       font-size: 36px;
       color: var(--color-blue);
     }
   }
+
   &__wrapper {
     position: relative;
   }
+
   &__inp {
     width: 100%;
     height: 45px;
@@ -34,9 +37,11 @@
     font-size: 14px;
     line-height: 1.3em;
     padding: 0 20px;
+
     &-invalid {
       border-color: var(--color-error);
     }
+
     &-feedback {
       position: absolute;
       bottom: -6px;
@@ -112,3 +117,46 @@
 // #reg-form-n:checked+.reg-form__radio::before {
 //   content: "";
 // }
+
+@media (max-width: 876px) {
+  .reg-form {
+    padding: 20px;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__inp {
+      height: 35px;
+    }
+
+    &__btn {
+      padding: 5px 20px;
+    }
+  }
+}
+
+@media (max-width: 491px) {
+
+  .reg-form__lbl {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 472px) {
+  .reg-form__lbl {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 416px) {
+  .reg-form__lbl {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 390px) {
+  .reg-form__lbl {
+    font-size: 20px;
+  }
+}
