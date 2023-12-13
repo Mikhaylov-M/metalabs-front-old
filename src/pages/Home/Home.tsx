@@ -34,7 +34,7 @@ export const Home = () => {
         
       <Testimonials />
       <Knowledges />
-      <Cities />
+      {/* <Cities /> */}
       <Contacts />
     </>
   )

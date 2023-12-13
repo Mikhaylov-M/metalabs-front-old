@@ -59,7 +59,7 @@ export const Footer = () => {
     // </footer>
 
 
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
       <div className="footer__container container">
         <div className="footer__wrapper">
           <div className="footer__logo-wrapper">

@@ -82,6 +82,15 @@
 
 .burger {
   display: none;
+  z-index: 999;
+  &__div {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    left: 0;
+    overflow: hidden;
+    bottom: 0;
+  }
 }
 
 .burger__lbl {
@@ -149,6 +158,9 @@
 
     &~.burger__nav {
       height: 70vh;
+    }
+    &~.burger__div {
+      height: 30vh;
     }
   }
 }

@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
@@ -7,7 +10,31 @@ import whiteLogo from '@/public/images/new-logo-white.svg'
 import './Header.scss'
 
 
+
 export const Header = () => {
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleCheckbox = (e: any) => {
+    console.log(`type ${typeof e}`)
+    setIsChecked(e.target.checked)
+    if (e.target.checked === true) {
+      document.body.style.overflow = 'hidden'
+      document.body.style.touchAction = 'none'
+      document.body.style.overscrollBehavior = 'none'
+    } else {
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
+      document.body.style.overscrollBehavior = ''
+    }
+  }
+
+  const offBurger = () => {
+    setIsChecked(false)
+    document.body.style.overflow = '';
+    document.body.style.touchAction = '';
+    document.body.style.overscrollBehavior = '';
+  }
+
   return (
     <header className="header" id="header">
       <div className="container">
@@ -37,20 +64,21 @@ export const Header = () => {
           </ul>
         </nav>
         <button className="burger">
-          <input type="checkbox" id="burger" hidden />
+          <input type="checkbox" id="burger" hidden 
+          onChange={handleCheckbox} checked={isChecked} />
           <label htmlFor="burger" className="burger__lbl">
             <div className="burger__line" />
           </label>
           <nav className="burger__nav">
             <ul className="burger__list">
               <li className="burger__item">
-                <a href="#courses">Курсы</a>
+                <a href="#courses" onClick={offBurger}>Курсы</a>
               </li>
               <li className="burger__item">
-                <a href="#testimonials">Отзывы</a>
+                <a href="#testimonials" onClick={offBurger}>Отзывы</a>
               </li>
               <li className="burger__item">
-                <a href="#footer">Контакты</a>
+                <a href="#footer" onClick={offBurger}>Контакты</a>
               </li>
             </ul>
             <div className="burger__contacts">
@@ -62,6 +90,7 @@ export const Header = () => {
               </a>
             </div>
           </nav>
+          <div className="burger__div" onClick={offBurger}></div>
         </button>
       </div>
     </header>

@@ -1,8 +1,12 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, } from 'swiper/modules';
+
 import 'swiper/css';
+import 'swiper/css/navigation';
 import './Testimonials.scss'
+
 import vid1 from '@/public/images/t1.mp4'
 import vid2 from '@/public/images/t2.mp4'
 import vid3 from '@/public/images/t3.mp4'
@@ -11,12 +15,18 @@ import vid4 from '@/public/images/t4.mp4'
 export const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
-      <div className="container">
+      {/* <div className="container"> */}
         <h2 className="section__title testimonials__title">
           Отзывы об авторе курса
         </h2>
-        <Swiper className="swiper testimonials__swiper">
-          {/* <div className="swiper-wrapper"> */}
+        <Swiper
+          slidesPerView={'auto'}
+          spaceBetween={30}
+          navigation={true}
+          mousewheel
+          modules={[ Navigation ]}
+          className="swiper testimonials__swiper"
+        >
             <SwiperSlide className="swiper-slide">
               <div className="student">
                 <div className="student__video">
@@ -93,10 +103,8 @@ export const Testimonials = () => {
                 </div>
               </div>
             </SwiperSlide>
-          {/* </div> */}
-          {/* <div className="swiper-pagination" /> */}
         </Swiper>
-      </div>
+      {/* </div> */}
     </section>
   )
 }

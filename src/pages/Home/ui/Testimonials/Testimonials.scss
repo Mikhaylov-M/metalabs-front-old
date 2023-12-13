@@ -7,7 +7,7 @@
   }
 
   .swiper-wrapper {
-    padding: 20px;
+    padding: 20px 50px;
   }
 
   &__swiper .swiper-slide {
@@ -24,14 +24,20 @@
   border-radius: 20px;
   background: var(--color-light);
   box-shadow: 0 0 10px 5px #ccc;
+  @media(max-width: 876px) {
+    flex-direction: column;
+  }
 
   &__video {
     width: 100%;
-    max-width: 200px;
+    // max-width: 200px;
     height: 150px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px #ccc;
+    @media(max-width: 876px) {
+      height: 200px;
+    }
 
     video {
       width: 100%;
