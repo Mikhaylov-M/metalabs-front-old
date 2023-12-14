@@ -15,7 +15,7 @@ import vid4 from '@/public/images/t4.mp4'
 export const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
-      {/* <div className="container"> */}
+      <div className="container">
         <h2 className="section__title testimonials__title">
           Отзывы об авторе курса
         </h2>
@@ -104,7 +104,7 @@ export const Testimonials = () => {
               </div>
             </SwiperSlide>
         </Swiper>
-      {/* </div> */}
+      </div>
     </section>
   )
 }
