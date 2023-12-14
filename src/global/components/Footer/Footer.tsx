@@ -62,9 +62,6 @@ export const Footer = () => {
     <footer className='footer' id='footer'>
       <div className="footer__container container">
         <div className="footer__wrapper">
-          <div className="footer__logo-wrapper">
-            <Image src={metaLogo} alt="" />
-          </div>
           <ul className="footer__list">
             <li className="footer__items">
               <h3 className="footer__title">Social</h3>
@@ -107,14 +104,25 @@ export const Footer = () => {
               <a className="footer__links footer__links-email" href="mailto:metalabs.kg@gmail.com" target='_blank'>
                 metalabs.kg@gmail.com 
               </a>
+              <a className="footer__links footer__links-address" href="mailto:metalabs.kg@gmail.com" target='_blank'>
+                Г. Бишкек, ул. Юсупа Абдрахманова 97А/1
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <p className='footer__copy'>
-        © 2023 | ОсОО «MetaLabs» | Все права защищены.
-        Копирование материалов запрещено.
-      </p>
+      <div className="footer__copy">
+        <div className="footer__copy-wrapper container">
+          <div className="footer__logo-wrapper">
+              <Image src={metaLogo} alt="" />
+            </div>
+          <p className='footer__copy-text'>
+            © 2023 | ОсОО «MetaLabs» | Все права защищены.
+            Копирование материалов запрещено.
+          </p>
+        </div>
+      </div>
+      
     </footer>
   )
 }

@@ -10,8 +10,6 @@
     width: 200px;
     height: 40px;
     overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 60px;
 
     & img {
       width: 100%;
@@ -21,7 +19,7 @@
   }
 
   &__list {
-    gap: 40px;
+    gap: 45px;
     display: flex;
     align-self: start;
     justify-content: space-around;
@@ -31,6 +29,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 250px;
   }
 
   &__title {
@@ -148,14 +148,20 @@
   }
 
   &__copy {
-    position: relative;
+    border-top: 1px solid #fff;
+    padding: 40px 0;
+  }
+
+  &__copy-wrapper {
+    display: flex;
+    align-items: center;
+    grid-area: 20px;
+  }
+
+  &__copy-text {
     text-align: center;
     font-size: 14px;
     line-height: 1.3em;
-    border-top: 1px solid #fff;
-    padding: 40px 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
