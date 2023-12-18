@@ -15,3 +15,4 @@ Fonts variables:
 To configure fonts, go to ./src/app/layout.tsx
 
 test
+test 2
