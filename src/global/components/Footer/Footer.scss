@@ -7,7 +7,8 @@
   }
 
   &__logo-wrapper {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 40px;
     overflow: hidden;
 
@@ -155,13 +156,14 @@
   &__copy-wrapper {
     display: flex;
     align-items: center;
-    grid-area: 20px;
+    justify-content: center;
+    gap: 100px;
   }
 
   &__copy-text {
-    text-align: center;
     font-size: 14px;
     line-height: 1.3em;
+    max-width: 400px;
   }
 }
 
@@ -170,6 +172,17 @@
     &__list {
       flex-wrap: wrap-reverse;
       justify-content: space-around;
+    }
+
+    &__copy-wrapper {
+      gap: 30px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__copy-text {
+      max-width: 100%;
+      text-align: center;
     }
   }
 }
