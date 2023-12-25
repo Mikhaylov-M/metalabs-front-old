@@ -44,19 +44,19 @@ export const Hero = () => {
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={'auto'}
-              // spaceBetween={0}
+              spaceBetween={0}
               coverflowEffect={{
-                rotate: 50,
+                rotate: 10,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
-                
                 slideShadows: true,
               }}
               pagination={true}
               navigation={true}
               modules={[EffectCoverflow, Pagination, Navigation]}
               className="mySwiper"
+              initialSlide={3}
             >
               <SwiperSlide className="swiper-slide">
                 <Image className='swiper-img' src={azatPhoto} alt="фотография ментора Азата" />
@@ -66,6 +66,33 @@ export const Hero = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <Image className='swiper-img' src={tarielPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
