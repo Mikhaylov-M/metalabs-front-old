@@ -33,6 +33,7 @@ export const Home = () => {
        */}
         
       <Testimonials />
+      
       <Knowledges />
       {/* <Cities /> */}
       <Contacts />
