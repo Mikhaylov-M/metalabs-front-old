@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
@@ -33,7 +33,7 @@ export const Hero = () => {
     <section className="hero" id="hero">
       <div className="container">
         <div className="hero__wrapper">
-          <div className="hero__text-wrapper">  
+          <div className="hero__text-wrapper"> 
             <Image className='swiper-img' src={text} alt="" />
           </div>
             <h1 className="hero__title">
@@ -44,58 +44,33 @@ export const Hero = () => {
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={'auto'}
-              spaceBetween={0}
+              navigation={true}
+              loop={true}
+              mousewheel
               coverflowEffect={{
-                rotate: 10,
+                rotate: 50,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
               }}
-              pagination={true}
-              navigation={true}
+              pagination={{
+                clickable: true,
+              }}
               modules={[EffectCoverflow, Pagination, Navigation]}
               className="mySwiper"
-              initialSlide={3}
             >
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={azatPhoto} alt="фотография ментора Азата" />
+              <SwiperSlide>
+                <Image src={azatPhoto} alt=''/>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={dimaPhoto} alt="фотография ментора Азата" />
+              <SwiperSlide>
+                <Image src={dimaPhoto} alt=''/>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={tarielPhoto} alt="фотография ментора Азата" />
+              <SwiperSlide>
+                <Image src={alibekPhoto} alt=''/>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <Image className='swiper-img' src={alibekPhoto} alt="фотография ментора Азата" />
+              <SwiperSlide>
+                <Image src={tarielPhoto} alt=''/>
               </SwiperSlide>
             </Swiper>
         </div>
