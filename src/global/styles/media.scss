@@ -72,6 +72,29 @@
     }
   }
 
+  .author {
+    &__img {
+
+      &--first {
+        right: 280px;
+        width: 150px;
+        height: 180px;
+      }
+
+      &--second {
+        top: -100px;
+        right: 150px;
+        width: 200px;
+        height: 200px;
+      }
+
+      &--third {
+        width: 150px;
+        height: 180px;
+      }
+    }
+  }
+
   .author__desc {
     max-width: 516px;
   }
@@ -212,6 +235,26 @@
 
   .author {
     padding-top: 0;
+
+    &__content {
+      width: 100%;
+    }
+
+    &__images {
+      width: 100%;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 200px;
+    }
   }
 
   .author__top {
@@ -609,6 +652,20 @@
 
   .steps__desc {
     font-size: 20px;
+  }
+
+  .author {
+
+    &__img {
+
+      &--first {
+        display: none;
+      }
+
+      &--third {
+        display: none;
+      }
+    }
   }
 
   .author__img {

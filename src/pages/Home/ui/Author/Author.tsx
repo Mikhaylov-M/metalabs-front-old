@@ -1,5 +1,8 @@
 import Image from 'next/image'
-import azatPhoto from '../../../../../public/images/azat.jpg'
+// import azatPhoto from '../../../../../public/images/azat.jpg'
+import azatFirst from '../../../../../public/images/azat-1.jpg'
+import azatSecond from '../../../../../public/images/azat-2.jpg'
+import azatThird from '../../../../../public/images/azat-3.jpeg'
 import './Author.scss'
 
 export const Author = () => {
@@ -17,8 +20,17 @@ export const Author = () => {
               кыргызские компании, так и в зарубежные.
             </p>
           </div>
-          <div className="author__img">
-            <Image src={azatPhoto} alt="фотография ментора Азата" />
+          <div className="author__images">
+              {/* <Image src={azatPhoto} alt="фотография ментора Азата" /> */}
+            <div className="author__img author__img--first">
+              <Image src={azatFirst} alt="фотография ментора Азата" />
+            </div>
+            <div className="author__img author__img--second">
+              <Image src={azatSecond} alt="фотография ментора Азата" />
+            </div>
+            <div className="author__img author__img--third">
+              <Image src={azatThird} alt="фотография ментора Азата" />
+            </div>
           </div>
         </div>
 

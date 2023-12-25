@@ -105,7 +105,7 @@ export const Footer = () => {
                 metalabs.kg@gmail.com 
               </a>
               <a className="footer__links footer__links-address" href="mailto:metalabs.kg@gmail.com" target='_blank'>
-                Г. Бишкек, ул. Юсупа Абдрахманова 97А/1
+                г. Бишкек, ул. Юсупа Абдрахманова 97А/1
               </a>
             </li>
           </ul>
@@ -114,8 +114,8 @@ export const Footer = () => {
       <div className="footer__copy">
         <div className="footer__copy-wrapper container">
           <div className="footer__logo-wrapper">
-              <Image src={metaLogo} alt="" />
-            </div>
+            <Image src={metaLogo} alt="" />
+          </div>
           <p className='footer__copy-text'>
             © 2023 | ОсОО «MetaLabs» | Все права защищены.
             Копирование материалов запрещено.
