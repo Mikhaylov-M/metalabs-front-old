@@ -10,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 import Image from 'next/image'
 import azatPhoto from '../../../../../public/images/hero-1.jpg'
@@ -37,16 +37,17 @@ export const Hero = () => {
             <Image className='swiper-img' src={text} alt="" />
           </div>
             <h1 className="hero__title">
-              Учись у лучших!
+              Открой новые горизонты в программировании
             </h1>
             <Swiper
               effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={'auto'}
+              slidesPerView={3}
               navigation={true}
               loop={true}
               mousewheel
+              keyboard
               coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -57,20 +58,28 @@ export const Hero = () => {
               pagination={{
                 clickable: true,
               }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
+              modules={[EffectCoverflow, Pagination, Navigation, Keyboard]}
               className="mySwiper"
             >
               <SwiperSlide>
                 <Image src={azatPhoto} alt=''/>
+                <h2>Азат</h2>
+                <p>ментор пo JS</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={dimaPhoto} alt=''/>
+                <h2>Дима</h2>
+                <p>ментор пo C#</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={alibekPhoto} alt=''/>
+                <h2>Алибек</h2>
+                <p>ментор пo JS</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={tarielPhoto} alt=''/>
+                <h2>Тариель</h2>
+                <p>ментор пo JS</p>
               </SwiperSlide>
             </Swiper>
         </div>

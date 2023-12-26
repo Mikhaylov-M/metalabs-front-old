@@ -18,7 +18,7 @@ button {
   --color-blue: #70B7FF;
   --color-grey: #F7F7F7;
   --color-error: #FD4C4C;
-  // --swiper-navigation-color: #000;
+  --swiper-navigation-color: #70B7FF;
 }
 
 .container {
@@ -41,4 +41,8 @@ button {
   font-weight: 700;
   line-height: 1.3em;
   letter-spacing: 0.01em;
+}
+
+.swiper-button-prev {
+  color: var(--color-main)
 }
