@@ -14,6 +14,7 @@
     display: grid;
     grid-template-columns: 65% 1fr;
     column-gap: 117px;
+    color: var(--color-banner-content);
   }
 
   &__title {
@@ -24,6 +25,7 @@
     line-height: 1.3em;
     letter-spacing: 0.6px;
     margin-bottom: 41px;
+    color: var(--color-banner-content);
   }
 
   &__desc {
@@ -32,6 +34,7 @@
     font-weight: 400;
     margin-bottom: 43px;
     font-size: 22px;
+    color: var(--color-banner-content);
   }
 
   &__btn {
@@ -77,6 +80,7 @@
     color: var(--color-black);
     font-size: 22px;
     font-weight: 500;
+    color: var(--color-banner-content);
   }
 }
 
@@ -91,22 +95,23 @@
   & .container {
     display: grid;
     grid-template-columns: 60% 1fr;
-    column-gap: 10px;
+    column-gap: 40px;
   }
 
   &__title {
     color: var(--color-black);
     font-family: var(--font-prosto-one), Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
-    line-height: 46px;
+    line-height: 1.3em;
     margin-bottom: 56px;
   }
 
   &__text {
     color: var(--color-black);
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 400;
+    line-height: 1.3em;
     margin-bottom: 22px;
   }
 
@@ -118,6 +123,12 @@
 
   &__right {
     padding-top: 40px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
 
@@ -127,7 +138,7 @@
 
 /* BENEFITS SECTON */
 .benefits {
-  padding: 105px 0;
+  padding: 80px 0;
 
   &__title {
     color: var(--color-black);
@@ -140,13 +151,13 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     column-gap: 58px;
     row-gap: 34px;
   }
 
   &__item {
-    padding: 48px 34px;
+    padding: 20px 30px;
     border-radius: 15px;
     background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
     box-shadow: 52px 63px 50px -26px rgba(0, 0, 0, 0.10);
@@ -177,7 +188,7 @@
     font-family: var(--font-prosto-one), Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.3em;
     margin-bottom: 59px;
     text-align: center;
   }
@@ -195,12 +206,15 @@
     background: linear-gradient(90deg, #DAD4EC 0%, #DAD4EC 1%, #F3E7E9 100%);
     box-shadow: 18px 38.70781px 26.72px -15.97465px rgba(0, 0, 0, 0.08);
     display: block;
-    width: 204px;
+
     color: var(--color-black);
     font-size: 26px;
     font-weight: 500;
     line-height: normal;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -438,10 +452,6 @@
     column-gap: 50px;
   }
 
-  .about .container {
-    grid-template-columns: 1fr;
-  }
-
   .about__right {
     display: flex;
     align-items: center;
@@ -467,10 +477,6 @@
 
   .schedule__content {
     column-gap: 45px;
-  }
-
-  .mentor {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .mentor__photo {
@@ -500,6 +506,22 @@
     font-size: 20px;
   }
 
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    &__right {
+      // padding-top: 0;
+
+      & img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+      }
+    }
+  }
+
   .about__title {
     font-size: 32px;
   }
@@ -508,12 +530,20 @@
     font-size: 18px;
   }
 
+  .benefits {
+    padding: 60px 0;
+  }
+
   .benefits__title {
     font-size: 32px;
   }
 
   .benefits__text {
     font-size: 24px;
+  }
+
+  .skills__content {
+    gap: 40px;
   }
 
   .skills__title {
@@ -702,9 +732,57 @@
 }
 
 @media (max-width: 472px) {
+  .skills {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+
   .skills__item {
-    width: 166px;
     padding: 20px;
+    font-size: 14px;
+  }
+
+  .about {
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    &__right {
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .benefits {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    &__item {
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
   }
 }
 
@@ -726,11 +804,6 @@
 
   .skills__content {
     gap: 16px;
-  }
-
-  .skills__item {
-    width: 142px;
-    padding: 16px;
   }
 
   .cost__content {
@@ -762,11 +835,6 @@
 @media (max-width: 340px) {
   .skills__content {
     gap: 10px;
-  }
-
-  .skills__item {
-    width: 132px;
-    padding: 12px;
   }
 
   .course__grid {
