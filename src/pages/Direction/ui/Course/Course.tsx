@@ -3,12 +3,16 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import './Course.scss'
 import { FC } from 'react'
+import Image, { StaticImageData } from 'next/image'
 
 export interface CourseProps {
   programLeft: string[], programRight: string[],
   scheduleDuration: string[],
   scheduleDays: string[],
   scheduleTime: string[],
+  mentorText: string[],
+  mentorImg: StaticImageData,
+  mentorImgAlt: string
 }
 
 export const Course:FC<CourseProps> = ({
@@ -16,6 +20,9 @@ export const Course:FC<CourseProps> = ({
   scheduleDuration,
   scheduleDays,
   scheduleTime,
+  mentorText,
+  mentorImg,
+  mentorImgAlt,
 }) => {
   return (
     <section className="course" id="course">
@@ -43,12 +50,12 @@ export const Course:FC<CourseProps> = ({
                   <p className="schedule__text">
                     Длительность:
                     {scheduleDuration.map(el => 
-                    <><br />el</>)}
+                    <><br />{el}</>)}
                   </p>
                   <p className="schedule__text">
                     Дни:
                     {scheduleDays.map(el => 
-                    <><br />el</>)}
+                    <><br />{el}</>)}
                   </p>
                   <p className="schedule__text">
                     Время:
@@ -61,19 +68,10 @@ export const Course:FC<CourseProps> = ({
             <TabPanel className="tabpanel">
               <div className="mentor">
                 <div className="mentor__desc">
-                  <p className="mentor__text">
-                    Меня зовут Азат, я являюсь автором курса Meta School. Мой опыт
-                    в программировании более 3х лет, работал в американском
-                    стартапе, китайской компании Richfit, а также в банке веб
-                    разработчиком.
-                  </p>
-                  <p className="mentor__text">
-                    Выпустил более 100+ учеников. Мои студенты трудоустроились,
-                    как в кыргызские компании, так и в зарубежные.
-                  </p>
+                  {mentorText.map(el => <p className="mentor__text">{el}</p> )}
                 </div>
                 <div className="mentor__photo">
-                  <img src="./assets/images/azat.jpg" alt="azat mentor photo" />
+                  <Image src={mentorImg} alt={mentorImgAlt} />
                 </div>
               </div>
             </TabPanel>
