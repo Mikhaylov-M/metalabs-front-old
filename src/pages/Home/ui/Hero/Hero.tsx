@@ -49,7 +49,7 @@ export const Hero = () => {
               mousewheel
               keyboard
               coverflowEffect={{
-                rotate: 50,
+                rotate: 60,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,

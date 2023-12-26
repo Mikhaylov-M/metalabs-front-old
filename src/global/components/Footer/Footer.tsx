@@ -105,7 +105,7 @@ export const Footer = () => {
                 metalabs.kg@gmail.com 
               </a>
               <a className="footer__links footer__links-address" href="mailto:metalabs.kg@gmail.com" target='_blank'>
-                г. Бишкек, ул. Юсупа Абдрахманова 97А/1
+                г.Бишкек, ул. Уметалиева 113/Рыскулова 34
               </a>
             </li>
           </ul>
