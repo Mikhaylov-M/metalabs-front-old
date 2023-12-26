@@ -12,7 +12,8 @@ export interface DirectionContentProps {
   bannerTitle: string, bannerDesc: string,
   aboutTitle: string, aboutText: string[], aboutList: string[],
   aboutImg: StaticImageData, aboutImgAlt: string,
-  benefitsTitle: string,
+  benefitsTitle: string, 
+  benefitsText1: string, benefitsText2: string, benefitsText3: string;
   skills: string[],
   course: CourseProps,
   costPrice: string
@@ -22,7 +23,7 @@ export const Direction: FC<DirectionContentProps> = (
   {
     bannerTitle, bannerDesc,
     aboutTitle, aboutText, aboutList, aboutImg, aboutImgAlt,
-    benefitsTitle,
+    benefitsTitle, benefitsText1, benefitsText2, benefitsText3,
     skills,
     course,
     costPrice,
@@ -360,7 +361,7 @@ export const Direction: FC<DirectionContentProps> = (
                   </defs>
                 </svg>
               </div>
-              <p className="benefits__text">Низкий порог входа в профессию</p>
+              <p className="benefits__text">{benefitsText1}</p>
             </div>
             <div className="benefits__item">
               <div className="benefits__icon">
@@ -432,7 +433,7 @@ export const Direction: FC<DirectionContentProps> = (
                   </defs>
                 </svg>
               </div>
-              <p className="benefits__text">Широкий выбор вакансий</p>
+              <p className="benefits__text">{benefitsText2}</p>
             </div>
             <div className="benefits__item">
               <div className="benfits__icon">
@@ -556,7 +557,7 @@ export const Direction: FC<DirectionContentProps> = (
                   </defs>
                 </svg>
               </div>
-              <p className="benefits__text">Высокая оплата труда</p>
+              <p className="benefits__text">{benefitsText3}</p>
             </div>
           </div>
         </div>
