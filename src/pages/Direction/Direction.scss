@@ -171,7 +171,7 @@
     color: var(--color-black);
     font-size: 26px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.3em;
   }
 }
 
@@ -778,10 +778,6 @@
       padding: 20px;
       flex-direction: column;
       text-align: center;
-    }
-
-    &__text {
-      font-size: 14px;
     }
   }
 }
