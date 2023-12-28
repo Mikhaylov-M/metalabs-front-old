@@ -192,7 +192,6 @@
 
 @media (max-width: 876px) {
   .hero {
-    padding: 60px 0;
 
     &__wrapper {
       text-align: center;
@@ -206,7 +205,11 @@
     }
 
     &__title {
-      font-size: 35px;
+      font-size: 30px;
+    }
+
+    &__text-wrapper {
+      height: 40px;
     }
 
     &__list {
@@ -442,6 +445,12 @@
 }
 
 @media (max-width: 670px) {
+  .hero {
+    &__title {
+      font-size: 25px;
+    }
+  }
+
   .courses__btn {
     font-size: 17px;
   }
@@ -640,6 +649,17 @@
 }
 
 @media (max-width: 577px) {
+  .hero {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__text-wrapper {
+      height: 25px;
+      padding: 5px 5px 7px 5px;
+    }
+  }
+
   .steps__block {
     &:not(:last-child) {
       margin-bottom: 0;
@@ -780,6 +800,12 @@
 }
 
 @media (max-width: 472px) {
+  .hero {
+    &__title {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
 
   .courses__title {
     margin-bottom: 40px;

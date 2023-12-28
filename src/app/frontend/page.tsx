@@ -14,9 +14,9 @@ const contentProps: DirectionContentProps = {
   aboutImg: aboutImg,
   aboutImgAlt: 'frontend abstract',
   benefitsTitle: 'Преимущества курса',
-  benefitsText1: '',
-  benefitsText2: '',
-  benefitsText3: '',
+  benefitsText1: "Lorem, ipsum dolor.",
+  benefitsText2: 'test test tets tet',
+  benefitsText3: 'Lorem ipsum dolor sit amet',
   skills: ['HTML/CSS', 'JavaScript', 'React', 'TypeScript'],
   course: {
     programLeft: [
