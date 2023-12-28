@@ -54,7 +54,7 @@
 .advantages {
   &__item {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     column-gap: 20px;
     margin-bottom: 51px;
@@ -233,7 +233,7 @@
     padding: 50px 90px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     row-gap: 30px;
     border-radius: 15px;
     background: var(--color-grey);

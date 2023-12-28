@@ -2,23 +2,19 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { use, useState } from 'react'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
 import './Header.scss'
 
-
-
-
 export const Header = () => {
-  const [isChecked, setIsChecked] = useState(false)
+  const [isChecked, setIsChecked] = useState<boolean>(false)
 
   const url = usePathname()
 
-  const handleCheckbox = (e: any) => {
-    console.log(`type ${typeof e}`)
+  const handleCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(e.target.checked)
     if (e.target.checked === true) {
       document.body.style.overflow = 'hidden'
