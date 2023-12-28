@@ -151,13 +151,13 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     column-gap: 58px;
     row-gap: 34px;
   }
 
   &__item {
-    padding: 20px 30px;
+    padding: 20px;
     border-radius: 15px;
     background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
     box-shadow: 52px 63px 50px -26px rgba(0, 0, 0, 0.10);

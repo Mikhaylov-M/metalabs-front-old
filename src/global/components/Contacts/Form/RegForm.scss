@@ -43,9 +43,6 @@
     }
 
     &-feedback {
-      position: absolute;
-      bottom: -6px;
-      left: 6px;
       color: var(--color-error);
     }
 
@@ -146,6 +143,16 @@
 @media (max-width: 472px) {
   .reg-form__lbl {
     font-size: 18px;
+  }
+
+  .reg-form {
+    gap: 20px;
+
+    &__inp {
+      &-feedback {
+        font-size: 14px;
+      }
+    }
   }
 }
 
