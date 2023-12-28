@@ -20,13 +20,6 @@ import alibekPhoto from '../../../../../public/images/hero-4.jpg'
 import text from '../../../../../public/images/hero-text.png'
 
 import './Hero.scss'
-import contentBg from '../../../../../public/images/air.png'
-import mentorTest from '@/public/images/azat.jpg'
-import frontendImage from '@/public/images/frontend.png'
-import jsImage from '@/public/images/JavaScript-logo.png'
-import cImage from '@/public/images/c.png'
-import htmlImage from '@/public/images/html-logo.png'
-
 
 export const Hero = () => {
   return (

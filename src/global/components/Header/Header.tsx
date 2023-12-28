@@ -2,17 +2,20 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { use, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
-
 import './Header.scss'
+
 
 
 
 export const Header = () => {
   const [isChecked, setIsChecked] = useState(false)
+
+  const url = usePathname()
 
   const handleCheckbox = (e: any) => {
     console.log(`type ${typeof e}`)
@@ -51,17 +54,31 @@ export const Header = () => {
           />
         </Link>
         <nav className="header__nav">
-          <ul className="header__list">
-            <li className="header__item">
-              <a href="#courses">Курсы</a>
-            </li>
-            <li className="header__item">
-              <a href="#testimonials">Отзывы</a>
-            </li>
-            <li className="header__item">
-              <a href="#footer">Контакты</a>
-            </li>
-          </ul>
+          {url === '/' ?
+            <ul className="header__list">
+              <li className="header__item">
+                <a href="#courses">Направления</a>
+              </li>
+              <li className="header__item">
+                <a href="#testimonials">Отзывы</a>
+              </li>
+              <li className="header__item">
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          :
+            <ul className="header__list">
+              <li className="header__item">
+                <a href="#course">О курсе</a>
+              </li>
+              <li className="header__item">
+                <a href="#cost">Стоимость</a>
+              </li>
+              <li className="header__item">
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          }
         </nav>
         <button className="burger">
           <input type="checkbox" id="burger" hidden 
@@ -70,17 +87,31 @@ export const Header = () => {
             <div className="burger__line" />
           </label>
           <nav className="burger__nav">
-            <ul className="burger__list">
-              <li className="burger__item">
-                <a href="#courses" onClick={offBurger}>Курсы</a>
-              </li>
-              <li className="burger__item">
-                <a href="#testimonials" onClick={offBurger}>Отзывы</a>
-              </li>
-              <li className="burger__item">
-                <a href="#footer" onClick={offBurger}>Контакты</a>
-              </li>
-            </ul>
+            {url === '/' ?
+              <ul className="burger__list">
+                <li className="burger__item">
+                  <a href="#courses" onClick={offBurger}>Направления</a>
+                </li>
+                <li className="burger__item">
+                  <a href="#testimonials" onClick={offBurger}>Отзывы</a>
+                </li>
+                <li className="burger__item">
+                  <a href="#footer" onClick={offBurger}>Контакты</a>
+                </li>
+              </ul>
+              :
+              <ul className="burger__list">
+                <li className="burger__item">
+                  <a href="#course" onClick={offBurger}>О курсе</a>
+                </li>
+                <li className="burger__item">
+                  <a href="#cost" onClick={offBurger}>Стоимость</a>
+                </li>
+                <li className="burger__item">
+                  <a href="#footer" onClick={offBurger}>Контакты</a>
+                </li>
+              </ul>
+            }
             <div className="burger__contacts">
               <a href="tel:+996705311113" className="burger__phone">
                 + 996 705 311 113

@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, } from 'swiper/modules';
+import { Keyboard, Navigation, } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,7 +24,8 @@ export const Testimonials = () => {
           spaceBetween={30}
           navigation={true}
           mousewheel
-          modules={[ Navigation ]}
+          keyboard
+          modules={[ Navigation, Keyboard ]}
           className="swiper testimonials__swiper"
         >
             <SwiperSlide className="swiper-slide">

@@ -5,6 +5,7 @@ import { Footer } from '../global/components/Footer'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
+import { useState } from 'react'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
