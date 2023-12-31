@@ -56,30 +56,27 @@ export const Hero = () => {
             >
               <SwiperSlide>
                 <Image src={azatPhoto} alt=''/>
-                <h2>Азат</h2>
-                <p>ментор пo JS</p>
+                <h2 className='hero__swiper-name'>Азат</h2>
+                <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={dimaPhoto} alt=''/>
-                <h2>Дима</h2>
-                <p>ментор пo C#</p>
+                <h2 className='hero__swiper-name'>Дима</h2>
+                <p className='hero__swiper-direction'>ментор пo C#</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={alibekPhoto} alt=''/>
-                <h2>Алибек</h2>
-                <p>ментор пo JS</p>
+                <h2 className='hero__swiper-name'>Алибек</h2>
+                <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={tarielPhoto} alt=''/>
-                <h2>Тариель</h2>
-                <p>ментор пo JS</p>
+                <h2 className='hero__swiper-name'>Тариель</h2>
+                <p className='hero__swiper-direction'>ментор пo JavaScript </p>
               </SwiperSlide>
             </Swiper>
         </div>
-
       </div>
-
-      {/* убрал задний фон из html, поставил через css потому что это не контентое изображение */}
     </section>
   )
 }

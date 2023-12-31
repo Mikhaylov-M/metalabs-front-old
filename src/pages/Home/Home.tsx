@@ -28,14 +28,21 @@ export const Home = () => {
       <Steps />
       <Salary />
       <Courses />
+
+
       {/* 
+      это остается
       <About />
        */}
         
-      <Testimonials />
-      
+      <Testimonials />      
       <Knowledges />
-      {/* <Cities /> */}
+
+
+      {/* это тоже остается
+      <Cities /> 
+       */}
+
       <Contacts />
     </>
   )

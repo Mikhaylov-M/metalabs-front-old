@@ -27,83 +27,83 @@ export const Testimonials = () => {
           keyboard
           modules={[ Navigation, Keyboard ]}
           className="swiper testimonials__swiper"
-        >
-            <SwiperSlide className="swiper-slide">
-              <div className="student">
-                <div className="student__video">
-                  <video
-                    muted
-                    autoPlay
-                    loop
-                    src={vid2}
-                  />
-                </div>
-                <div className="student__content">
-                  <h4 className="student__name">Аяна</h4>
-                  <p className="student__testimonial">
-                    “Он очень доброжелательный, всегда старается все понятно
-                    объяснить...”
-                  </p>
-                </div>
+          >
+          <SwiperSlide className="swiper-slide">
+            <div className="student">
+              <div className="student__video">
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  src={vid2}
+                />
               </div>
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <div className="student">
-                <div className="student__video">
-                  <video
-                    muted
-                    autoPlay
-                    loop
-                    src={vid3}
-                  />
-                </div>
-                <div className="student__content">
-                  <h4 className="student__name">Карим</h4>
-                  <p className="student__testimonial">
-                    “Как я о нем узнал? Мне его посоветовали, он очень хорошо
-                    объясняет...”
-                  </p>
-                </div>
+              <div className="student__content">
+                <h4 className="student__name">Аяна</h4>
+                <p className="student__testimonial">
+                  “Он очень доброжелательный, всегда старается все понятно
+                  объяснить...”
+                </p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <div className="student">
-                <div className="student__video">
-                  <video
-                    muted
-                    autoPlay
-                    loop
-                    src={vid4}
-                  />
-                </div>
-                <div className="student__content">
-                  <h4 className="student__name">Кубаныч</h4>
-                  <p className="student__testimonial">
-                    “За время нашего занятия и общения он начал делиться своим
-                    опытом...”
-                  </p>
-                </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <div className="student">
+              <div className="student__video">
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  src={vid3}
+                />
               </div>
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <div className="student">
-                <div className="student__video">
-                  <video
-                    muted
-                    autoPlay
-                    loop
-                    src={vid1}
-                  />
-                </div>
-                <div className="student__content">
-                  <h4 className="student__name">Али</h4>
-                  <p className="student__testimonial">
-                    “Мне нравится, то как наш ментор проводит обучение, проводит
-                    уроки...”
-                  </p>
-                </div>
+              <div className="student__content">
+                <h4 className="student__name">Карим</h4>
+                <p className="student__testimonial">
+                  “Как я о нем узнал? Мне его посоветовали, он очень хорошо
+                  объясняет...”
+                </p>
               </div>
-            </SwiperSlide>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <div className="student">
+              <div className="student__video">
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  src={vid4}
+                />
+              </div>
+              <div className="student__content">
+                <h4 className="student__name">Кубаныч</h4>
+                <p className="student__testimonial">
+                  “За время нашего занятия и общения он начал делиться своим
+                  опытом...”
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <div className="student">
+              <div className="student__video">
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  src={vid1}
+                />
+              </div>
+              <div className="student__content">
+                <h4 className="student__name">Али</h4>
+                <p className="student__testimonial">
+                  “Мне нравится, то как наш ментор проводит обучение, проводит
+                  уроки...”
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

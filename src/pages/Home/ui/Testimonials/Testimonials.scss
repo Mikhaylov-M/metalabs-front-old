@@ -24,9 +24,6 @@
   border-radius: 20px;
   background: var(--color-light);
   box-shadow: 0 0 10px 5px #ccc;
-  @media(max-width: 876px) {
-    flex-direction: column;
-  }
 
   &__video {
     width: 100%;
@@ -34,9 +31,6 @@
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px #ccc;
-    @media(max-width: 876px) {
-      height: 200px;
-    }
 
     video {
       width: 100%;
@@ -47,5 +41,9 @@
 
   &__content {
     padding: 20px;
+
+    @media (max-width: 991px) {
+      padding: 10px;
+    }
   }
 }

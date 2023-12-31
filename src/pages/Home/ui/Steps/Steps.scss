@@ -68,3 +68,25 @@
     max-width: 379px;
   }
 }
+
+@media (max-width: 991px) {
+  .steps {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__block {
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}

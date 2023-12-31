@@ -9,6 +9,10 @@
   background-position: left;
   background-size: contain;
 
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+
   &__wrapper {
     width: 100%;
     padding-bottom: 100px;
@@ -19,6 +23,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
 
     & .swiper {
       width: 100%;
@@ -41,16 +49,21 @@
       object-position: center;
     }
 
-    & .swiper-slide h2 {
-      margin-top: 10px;
-    }
-
     & .swiper-pagination-bullet {
       background-color: #ccc;
     }
 
     & .swiper-pagination-bullet-active {
       background-color: var(--swiper-navigation-color);
+    }
+
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      @media (max-width: 500px) {
+        &::after {
+          font-size: 25px;
+        }
+      }
     }
   }
 
@@ -64,9 +77,19 @@
     bottom: 20px;
     left: 0;
     border-radius: 0 10px 10px 0;
-    // transform: rotate(-90deg);
     z-index: 99;
 
+    @media (max-width: 991px) {
+      height: 30px;
+      max-width: 150px;
+    }
+
+    @media (max-width: 500px) {
+      height: 20px;
+      max-width: 100px;
+      padding: 2px 5px 6px 5px;
+      bottom: 30px;
+    }
 
     & img {
       width: 100%;
@@ -105,6 +128,54 @@
     padding: 10px 25px;
     border-radius: 20px;
     box-shadow: 10px 10px 40px 10px #354199;
+
+    @media (max-width: 991px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+
+  &__swiper-name {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 1.3em;
+
+    @media (max-width: 991px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__swiper-direction {
+    font-size: 22px;
+    line-height: 1.3em;
+
+    @media (max-width: 991px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 }
 

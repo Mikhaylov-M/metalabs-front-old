@@ -3,6 +3,10 @@
   padding: 69px 0 52px;
   background: linear-gradient(180deg, #191929 0%, #05070B 100%);
 
+  @media (max-width: 500px) {
+    padding: 45px 0;
+  }
+
   &__bg {
     position: absolute;
     right: 0;
@@ -44,6 +48,14 @@
         height: 100px;
       }
     }
+
+    @media (max-width: 768px) {
+      max-height: 60vh;
+    }
+
+    @media (max-width: 500px) {
+      max-height: 45vh;
+    }
   }
 
   &__block {
@@ -65,13 +77,21 @@
   &__sm-desc {
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 1.7em;
     color: var(--color-light);
     margin-bottom: 40px;
     padding-bottom: 10px;
 
     &:not(:last-child) {
       border-bottom: 1px solid #6DBAF0;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 14px;
     }
   }
 }

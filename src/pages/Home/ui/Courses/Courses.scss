@@ -132,3 +132,21 @@
     top: -126px;
   }
 }
+
+@media (max-width: 991px) {
+  .courses {
+    &__card {
+      padding: 30px 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {
+  .courses {
+    &__row {
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    }
+  }
+}
