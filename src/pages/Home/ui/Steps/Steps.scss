@@ -87,6 +87,22 @@
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .steps {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+  .steps {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__num {
+      font-size: 84px;
+    }
+  }
+}

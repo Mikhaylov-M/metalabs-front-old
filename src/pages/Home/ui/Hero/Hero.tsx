@@ -61,7 +61,7 @@ export const Hero = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image src={dimaPhoto} alt=''/>
-                <h2 className='hero__swiper-name'>Дима</h2>
+                <h2 className='hero__swiper-name'>Дмитрий</h2>
                 <p className='hero__swiper-direction'>ментор пo C#</p>
               </SwiperSlide>
               <SwiperSlide>
