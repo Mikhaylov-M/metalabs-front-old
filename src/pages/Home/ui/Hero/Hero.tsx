@@ -1,12 +1,11 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
@@ -54,7 +53,7 @@ export const Hero = () => {
               modules={[EffectCoverflow, Pagination, Navigation, Keyboard]}
               className="mySwiper"
               breakpoints={{
-                // Когда ширина экрана меньше 768px
+                // Когда ширина экрана больше 768px
                 768: {
                   slidesPerView: 3,
                 }
@@ -62,28 +61,28 @@ export const Hero = () => {
             >
               <SwiperSlide>
                 <div className="swiper__img-wrapper">
-                  <Image src={azatPhoto} alt=''/>
+                  <Image src={azatPhoto} alt='фотография Азата'/>
                 </div>
                 <h2 className='hero__swiper-name'>Азат</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper__img-wrapper">
-                  <Image src={dimaPhoto} alt=''/>
+                  <Image src={dimaPhoto} alt='фотография Дмитрия'/>
                 </div>
                 <h2 className='hero__swiper-name'>Дмитрий</h2>
                 <p className='hero__swiper-direction'>ментор пo C#</p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper__img-wrapper">
-                  <Image src={alibekPhoto} alt=''/>
+                  <Image src={alibekPhoto} alt='фотография Алибека'/>
                 </div>
                 <h2 className='hero__swiper-name'>Алибек</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper__img-wrapper">
-                  <Image src={tarielPhoto} alt=''/>
+                  <Image src={tarielPhoto} alt='фотография Тариэля'/>
                 </div>
                 <h2 className='hero__swiper-name'>Тариель</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript </p>
