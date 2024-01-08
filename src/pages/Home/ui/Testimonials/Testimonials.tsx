@@ -32,9 +32,9 @@ export const Testimonials = () => {
             <div className="student">
               <div className="student__video">
                 <video
-                  muted
-                  autoPlay
-                  loop
+                  muted={true}
+                  autoPlay={true}
+                  loop={true}
                   src={vid2}
                 />
               </div>
@@ -51,9 +51,9 @@ export const Testimonials = () => {
             <div className="student">
               <div className="student__video">
                 <video
-                  muted
-                  autoPlay
-                  loop
+                  muted={true}
+                  autoPlay={true}
+                  loop={true}
                   src={vid3}
                 />
               </div>
@@ -70,9 +70,9 @@ export const Testimonials = () => {
             <div className="student">
               <div className="student__video">
                 <video
-                  muted
-                  autoPlay
-                  loop
+                  muted={true}
+                  // autoPlay={true}
+                  loop={true}
                   src={vid4}
                 />
               </div>
@@ -89,9 +89,9 @@ export const Testimonials = () => {
             <div className="student">
               <div className="student__video">
                 <video
-                  muted
-                  autoPlay
-                  loop
+                  muted={true}
+                  autoPlay={true}
+                  loop={true}
                   src={vid1}
                 />
               </div>

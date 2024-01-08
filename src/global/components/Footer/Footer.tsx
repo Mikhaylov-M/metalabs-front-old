@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import metaLogo from '../../../../public/images/new-logo-white.svg'
 import './Footer.scss'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -58,9 +59,9 @@ export const Footer = () => {
       </div>
       <div className="footer__copy">
         <div className="footer__copy-wrapper container">
-          <div className="footer__logo-wrapper">
+          <Link className="footer__logo-wrapper" href="/">
             <Image src={metaLogo} alt="" />
-          </div>
+          </Link>
           <p className='footer__copy-text'>
             © 2023 | ОсОО «MetaLabs» | Все права защищены.
             Копирование материалов запрещено.

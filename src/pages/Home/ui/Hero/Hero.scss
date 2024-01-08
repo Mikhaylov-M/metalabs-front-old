@@ -6,7 +6,7 @@
   overflow: hidden;
   background-image: url("../../../../../public/images/hero-bg.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left bottom;
   background-size: contain;
 
   @media (max-width: 500px) {
@@ -16,8 +16,9 @@
   &__wrapper {
     width: 100%;
     padding-bottom: 100px;
-    margin: 0 auto;
     padding: 20px 50px;
+    margin: 0 auto;
+
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,10 @@
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
+
+      @media (max-width: 768px) {
+        padding-top: 20px;
+      }
     }
 
     & .swiper-slide {
@@ -39,6 +44,17 @@
       background-size: cover;
       width: 300px;
       text-align: center;
+    }
+
+    & .swiper__img-wrapper {
+      height: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        height: 400px;
+        max-width: 300px;
+      }
     }
 
     & .swiper-slide img {
@@ -57,11 +73,26 @@
       background-color: var(--swiper-navigation-color);
     }
 
+    & .swiper-slide-shadow-left {
+      background-image: none;
+    }
+
+    & .swiper-slide-shadow-right {
+      background-image: none;
+    }
+
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      width: 40px;
+      height: 40px;
+    }
+
     & .swiper-button-prev,
     & .swiper-button-next {
       @media (max-width: 500px) {
         &::after {
-          font-size: 25px;
+          font-size: 30px;
+          font-weight: 900;
         }
       }
     }
@@ -86,8 +117,8 @@
 
     @media (max-width: 500px) {
       height: 20px;
-      max-width: 100px;
-      padding: 2px 5px 6px 5px;
+      max-width: 110px;
+      padding: 2px 5px 6px 15px;
       bottom: 30px;
     }
 

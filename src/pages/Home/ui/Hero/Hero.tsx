@@ -36,7 +36,7 @@ export const Hero = () => {
               effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={3}
+              slidesPerView={1}
               navigation={true}
               loop={true}
               mousewheel
@@ -53,24 +53,38 @@ export const Hero = () => {
               }}
               modules={[EffectCoverflow, Pagination, Navigation, Keyboard]}
               className="mySwiper"
+              breakpoints={{
+                // Когда ширина экрана меньше 768px
+                768: {
+                  slidesPerView: 3,
+                }
+              }}
             >
               <SwiperSlide>
-                <Image src={azatPhoto} alt=''/>
+                <div className="swiper__img-wrapper">
+                  <Image src={azatPhoto} alt=''/>
+                </div>
                 <h2 className='hero__swiper-name'>Азат</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
-                <Image src={dimaPhoto} alt=''/>
+                <div className="swiper__img-wrapper">
+                  <Image src={dimaPhoto} alt=''/>
+                </div>
                 <h2 className='hero__swiper-name'>Дмитрий</h2>
                 <p className='hero__swiper-direction'>ментор пo C#</p>
               </SwiperSlide>
               <SwiperSlide>
-                <Image src={alibekPhoto} alt=''/>
+                <div className="swiper__img-wrapper">
+                  <Image src={alibekPhoto} alt=''/>
+                </div>
                 <h2 className='hero__swiper-name'>Алибек</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript</p>
               </SwiperSlide>
               <SwiperSlide>
-                <Image src={tarielPhoto} alt=''/>
+                <div className="swiper__img-wrapper">
+                  <Image src={tarielPhoto} alt=''/>
+                </div>
                 <h2 className='hero__swiper-name'>Тариель</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript </p>
               </SwiperSlide>
