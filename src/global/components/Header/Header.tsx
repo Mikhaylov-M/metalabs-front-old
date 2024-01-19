@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
+import * as pixel from "@/src/lib/fpixel";
 
 import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
@@ -13,6 +14,12 @@ export const Header = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false)
 
   const url = usePathname()
+
+  const handleClick = () => {
+    console.log('pixel click')
+    
+    pixel.event('Purchase', {currency: 'USD', value: 10})
+  }
 
   const handleCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(e.target.checked)
@@ -59,7 +66,7 @@ export const Header = () => {
                 <a href="#testimonials">Отзывы</a>
               </li>
               <li className="header__item">
-                <a href="#footer">Контакты</a>
+                <a href="#footer" onClick={() => {handleClick()}}>Контакты</a>
               </li>
             </ul>
           :

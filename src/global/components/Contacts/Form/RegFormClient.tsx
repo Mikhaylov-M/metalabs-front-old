@@ -22,7 +22,7 @@ const RegFormSchema = Yup.object().shape({
 export const RegForm = () => {
 
   const sendForm = async (values: any) => {
-    console.log(values)
+    // console.log(values)
     const { data } = await axios(`https://prodat.io:8445/trello?name=${values.name}&phone=${values.phone}`)
 
     console.log(data)

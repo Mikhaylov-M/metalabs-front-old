@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { FacebookPixel } from '@/src/global/components/FacebookPixel'
 import { Inter, Raleway, Nunito, Prosto_One, Rubik } from 'next/font/google'
 import { Header } from '../global/components/Header'
 import { Footer } from '../global/components/Footer'
@@ -57,6 +58,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
       <body>
         <Header />
         {children}
+        <FacebookPixel />
         <Footer />
       </body>
     </html>
