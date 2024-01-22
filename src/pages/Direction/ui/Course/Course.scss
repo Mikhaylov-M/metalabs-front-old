@@ -13,7 +13,7 @@
     display: grid;
     padding: 40px;
     border-radius: 30px;
-    background: linear-gradient(90deg, #8989BA 0%, #8989BA 52%, #8989BA 100%);
+    background: var(--course-bg);
 
     @media (max-width: 600px) {
       padding: 20px;
