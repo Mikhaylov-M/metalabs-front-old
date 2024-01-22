@@ -9,7 +9,7 @@
   &__row {
     gap: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   }
 
   &__card {
@@ -62,6 +62,10 @@
       text-transform: capitalize;
       margin-bottom: 44px;
     }
+
+    &-uxui {
+      color: var(--color-light);
+    }
   }
 
   &__desc {
@@ -77,6 +81,10 @@
       font-weight: 400;
       margin-bottom: 43px;
       font-size: 20px;
+    }
+
+    &-uxui {
+      color: var(--color-light);
     }
   }
 
@@ -96,7 +104,7 @@
       display: block;
       border-radius: 25px;
       border: 1px solid #09BA8F;
-      background: rgba(253, 253, 253, 0.08);
+      // background: rgba(253, 253, 253, 0.08);
       color: var(--color-light);
       text-align: center;
       font-size: 18px;
@@ -131,6 +139,12 @@
     left: -105px;
     top: -126px;
   }
+}
+
+.card-uxui {
+  color: var(--color-light);
+  background: linear-gradient(247deg, #B530F1 41.48%, #DE5AE4 93.28%);
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 991px) {

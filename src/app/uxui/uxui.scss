@@ -6,3 +6,40 @@
   --skills-item-color: #fff;
   --advantages-icons-bg: linear-gradient(247deg, #B530F1 41.48%, #DE5AE4 93.28%);
 }
+
+.banner {
+  &__content {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 350px;
+      height: 200px;
+      left: 400px;
+      top: -40px;
+      background: url("../../../public/images/сube.png") no-repeat center/contain;
+      filter: blur(10px);
+      z-index: 0;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    &__content {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+
+  }
+}

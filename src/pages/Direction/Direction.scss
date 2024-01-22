@@ -312,6 +312,15 @@
       object-fit: cover;
     }
   }
+
+  &__btn {
+    max-height: 45px;
+    max-width: 300px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #4AA3E1 0%, #9573F5 100%);
+    color: var(--color-light);
+  }
 }
 
 /* COST SECTION */

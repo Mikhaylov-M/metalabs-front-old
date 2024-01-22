@@ -134,7 +134,7 @@ export const Courses = () => {
           </div>
           
 
-          <div className="courses__card">
+          <div className="courses__card card-uxui">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={1206}
@@ -179,15 +179,16 @@ export const Courses = () => {
               className="courses__bg"
             />
             <div className="courses__content">
-              <h2 className="courses__topic section__title">UX/UI</h2>
-              <p className="courses__desc">
-                some
+              <h2 className="courses__topic courses__topic-uxui section__title">UX/UI</h2>
+              <p className="courses__desc courses__desc-uxui">
+                Создание дизайна для сайтов и приложений
+                Разработка современных интерфесов
               </p>
               <span className="courses__skill">
-                some
+                Освоить Figma с нуля до Pro
               </span>
-              <span className="courses__skill">some</span>
-              <span className="courses__skill">some</span>
+              <span className="courses__skill">Сделать портфолио из 5 работ</span>
+              <span className="courses__skill">Разработать дизайн для настоящих проектов</span>
             </div>
             <Link href='/uxui' className="courses__btn sales__oval" id="left-btn">
               Подробнее
