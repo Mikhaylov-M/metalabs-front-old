@@ -132,6 +132,69 @@ export const Courses = () => {
               Подробнее
             </Link>
           </div>
+          
+
+          <div className="courses__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={1206}
+              height={1024}
+              viewBox="0 0 1206 1024"
+              fill="none"
+            >
+              <g filter="url(#filter0_f_616_814)">
+                <path
+                  d="M746.223 523.79C638.662 660.808 544.688 704.271 434.8 680.374C-11.4015 653.055 255.314 395.8 313.8 269.247C345.593 123.052 640.363 101.593 750.25 125.489C896.78 137.066 835.536 372.522 746.223 523.79Z"
+                  fill="white"
+                  fillOpacity="0.2"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_616_814"
+                  x="-185.934"
+                  y="-250.175"
+                  width="1391.57"
+                  height="1304.09"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity={0} result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="183.662"
+                    result="effect1_foregroundBlur_616_814"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <Image
+              src={cardBg1}
+              alt="card background"
+              className="courses__bg"
+            />
+            <div className="courses__content">
+              <h2 className="courses__topic section__title">UX/UI</h2>
+              <p className="courses__desc">
+                some
+              </p>
+              <span className="courses__skill">
+                some
+              </span>
+              <span className="courses__skill">some</span>
+              <span className="courses__skill">some</span>
+            </div>
+            <Link href='/uxui' className="courses__btn sales__oval" id="left-btn">
+              Подробнее
+            </Link>
+          </div>
+
+
         </div>
       </div>
     </section>

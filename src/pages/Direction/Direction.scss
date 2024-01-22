@@ -67,7 +67,7 @@
 
   &__icon {
     border-radius: 10px;
-    background: var(--liner, linear-gradient(180deg, rgba(74, 163, 225, 0.74) 0%, rgba(149, 115, 245, 0.74) 100%));
+    background: var(--advantages-icons-bg);
     box-shadow: 0px 63px 50px -26px rgba(0, 0, 0, 0.10);
     display: flex;
     justify-content: center;
@@ -201,12 +201,13 @@
 
   &__item {
     padding: 20px;
-    border-radius: 60px;
-    background: linear-gradient(90deg, #DAD4EC 0%, #DAD4EC 1%, #F3E7E9 100%);
+    border-radius: 10px;
+    background: var(--skills-item-bg);
+    // background: linear-gradient(90deg, #DAD4EC 0%, #DAD4EC 1%, #F3E7E9 100%);
     box-shadow: 18px 38.70781px 26.72px -15.97465px rgba(0, 0, 0, 0.08);
     display: block;
 
-    color: var(--color-black);
+    color: var(--skills-item-color);
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
