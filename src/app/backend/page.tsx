@@ -1,4 +1,4 @@
-import { Direction, DirectionContentProps } from '@/src/pages/Direction'
+import Direction, { DirectionContentProps } from '@/src/pages/Direction/Direction'
 import './backend.scss'
 
 import aboutImg from '@/public/images/abstract-backend.png'

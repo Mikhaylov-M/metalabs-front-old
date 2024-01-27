@@ -5,7 +5,7 @@ import azatSecond from '../../../../../public/images/azat-2.jpg'
 import azatThird from '../../../../../public/images/azat-3.jpeg'
 import './Author.scss'
 
-export const Author = () => {
+function Author () {
   return (
     <section className="author" id="author">
       <div className="container">
@@ -62,3 +62,5 @@ export const Author = () => {
     </section>
   )
 }
+
+export default Author

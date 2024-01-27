@@ -12,7 +12,7 @@ import vid2 from '@/public/images/t2.mp4'
 import vid3 from '@/public/images/t3.mp4'
 import vid4 from '@/public/images/t4.mp4'
 
-export const Testimonials = () => {
+function Testimonials () {
   return (
     <section className="testimonials" id="testimonials">
       <div className="container">
@@ -109,3 +109,4 @@ export const Testimonials = () => {
     </section>
   )
 }
+export default Testimonials 

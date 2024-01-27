@@ -15,7 +15,7 @@ export interface CourseProps {
   mentorImgAlt: string
 }
 
-export const Course:FC<CourseProps> = ({
+const Course:FC<CourseProps> = ({
   programLeft, programRight,
   scheduleDuration,
   scheduleDays,
@@ -36,10 +36,10 @@ export const Course:FC<CourseProps> = ({
             <TabPanel className="tabpanel">
               <div className="program">
                 <div className="program__left">
-                  {programLeft.map(el => <p className="program__text">{el}</p>)}
+                  {programLeft?.map(el => <p className="program__text">{el}</p>)}
                 </div>
                 <div className="program__right">
-                  {programRight.map(el => <p className="program__text program__text-rigth">{el}</p>)}
+                  {programRight?.map(el => <p className="program__text program__text-rigth">{el}</p>)}
                 </div>
               </div>
             </TabPanel>
@@ -49,17 +49,17 @@ export const Course:FC<CourseProps> = ({
                 <div className="schedule__content">
                   <p className="schedule__text">
                     Длительность:
-                    {scheduleDuration.map(el => 
+                    {scheduleDuration?.map(el => 
                     <><br />{el}</>)}
                   </p>
                   <p className="schedule__text">
                     Дни:
-                    {scheduleDays.map(el => 
+                    {scheduleDays?.map(el => 
                     <><br />{el}</>)}
                   </p>
                   <p className="schedule__text">
                     Время:
-                    {scheduleTime.map(el => 
+                    {scheduleTime?.map(el => 
                     <><br /><span className="schedule__text-time">{el}</span></>)}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export const Course:FC<CourseProps> = ({
             <TabPanel className="tabpanel">
               <div className="mentor">
                 <div className="mentor__desc">
-                  {mentorText.map(el => <p className="mentor__text">{el}</p> )}
+                  {mentorText?.map(el => <p className="mentor__text">{el}</p> )}
                 </div>
                 <div className="mentor__photo">
                   <Image src={mentorImg} alt={mentorImgAlt} />
@@ -80,3 +80,4 @@ export const Course:FC<CourseProps> = ({
     </section>
   )
 }
+export default Course

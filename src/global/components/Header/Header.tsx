@@ -10,7 +10,7 @@ import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
 import './Header.scss'
 
-export const Header = () => {
+function Header () {
   const [isChecked, setIsChecked] = useState<boolean>(false)
 
   const url = usePathname()
@@ -130,3 +130,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header

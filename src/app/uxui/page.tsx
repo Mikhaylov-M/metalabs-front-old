@@ -1,8 +1,8 @@
-import { Direction, DirectionContentProps } from '@/src/pages/Direction'
+import Direction, { DirectionContentProps } from '@/src/pages/Direction/Direction'
 import './uxui.scss'
 
 import aboutImg from '@/public/images/uxui-phone.png'
-import mentorImg from '@/public/images/hero-2.jpg'
+import mentorImg from '@/public/images/hero-5.jpg'
 
 const UXUI = () => {
 

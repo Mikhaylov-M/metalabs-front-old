@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import './Direction.scss'
-import { Course, CourseProps } from './ui/Course'
-import { Contacts } from '@/src/global/components/Contacts'
+import Course, {CourseProps} from './ui/Course/Course'
+import Contacts from '@/src/global/components/Contacts/Contacts'
 import Image, { StaticImageData } from 'next/image'
 
 import costImg from '@/public/images/frontend-abstract.png'
@@ -18,8 +18,9 @@ export interface DirectionContentProps {
   course: CourseProps,
   costPrice: string
 }
+const a: string = 'hello'
 
-export const Direction: FC<DirectionContentProps> = (
+const Direction: FC<DirectionContentProps> = (
   {
     bannerTitle, bannerDesc,
     aboutTitle, aboutText, aboutList, aboutImg, aboutImgAlt,
@@ -290,9 +291,9 @@ export const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <div className="about__left">
             <h2 className="about__title">{aboutTitle}</h2>
-            {aboutText.map(el => <p className='about__text'>{el}</p>)}
+            {aboutText?.map(el => <p className='about__text'>{el}</p>)}
             <ul className="about__text">
-              {aboutList.map(el => <li className="about__list-item">{el}</li>)}
+              {aboutList?.map(el => <li className="about__list-item">{el}</li>)}
             </ul>
           </div>
           <div className="about__right">
@@ -569,7 +570,7 @@ export const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <h2 className="skills__title">Чему вы научитесь</h2>
           <div className="skills__content">
-            {skills.map(el => <span className="skills__item">{el}</span>)}
+            {skills?.map(el => <span className="skills__item">{el}</span>)}
           </div>
         </div>
       </section>
@@ -609,3 +610,5 @@ export const Direction: FC<DirectionContentProps> = (
     </>
   )
 }
+
+export default Direction

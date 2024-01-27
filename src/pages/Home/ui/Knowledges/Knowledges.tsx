@@ -2,7 +2,7 @@ import './Knowledges.scss'
 import Image from 'next/image'
 import knowledgesBg from '../../../../../public/images/tech.svg'
 
-export const Knowledges = () => {
+function Knowledges () {
   return (
     <section className="knowledges">
       <div className="container">
@@ -64,3 +64,5 @@ export const Knowledges = () => {
     </section>
   )
 }
+
+export default Knowledges

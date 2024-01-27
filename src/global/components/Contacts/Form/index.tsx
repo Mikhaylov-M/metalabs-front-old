@@ -1,1 +1,0 @@
-export { RegForm } from './RegFormClient'

@@ -19,17 +19,14 @@ const RegFormSchema = Yup.object().shape({
     .required('Номер телефона обязателен для заполнения'),
 })
 
-export const RegForm = () => {
+function RegForm () {
 
   const sendForm = async (values: any) => {
     // console.log(values)
     const { data } = await axios(`https://prodat.io:8445/trello?name=${values.name}&phone=${values.phone}`)
-
     console.log(data)
-
 	  return data
-  }
-  
+  } 
   return (
      <Formik
       initialValues={{
@@ -72,3 +69,4 @@ export const RegForm = () => {
     </Formik>
   )
 }
+export default RegForm

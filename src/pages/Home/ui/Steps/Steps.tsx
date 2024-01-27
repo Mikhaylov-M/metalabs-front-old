@@ -1,6 +1,6 @@
 import './Steps.scss'
 
-export const Steps = () => {
+function Steps () {
   return (
     <section className="steps" id="steps">
       <div className="container">
@@ -29,3 +29,4 @@ export const Steps = () => {
     </section>
   )
 }
+export default Steps

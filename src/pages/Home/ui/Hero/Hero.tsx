@@ -16,11 +16,12 @@ import azatPhoto from '../../../../../public/images/hero-1.jpg'
 import dimaPhoto from '../../../../../public/images/hero-2.jpg'
 import tarielPhoto from '../../../../../public/images/hero-3.jpg'
 import alibekPhoto from '../../../../../public/images/hero-4.jpg'
+import diazPhoto from '../../../../../public/images/hero-5.jpg'
 import text from '../../../../../public/images/hero-text.png'
 
 import './Hero.scss'
 
-export const Hero = () => {
+function Hero () {
   return (
     <section className="hero" id="hero">
       <div className="container">
@@ -87,9 +88,18 @@ export const Hero = () => {
                 <h2 className='hero__swiper-name'>Тариель</h2>
                 <p className='hero__swiper-direction'>ментор пo JavaScript </p>
               </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper__img-wrapper">
+                  <Image src={diazPhoto} alt='фотография Тариэля'/>
+                </div>
+                <h2 className='hero__swiper-name'>Диаз</h2>
+                <p className='hero__swiper-direction'>ментор пo UX/UI </p>
+              </SwiperSlide>
             </Swiper>
         </div>
       </div>
     </section>
   )
 }
+
+export default Hero

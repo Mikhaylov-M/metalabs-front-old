@@ -1,6 +1,6 @@
 import './Cities.scss'
 
-export const Cities = () => {
+function Cities () {
   return (
     <section className="cities">
       <h2 className="section__title cities__title">Учитесь из любой страны, города и в любое время<br /> Развивайте свои профессиональные навыки в удобном онлайн-формате</h2>
@@ -183,3 +183,5 @@ export const Cities = () => {
     </section>
   )
 }
+
+export default Cities

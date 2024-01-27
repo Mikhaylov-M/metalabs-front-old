@@ -5,7 +5,7 @@ import advantagesSecond from '../../../../../public/images/advantages-2.svg'
 import advantagesThird from '../../../../../public/images/advantages-3.svg'
 import advantagesFourth from '../../../../../public/images/advantages-4.svg'
 
-export const Advantages = () => {
+function Advantages () {
   return (
     <section className="advantages" id="advantages">
       <div className="container">
@@ -51,3 +51,5 @@ export const Advantages = () => {
     </section>
   )
 }
+
+export default Advantages

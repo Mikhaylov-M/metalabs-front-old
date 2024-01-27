@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { FacebookPixel } from '@/src/global/components/FacebookPixel'
 import { Inter, Raleway, Nunito, Prosto_One, Rubik } from 'next/font/google'
-import { Header } from '../global/components/Header'
-import { Footer } from '../global/components/Footer'
+import Header from '../global/components/Header/Header'
+import Footer from '../global/components/Footer/Footer'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'

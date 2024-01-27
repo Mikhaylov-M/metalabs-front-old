@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import './Salary.scss'
 
-export const Salary = () => {
+function Salary () {
   return (
     <section className="salary" id="salary">
       <div className="salary__content">
@@ -837,3 +837,5 @@ export const Salary = () => {
     </section>
   )
 }
+
+export default Salary

@@ -3,7 +3,7 @@ import metaLogo from '../../../../public/images/new-logo-white.svg'
 import './Footer.scss'
 import Link from 'next/link'
 
-export const Footer = () => {
+function Footer () {
   return (
     <footer className='footer' id='footer'>
       <div className="footer__container container">
@@ -71,3 +71,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer

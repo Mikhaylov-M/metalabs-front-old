@@ -1,19 +1,20 @@
 import './home.scss'
-import { Hero } from './ui/Hero'
-import { Advantages } from './ui/Advantages'
-import { Author } from './ui/Author'
-import { Steps } from './ui/Steps'
-import { Salary } from './ui/Salary'
-import { Courses } from './ui/Courses'
-import { About } from './ui/About'
-import { Testimonials } from './ui/Testimonials'
-import { Knowledges } from './ui/Knowledges'
-import { Cities } from './ui/Cities'
-import { Contacts } from '@/src/global/components/Contacts'
+import Hero from './ui/Hero/Hero'
+import Advantages from './ui/Advantages/Advantages'
+import Author from './ui/Author/Author'
+import Steps from './ui/Steps/Steps'
+import Salary from './ui/Salary/Salary'
+import Courses from './ui/Courses/Courses'
+import About from './ui/About/About'
+import Testimonials from './ui/Testimonials/Testimonials'
+import Knowledges from './ui/Knowledges/Knowledges'
+import Cities from './ui/Cities/Cities'
+import Contacts from '@/src/global/components/Contacts/Contacts'
+import { Wix_Madefor_Display } from 'next/font/google'
 
 // import Hero from './ui/Hero'
 
-export const Home = () => {
+function Home () {
   return (
     <>
 
@@ -36,3 +37,4 @@ export const Home = () => {
     </>
   )
 }
+export default Home

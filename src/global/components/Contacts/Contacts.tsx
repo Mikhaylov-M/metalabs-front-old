@@ -1,7 +1,7 @@
 import './Contacts.scss'
-import { RegForm } from './Form'
+import RegForm from './Form/RegFormClient'
 
-export const Contacts = () => {
+function Contacts () {
   return (
     <section className="contacts" id="contacts">
       <div className="container">
@@ -20,3 +20,4 @@ export const Contacts = () => {
     </section>
   )
 }
+export default Contacts

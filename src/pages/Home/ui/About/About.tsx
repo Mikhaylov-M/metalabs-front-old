@@ -1,6 +1,6 @@
 import './About.scss'
 
-export const About = () => {
+function About () {
   return (
     <section className="about" id="about">
       <div className="container about__grid">
@@ -50,3 +50,5 @@ export const About = () => {
     </section>
   )
 }
+
+export default About

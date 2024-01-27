@@ -1,4 +1,4 @@
-import { Direction, DirectionContentProps } from '@/src/pages/Direction'
+import Direction, { DirectionContentProps } from '@/src/pages/Direction/Direction'
 
 import aboutImg from '@/public/images/abstract-frontend.png'
 import mentorImg from '@/public/images/azat.jpg'

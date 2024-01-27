@@ -4,7 +4,7 @@ import cardBg1 from '../../../../../public/images/card-bg1.png'
 import cardBg2 from '../../../../../public/images/card-bg2.png'
 import './Courses.scss'
 
-export const Courses = () => {
+function Courses () {
   return (
     <section className="courses" id="courses">
       <div className="container">
@@ -201,3 +201,5 @@ export const Courses = () => {
     </section>
   )
 }
+
+export default Courses
