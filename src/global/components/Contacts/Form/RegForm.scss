@@ -23,6 +23,12 @@
       color: var(--color-blue);
     }
   }
+  &__success {
+    color: var(--color-blue);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3em;
+  }
 
   &__wrapper {
     position: relative;
