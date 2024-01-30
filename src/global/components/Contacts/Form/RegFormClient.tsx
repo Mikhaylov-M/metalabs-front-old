@@ -26,7 +26,7 @@ function RegForm () {
 
 
   const sendForm = async (values: any) => {
-    const URL = 'http://192.168.68.191:3000/api/telegramBot/'
+    const URL = `${process.env.NEXT_PUBLIC_API_URL}/api/telegramBot/`
     const body = {
       name: values.name,
       phone: values.phone,
