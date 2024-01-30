@@ -23,7 +23,7 @@ function Footer () {
               <a className="footer__links" href="#">
                 Об авторе  
               </a>
-              <a className="footer__links" href="#">
+              <a className="footer__links" href="#courses">
                 направления 
               </a>
               <a className="footer__links" href="#">
