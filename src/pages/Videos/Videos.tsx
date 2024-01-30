@@ -1,74 +1,81 @@
 'use client'
-// import './videos.scss'
 
-// const Videos = () => {
-//   return (
-//     <>
-//       <div className="video">
-//         <div className="container">
+import React, { useState, useRef, useEffect } from 'react';
+import './videos.scss';
 
-//           <div className="block">
-//             <div className="block__item">
-//               <div className="block__title">
-//                 TITLE 1
-//               </div>
-//               <div className="block__text">
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis quod voluptatum doloribus saepe aliquam aperiam, quas ea quasi mollitia.
-//               </div>
-//             </div>
-//             <div className="block__item">
-//               <div className="block__title">
-//                 TITLE 2
-//               </div>
-//               <div className="block__text">
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis quod voluptatum doloribus saepe aliquam aperiam, quas ea quasi mollitia.
-//               </div>
-//             </div>
-//             <div className="block__item">
-//               <div className="block__title">
-//                 TITLE 3
-//               </div>
-//               <div className="block__text">
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis quod voluptatum doloribus saepe aliquam aperiam, quas ea quasi mollitia.
-//               </div>
-//             </div>
-//           </div>
+interface AccordionProps {
+  index: number;
+  title: string;
+  videoId: string;
+  openIndex: number;
+  setOpenIndex: React.Dispatch<React.SetStateAction<number>>;
+}
 
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-// export default Videos
+const Accordion: React.FC<AccordionProps> = ({ index, title, videoId, openIndex, setOpenIndex }) => {
+  const isOpen = index === openIndex;
+  const contentRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.style.maxHeight = isOpen
+        ? `${contentRef.current.scrollHeight}px`
+        : '0';
+    }
+  }, [isOpen]);
 
-import React, { useState } from 'react';
-import './videos.scss'
-
-const Videos = () => {
-  const numBlocks = 10; // Укажите желаемое количество блоков
-  const [openIndex, setOpenIndex] = useState(null); // Инициализация состояния открытого блока
-
-  const handleToggle = (index) => {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+  const handleToggle = () => {
+    setOpenIndex(isOpen ? -1 : index);
   };
 
   return (
-    <div className="container">
-      <div className="block">
-        {Array.from({ length: numBlocks }, (_, index) => (
-          <div key={index} className={`block__item ${openIndex === index ? 'open' : ''}`}>
-            <div
-              className={`block__title ${openIndex === index ? 'active' : ''}`}
-              onClick={() => handleToggle(index)}
-            >
-              TITLE {index + 1}
-            </div>
-            <div className={`block__video ${openIndex === index ? 'visible' : ''}`}>
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/u31qwQUeGuM?si=lU_JPMT0XpEmCu4K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+    <div className={`accordion ${isOpen ? 'open' : ''}`}>
+      <div className="accordion__header" onClick={handleToggle}>
+        <h3>{title}</h3>
+      </div>
+      <div
+        ref={contentRef}
+        className={`accordion__content ${isOpen ? 'open' : ''}`}
+      >
+        {isOpen && (
+          <div className="accordion__iframe-wrapper">
+            <iframe
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&muted=1`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            {/* <iframe
+              src={`https://www.youtube.com/embed/${videoId}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe> */}
           </div>
-        ))}
+        )}
+      </div>
+    </div>
+  );
+};
+
+const Videos: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number>(-1);
+
+  return (
+    <div className="container">
+      <div className="app">
+        <Accordion index={0} title="приветствие" videoId="M3AGJUwBH0k" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={1} title="Почему стоит выбрать MetaLabs" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={3} title="Из-за чего выбирают IT" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={4} title="Какие направления в IT актуальны" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={5} title="Сложно ли учиться на программиста" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={6} title="Убедись в качестве преподавания на 3 минуты" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={7} title="Почему стоит доверять нашим менторам" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={8} title="Чем наше обучение отличается от вузов" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={9} title="MetaLabs - это еще и IT компания" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={10} title="Как MetaLabs помогает в трудоустройстве и развитии карьеры" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
+        <Accordion index={11} title="У вас остались вопросы?" videoId="u31qwQUeGuM" openIndex={openIndex} setOpenIndex={setOpenIndex} />
       </div>
     </div>
   );
