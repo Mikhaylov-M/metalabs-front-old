@@ -33,7 +33,7 @@ function RegForm () {
     }
     console.log(body)
     const { data } = await axios.post(URL, body)
-    if (data === 200) {
+    if (data === 200 || data === 'OK') {
       setSuccess(prev => !prev)
     }
 	  return data
