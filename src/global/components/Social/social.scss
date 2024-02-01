@@ -1,0 +1,66 @@
+.social {
+  position: fixed;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  z-index: 99;
+  right: 20px;
+  bottom: 20px;
+
+  @media (max-width: 500px) {
+    bottom: 30px;
+  }
+
+  &__links {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--color-violet);
+    transition: all .3s;
+
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-telegram {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        z-index: 5;
+        background: url("../../../../public/images/telegram.svg") no-repeat center/cover;
+      }
+    }
+
+    &-whatsapp {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        z-index: 5;
+        background: url("../../../../public/images//whatsapp.svg") no-repeat center/cover;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.2) rotate(360deg);
+    }
+  }
+}

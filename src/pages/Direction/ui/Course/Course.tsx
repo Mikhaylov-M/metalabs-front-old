@@ -6,6 +6,7 @@ import { FC } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 export interface CourseProps {
+  courseBg: string,
   programLeft: string[], programRight: string[],
   scheduleDuration: string[],
   scheduleDays: string[],
@@ -16,6 +17,7 @@ export interface CourseProps {
 }
 
 const Course:FC<CourseProps> = ({
+  courseBg,
   programLeft, programRight,
   scheduleDuration,
   scheduleDays,
@@ -27,7 +29,7 @@ const Course:FC<CourseProps> = ({
   return (
     <section className="course" id="course">
       <div className="container">
-        <Tabs className="course__grid">
+        <Tabs className={`course__grid ${courseBg}`}>
           <TabList className="course__list">
             <Tab className="course__navbutton">Программа курса</Tab>
             <Tab className="course__navbutton">График обучения</Tab>
