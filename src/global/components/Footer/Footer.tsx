@@ -11,10 +11,10 @@ function Footer () {
           <ul className="footer__list">
             <li className="footer__items">
               <h3 className="footer__title">Social</h3>
-              <a className="footer__links footer__links-inst" href="#">
+              <a className="footer__links footer__links-inst" href="https://www.instagram.com/metalabs.kg?igsh=bmFkczV5NjV2Zzhw&utm_source=qr">
                 Instagram
               </a>
-              <a className="footer__links footer__links-tiktok" href="#">
+              <a className="footer__links footer__links-tiktok" href="https://www.tiktok.com/@metalabs.kg">
                 TikTok
               </a>
             </li>

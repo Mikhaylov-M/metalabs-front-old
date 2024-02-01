@@ -13,7 +13,19 @@
     display: grid;
     padding: 40px;
     border-radius: 30px;
-    background: var(--course-bg);
+    // background: var(--course-bg);
+
+    &-front {
+      background: linear-gradient(90deg, #8989BA 0%, #8989BA 52%, #8989BA 100%);
+    }
+
+    &-back {
+      background: linear-gradient(90deg, #1E1C2C 0%, #312F3E 52%, #181627 100%);
+    }
+
+    &-uxui {
+      background: linear-gradient(90deg, #1E1C2C 0%, #312F3E 52%, #181627 100%);
+    }
 
     @media (max-width: 600px) {
       padding: 20px;
@@ -43,12 +55,11 @@
           font-size: 16px;
         }
       }
-
     }
-
   }
 
   &__navbutton {
+    cursor: pointer;
     display: inline-block;
     color: var(--color-light);
     border-radius: 12px;

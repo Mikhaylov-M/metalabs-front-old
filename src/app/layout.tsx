@@ -3,6 +3,7 @@ import { FacebookPixel } from '@/src/global/components/FacebookPixel'
 import { Inter, Raleway, Nunito, Prosto_One, Rubik } from 'next/font/google'
 import Header from '../global/components/Header/Header'
 import Footer from '../global/components/Footer/Footer'
+import Social from '../global/components/Social/Social'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
@@ -57,6 +58,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
     `}>
       <body>
         <Header />
+        <Social />
         {children}
         <FacebookPixel />
         <Footer />
