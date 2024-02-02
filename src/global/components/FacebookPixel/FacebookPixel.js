@@ -15,6 +15,10 @@ const FacebookPixel = () => {
     pixel.pageview();
   }, [pathname, loaded]);
 
+  useEffect(() => {
+    // pixel.event("ViewContent", {content_name: pathname});
+  }, [pathname]);
+
   return (
     <div>
       <Script
