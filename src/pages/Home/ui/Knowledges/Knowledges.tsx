@@ -4,7 +4,7 @@ import knowledgesBg from '../../../../../public/images/tech.svg'
 
 function Knowledges () {
   return (
-    <section className="knowledges">
+    <section className="knowledges" id='knowledges'>
       <div className="container">
         <h2 className="section__title knowledges__title">
           Набор знаний, который вы получите
