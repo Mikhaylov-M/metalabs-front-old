@@ -15,12 +15,6 @@ function Header () {
 
   const url = usePathname()
 
-  const handleClick = () => {
-    console.log('pixel click')
-    
-    pixel.event('Purchase', {currency: 'USD', value: 10})
-  }
-
   const handleCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(e.target.checked)
     if (e.target.checked === true) {
@@ -66,7 +60,7 @@ function Header () {
                 <a href="#testimonials">Отзывы</a>
               </li>
               <li className="header__item">
-                <a href="#footer" onClick={() => {handleClick()}}>Контакты</a>
+                <a href="#footer">Контакты</a>
               </li>
             </ul>
           :

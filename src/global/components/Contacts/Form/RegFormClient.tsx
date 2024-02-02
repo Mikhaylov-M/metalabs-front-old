@@ -2,6 +2,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import * as pixel from "@/src/lib/fpixel";
 
 import './RegForm.scss'
 import { useEffect, useState } from 'react';
@@ -33,8 +34,9 @@ function RegForm () {
     }
     console.log(body)
     const { data } = await axios.post(URL, body)
-    if (data === 200) {
+    if (data === 200 || data === 'OK') {
       setSuccess(prev => !prev)
+      pixel.event('Lead')
     }
 	  return data
   }
