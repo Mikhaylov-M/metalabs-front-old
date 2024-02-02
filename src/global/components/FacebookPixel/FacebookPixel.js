@@ -13,11 +13,8 @@ const FacebookPixel = () => {
     if (!loaded) return;
 
     pixel.pageview();
+    pixel.pagevisit(pathname);
   }, [pathname, loaded]);
-
-  useEffect(() => {
-    // pixel.event("ViewContent", {content_name: pathname});
-  }, [pathname]);
 
   return (
     <div>
