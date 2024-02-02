@@ -4,6 +4,10 @@ export const pageview = () => {
   window.fbq("track", "PageView");
 };
 
+export const pagevisit = (path) => {
+  window.fbq("track", "ViewContent", {content_name: path});
+};
+
 // https://developers.facebook.com/docs/facebook-pixel/advanced/
 export const event = (name, options = {}) => {
   window.fbq("track", name, options);

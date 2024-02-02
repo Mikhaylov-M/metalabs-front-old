@@ -13,6 +13,7 @@ const FacebookPixel = () => {
     if (!loaded) return;
 
     pixel.pageview();
+    pixel.pagevisit(pathname);
   }, [pathname, loaded]);
 
   return (
