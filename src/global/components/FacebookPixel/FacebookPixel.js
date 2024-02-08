@@ -17,7 +17,7 @@ const FacebookPixel = () => {
   }, [pathname, loaded]);
 
   return (
-    <div>
+    <>
       <Script
         id="fb-pixel"
         src="/scripts/pixel.js"
@@ -25,8 +25,8 @@ const FacebookPixel = () => {
         onLoad={() => setLoaded(true)}
         data-pixel-id={pixel.FB_PIXEL_ID}
       />
-    </div>
-  );
-};
+    </>
+  )
+}
 
 export default FacebookPixel;

@@ -291,9 +291,9 @@ const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <div className="about__left">
             <h2 className="about__title">{aboutTitle}</h2>
-            {aboutText?.map(el => <p className='about__text'>{el}</p>)}
+            {aboutText?.map((el, index) => <p className='about__text' key={index}>{el}</p>)}
             <ul className="about__text">
-              {aboutList?.map(el => <li className="about__list-item">{el}</li>)}
+              {aboutList?.map((el, index) => <li className="about__list-item" key={index}>{el}</li>)}
             </ul>
           </div>
           <div className="about__right">
@@ -570,7 +570,7 @@ const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <h2 className="skills__title">Чему вы научитесь</h2>
           <div className="skills__content">
-            {skills?.map(el => <span className={`skills__item ${skillsItem}`}>{el}</span>)}
+            {skills?.map((el, index) => <span key={index} className={`skills__item ${skillsItem}`}>{el}</span>)}
           </div>
         </div>
       </section>

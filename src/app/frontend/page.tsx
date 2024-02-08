@@ -24,18 +24,18 @@ const contentProps: DirectionContentProps = {
   skillsItem: 'skills__item-front',
   course: {
     programLeft: [
-      'HTML, CSS, JavaScript:', 'Продвинутый JavaScript', 'Node', 'Телеграмм бот', 'ООП',  'Стейт менеджер redux, toolkit', 'Formik Yup', 'Lazy Loading', 'Git'],
+      'HTML, CSS, JavaScript:', 'Продвинутый JavaScript', 'Node', 'Телеграмм бот', 'ООП', 'Стейт менеджер redux, toolkit', 'Formik Yup', 'Lazy Loading', 'Git'],
     programRight: 
     ['-24 практических занятия', '-Доступ ко всем материалам курса', 'Mobile, desktop first адаптив', 'Препроцессоры', 'Сборщик gulp', 'Промисы', 'Структуры данных', 'Event Loop', 'Телеграмм бот', 'ООП', ''],
-    scheduleDuration: ['8 месяцев', '12 месяцев', '15 лет'],
-    scheduleDays: ['Пн/Ср/Пт', 'Пн/Вт/Ср/Чт/Пт/Сб', 'Вс'],
-    scheduleTime: ['24/7', '10:00 - 22:00', '17:00 - 17:30'],
+    scheduleDuration: ['8 месяцев'],
+    scheduleDays: ['Пн/Ср/Пт', 'Вт/Чт/Сб'],
+    scheduleTime: ['17:00 - 18:30', '19:00 - 20:30'],
     mentorText: ['Меня зовут Азат, я являюсь автором курса Meta School. Мой опыт в программировании более 3х лет, работал в американском стартапе, китайской компании Richfit, а также в банке веб разработчиком.', 'Выпустил более 100+ учеников. Мои студенты трудоустроились, как в кыргызские компании, так и в зарубежные.'],
     mentorImg: mentorImg,
     mentorImgAlt: 'Фотография Ментора Азата',
     courseBg: 'course__grid-front'
   },
-  costPrice: '13000 сом в месяц'
+  costPrice: '13 000 сом в месяц'
 }
 
 const Frontend = () => {

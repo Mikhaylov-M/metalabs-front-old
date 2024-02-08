@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { FacebookPixel } from '@/src/global/components/FacebookPixel'
+import { YandexMetrika } from '@/src/global/components/YandexMetrika'
 import { Inter, Raleway, Nunito, Prosto_One, Rubik } from 'next/font/google'
 import Header from '../global/components/Header/Header'
 import Footer from '../global/components/Footer/Footer'
@@ -8,6 +10,7 @@ import Social from '../global/components/Social/Social'
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
 import { useState } from 'react'
+
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -57,6 +60,22 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
     ${rubik.variable}
     `}>
       <body>
+        <Script id="metrika-counter" strategy="afterInteractive">
+          {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(96391902, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });`
+          }
+        </Script>
+        <YandexMetrika />
         <Header />
         <Social />
         {children}
