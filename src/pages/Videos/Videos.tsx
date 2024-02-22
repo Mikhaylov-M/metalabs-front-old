@@ -41,7 +41,7 @@ const Videos: React.FC = () => {
                 <a className="video__link" href="#">Подробнее</a>
               </div>
             </li>
-                    <li className="video__card">
+            <li className="video__card">
               <div className="video__wrapper">
                 {/* here will be your teg for video */}
               </div>
@@ -52,7 +52,7 @@ const Videos: React.FC = () => {
                 <a className="video__link" href="#">Подробнее</a>
               </div>
             </li>
-                    <li className="video__card">
+            <li className="video__card">
               <div className="video__wrapper">
                 {/* here will be your teg for video */}
               </div>
@@ -63,7 +63,7 @@ const Videos: React.FC = () => {
                 <a className="video__link" href="#">Подробнее</a>
               </div>
             </li>
-                    <li className="video__card">
+            <li className="video__card">
               <div className="video__wrapper">
                 {/* here will be your teg for video */}
               </div>
@@ -74,7 +74,7 @@ const Videos: React.FC = () => {
                 <a className="video__link" href="#">Подробнее</a>
               </div>
             </li>
-                    <li className="video__card">
+            <li className="video__card">
               <div className="video__wrapper">
                 {/* here will be your teg for video */}
               </div>
@@ -85,40 +85,6 @@ const Videos: React.FC = () => {
                 <a className="video__link" href="#">Подробнее</a>
               </div>
             </li>
-                    <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-                    <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-                    <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-
         </ul>
       </div>
     </div>
