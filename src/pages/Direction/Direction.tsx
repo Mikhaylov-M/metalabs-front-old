@@ -9,12 +9,13 @@ import costIcon from '@/public/images/tick-white.svg'
 
 
 export interface DirectionContentProps {
-  bannerTitle: string, bannerDesc: string,
+  bannerTitle: string, bannerDesc: string, bannerBg: string, bannerTitleColor: string, bannerDescColor: string,
+  advantagesIconBg: string, advantagesDesc: string,
   aboutTitle: string, aboutText: string[], aboutList: string[],
   aboutImg: StaticImageData, aboutImgAlt: string,
   benefitsTitle: string, 
   benefitsText1: string, benefitsText2: string, benefitsText3: string;
-  skills: string[],
+  skills: string[], skillsItem: string,
   course: CourseProps,
   costPrice: string
 }
@@ -22,10 +23,11 @@ const a: string = 'hello'
 
 const Direction: FC<DirectionContentProps> = (
   {
-    bannerTitle, bannerDesc,
+    bannerTitle, bannerDesc, bannerBg, bannerTitleColor, bannerDescColor,
+    advantagesIconBg, advantagesDesc,
     aboutTitle, aboutText, aboutList, aboutImg, aboutImgAlt,
     benefitsTitle, benefitsText1, benefitsText2, benefitsText3,
-    skills,
+    skills, skillsItem,
     course,
     costPrice,
   }
@@ -33,18 +35,16 @@ const Direction: FC<DirectionContentProps> = (
 
   return (
     <>
+
       {/* BANNER */}
       <section className="banner" id="banner">
         <div className="container">
-          <div className="banner__content">
-            <h1 className="banner__title">{bannerTitle}</h1>
-            <p className="banner__desc">{bannerDesc}</p>
-            <button className="banner__btn reg-form__popup registration__btn">
-              Записаться на курс
-            </button>
+          <div className={`banner__content ${bannerBg}`}>
+            <h1 className={`banner__title ${bannerTitleColor}`}>{bannerTitle}</h1>
+            <p className={`banner__desc ${bannerDescColor}`}>{bannerDesc}</p>
             <div className="banner__advantages">
               <div className="advantages__item">
-                <div className="advantages__icon">
+                <div className={`advantages__icon ${advantagesIconBg}`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={48}
@@ -106,10 +106,10 @@ const Direction: FC<DirectionContentProps> = (
                     />
                   </svg>
                 </div>
-                <p className="advantages__desc">Сертификат</p>
+                <p className={`advantages__desc ${advantagesDesc}`}>Сертификат</p>
               </div>
               <div className="advantages__item">
-                <div className="advantages__icon">
+                <div className={`advantages__icon ${advantagesIconBg}`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={48}
@@ -181,10 +181,10 @@ const Direction: FC<DirectionContentProps> = (
                     </defs>
                   </svg>
                 </div>
-                <p className="advantages__desc">Проекты для портфолио</p>
+                <p className={`advantages__desc ${advantagesDesc}`}>Проекты для портфолио</p>
               </div>
               <div className="advantages__item">
-                <div className="advantages__icon">
+                <div className={`advantages__icon ${advantagesIconBg}`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={45}
@@ -278,7 +278,7 @@ const Direction: FC<DirectionContentProps> = (
                     />
                   </svg>
                 </div>
-                <p className="advantages__desc">Помощь в трудоустройстве</p>
+                <p className={`advantages__desc ${advantagesDesc}`}>Помощь в трудоустройстве</p>
               </div>
             </div>
           </div>
@@ -291,9 +291,9 @@ const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <div className="about__left">
             <h2 className="about__title">{aboutTitle}</h2>
-            {aboutText?.map(el => <p className='about__text'>{el}</p>)}
+            {aboutText?.map((el, index) => <p className='about__text' key={index}>{el}</p>)}
             <ul className="about__text">
-              {aboutList?.map(el => <li className="about__list-item">{el}</li>)}
+              {aboutList?.map((el, index) => <li className="about__list-item" key={index}>{el}</li>)}
             </ul>
           </div>
           <div className="about__right">
@@ -570,7 +570,7 @@ const Direction: FC<DirectionContentProps> = (
         <div className="container">
           <h2 className="skills__title">Чему вы научитесь</h2>
           <div className="skills__content">
-            {skills?.map(el => <span className="skills__item">{el}</span>)}
+            {skills?.map((el, index) => <span key={index} className={`skills__item ${skillsItem}`}>{el}</span>)}
           </div>
         </div>
       </section>
@@ -595,9 +595,6 @@ const Direction: FC<DirectionContentProps> = (
               <li className="cost__item">Удобный формат обучения</li>
               <li className="cost__item">Бесплатный пробный урок</li>
             </ul>
-            <button className="cost__btn reg-form__popup registration__btn">
-              Записаться на курс
-            </button>
           </div>
           <div className="cost__img">
             <Image src={costImg} alt="abstract image" />

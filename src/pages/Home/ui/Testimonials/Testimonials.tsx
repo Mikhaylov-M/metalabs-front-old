@@ -7,10 +7,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Testimonials.scss'
 
-import vid1 from '@/public/images/t1.mp4'
-import vid2 from '@/public/images/t2.mp4'
-import vid3 from '@/public/images/t3.mp4'
-import vid4 from '@/public/images/t4.mp4'
+// import vid1 from '@/public/images/t1.mp4'
+// import vid2 from '@/public/images/t2.mp4'
+// import vid3 from '@/public/images/t3.mp4'
+// import vid4 from '@/public/images/t4.mp4'
 
 function Testimonials () {
   return (
@@ -35,7 +35,7 @@ function Testimonials () {
                   muted={true}
                   autoPlay={true}
                   loop={true}
-                  src={vid2}
+                  // src={vid2}
                 />
               </div>
               <div className="student__content">
@@ -54,7 +54,7 @@ function Testimonials () {
                   muted={true}
                   autoPlay={true}
                   loop={true}
-                  src={vid3}
+                  // src={vid3}
                 />
               </div>
               <div className="student__content">
@@ -73,7 +73,7 @@ function Testimonials () {
                   muted={true}
                   // autoPlay={true}
                   loop={true}
-                  src={vid4}
+                  // src={vid4}
                 />
               </div>
               <div className="student__content">
@@ -92,7 +92,7 @@ function Testimonials () {
                   muted={true}
                   autoPlay={true}
                   loop={true}
-                  src={vid1}
+                  // src={vid1}
                 />
               </div>
               <div className="student__content">

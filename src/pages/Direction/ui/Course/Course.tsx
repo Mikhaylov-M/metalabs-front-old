@@ -6,6 +6,7 @@ import { FC } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 export interface CourseProps {
+  courseBg: string,
   programLeft: string[], programRight: string[],
   scheduleDuration: string[],
   scheduleDays: string[],
@@ -16,6 +17,7 @@ export interface CourseProps {
 }
 
 const Course:FC<CourseProps> = ({
+  courseBg,
   programLeft, programRight,
   scheduleDuration,
   scheduleDays,
@@ -27,7 +29,7 @@ const Course:FC<CourseProps> = ({
   return (
     <section className="course" id="course">
       <div className="container">
-        <Tabs className="course__grid">
+        <Tabs className={`course__grid ${courseBg}`}>
           <TabList className="course__list">
             <Tab className="course__navbutton">Программа курса</Tab>
             <Tab className="course__navbutton">График обучения</Tab>
@@ -36,10 +38,10 @@ const Course:FC<CourseProps> = ({
             <TabPanel className="tabpanel">
               <div className="program">
                 <div className="program__left">
-                  {programLeft?.map(el => <p className="program__text">{el}</p>)}
+                  {programLeft?.map((el, index) => <p key={index} className="program__text">{el}</p>)}
                 </div>
                 <div className="program__right">
-                  {programRight?.map(el => <p className="program__text program__text-rigth">{el}</p>)}
+                  {programRight?.map((el, index) => <p key={index} className="program__text program__text-rigth">{el}</p>)}
                 </div>
               </div>
             </TabPanel>
@@ -47,28 +49,28 @@ const Course:FC<CourseProps> = ({
               <div className="schedule">
                 <h2 className="schedule__title">Оффлайн / Онлайн</h2>
                 <div className="schedule__content">
-                  <p className="schedule__text">
+                  <ul className="schedule__text">
                     Длительность:
-                    {scheduleDuration?.map(el => 
-                    <><br />{el}</>)}
-                  </p>
-                  <p className="schedule__text">
+                    {scheduleDuration?.map((el, index) => 
+                    <li key={index}>{el}</li>)}
+                  </ul>
+                  <ul className="schedule__text">
                     Дни:
-                    {scheduleDays?.map(el => 
-                    <><br />{el}</>)}
-                  </p>
-                  <p className="schedule__text">
+                    {scheduleDays?.map((el, index) => 
+                    <li key={index}>{el}</li>)}
+                  </ul>
+                  <ul className="schedule__text">
                     Время:
-                    {scheduleTime?.map(el => 
-                    <><br /><span className="schedule__text-time">{el}</span></>)}
-                  </p>
+                    {scheduleTime?.map((el, index) => 
+                    <><br /><span key={index} className="schedule__text-time">{el}</span></>)}
+                  </ul>
                 </div>
               </div>
             </TabPanel>
             <TabPanel className="tabpanel">
               <div className="mentor">
                 <div className="mentor__desc">
-                  {mentorText?.map(el => <p className="mentor__text">{el}</p> )}
+                  {mentorText?.map((el, index) => <p key={index} className="mentor__text">{el}</p> )}
                 </div>
                 <div className="mentor__photo">
                   <Image src={mentorImg} alt={mentorImgAlt} />
