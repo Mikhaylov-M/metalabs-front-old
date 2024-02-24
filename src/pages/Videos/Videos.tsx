@@ -1,10 +1,9 @@
-'use client'
-
-import React, { useState, useRef, useEffect } from 'react';
+import { FC } from 'react';
+import Video from './Video/Video';
 import './videos.scss';
 import Link from 'next/link';
 
-const Videos: React.FC = () => {
+const Videos:FC = () => {
 
   return (
     <section className="video">
