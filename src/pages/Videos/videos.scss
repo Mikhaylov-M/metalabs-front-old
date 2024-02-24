@@ -1,28 +1,29 @@
-html { /* body won't work ¯\_(ツ)_/¯ */
-  scroll-snap-type: y mandatory;
-}
-.footer__container {
-  scroll-snap-align: start;
-}
-.footer__copy {
-  scroll-snap-align: end;
-}
 .video {
   margin: 45px 0;
+
   &__scroll {
-    scroll-snap-align: center;
+
+    &:nth-child(2) {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
   }
+
   &__wrapper {
     aspect-ratio: 16/9;
   }
+
   &__title {
+    grid-column: 1 / 4;
     margin-bottom: 30px;
   }
+
   &__list {
     gap: 45px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
+
   &__card {
     border-radius: 10px;
     background-color: #ccc;
@@ -31,12 +32,18 @@ html { /* body won't work ¯\_(ツ)_/¯ */
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 1px 8px 0 rgba(193, 193, 193, 0.25);
+
     &-desc {
       padding: 15px;
       background-color: #fff;
       gap: 10px;
       display: flex;
       flex-direction: column;
+    }
+
+    &:nth-child(2) {
+      height: 100%;
+      max-height: 500px;
     }
   }
 
@@ -50,6 +57,7 @@ html { /* body won't work ¯\_(ツ)_/¯ */
     font-size: 18px;
     line-height: 1.3em;
     max-width: 240px;
+    margin-bottom: 10px;
 
     & a {
       font-weight: 500;
@@ -77,71 +85,59 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 
     &__text {
       font-weight: 400;
-      font-size: 32px;
+      font-size: 25px;
       line-height: 1.3em;
       color: #000;
       max-width: 848px;
     }
 
-    &__wrapper {
+    &__btn {
+      text-align: center;
       width: 100%;
-      height: 500px;
-      background-color: #ccc;
-      border-radius: 15px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 1px 8px 0 rgba(193, 193, 193, 0.25);
-      margin-bottom: 35px;
-    }
-
-    &__inner {
-      gap: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 25px;
-      background: #fff;
-    }
-
-    &__desc {
-      font-weight: 400;
-      font-size: 26px;
+      max-width: 200px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(50px);
+      background: linear-gradient(180deg, rgba(198, 135, 255, 0.8) 0%, rgba(141, 98, 233, 0.9) 100%);
+      font-weight: 500;
+      font-size: 20px;
       line-height: 1.3em;
-      color: #000;
+      color: #fff;
+    }
+  }
+}
 
-      & a {
-        color: #354199;
+@media (max-width:1200px) {
+  .video {
+    &__scroll {
+
+      &:nth-child(2) {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
       }
     }
 
-    &__link {
-      text-decoration: underline;
-      cursor: pointer;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 1.3em;
-      color: #909090;
-    }
-
-    &__btn {
-      display: block;
-      text-align: center;
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 1.3em;
-      color: #fff;
-      padding: 25px 60px;
-      border-radius: 15px;
-      backdrop-filter: blur(50px);
-      background: linear-gradient(180deg, rgba(198, 135, 255, 0.8) 0%, rgba(141, 98, 233, 0.9) 100%);
+    &__title {
+      grid-column: 1 / 3;
     }
   }
 }
 
 @media (max-width:991px) {
   .video {
+
+    &__list {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    &__card {
+      &:nth-child(2) {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
     .video-top {
       &__title {
         font-size: 40px;
@@ -151,26 +147,8 @@ html { /* body won't work ¯\_(ツ)_/¯ */
         font-size: 27px;
       }
 
-      &__wrapper {
-        height: 400px;
-      }
-
-      &__inner {
-        padding: 15px;
-        background: #fff;
-      }
-
-      &__desc {
-        font-size: 20px;
-      }
-
-      &__link {
-        font-size: 20px;
-      }
-
       &__btn {
-        font-size: 18px;
-        padding: 15px 60px;
+        font-size: 17px;
       }
     }
   }
@@ -178,7 +156,27 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 
 @media (max-width:768px) {
   .video {
-    // padding: 60px 0;
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__scroll {
+
+      &:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &__title {
+      grid-column: 1 / 2;
+    }
+
+    &__card {
+      &:nth-child(2) {
+        max-width: 100%;
+      }
+    }
 
     .video-top {
       &__title {
@@ -188,35 +186,36 @@ html { /* body won't work ¯\_(ツ)_/¯ */
       &__text {
         font-size: 22px;
       }
-
-      &__wrapper {
-        height: 350px;
-      }
-
-      &__inner {
-        padding: 15px;
-        background: #fff;
-      }
-
-      &__desc {
-        font-size: 17px;
-      }
-
-      &__link {
-        font-size: 17px;
-      }
-
-      &__btn {
-        font-size: 18px;
-        padding: 10px 45px;
-      }
     }
   }
 }
 
 @media (max-width:500px) {
+  html {
+    /* body won't work ¯\_(ツ)_/¯ */
+    scroll-snap-type: y mandatory;
+  }
+
+  .footer__container {
+    scroll-snap-align: start;
+  }
+
+  .footer__copy {
+    scroll-snap-align: end;
+  }
+
   .video {
-    // padding: 40px 0;
+    &__scroll {
+      scroll-snap-align: center;
+    }
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    &__desc {
+      font-size: 17px;
+    }
 
     .video-top {
       &__title {
@@ -227,30 +226,9 @@ html { /* body won't work ¯\_(ツ)_/¯ */
         font-size: 17px;
       }
 
-      &__wrapper {
-        height: 260px;
-      }
-
-      &__inner {
-        padding: 15px;
-      }
-
-      &__desc {
-        font-size: 14px;
-      }
-
-      &__link {
-        font-size: 14px;
-      }
-
       &__btn {
         font-size: 14px;
-        padding: 10px 45px;
       }
-    }
-
-    &__list {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
 }
