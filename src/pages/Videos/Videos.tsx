@@ -1,10 +1,9 @@
-'use client'
-
-import React, { useState, useRef, useEffect } from 'react';
+import Video from './Video/Video';
 import './videos.scss';
 import Link from 'next/link';
 
-const Videos: React.FC = () => {
+const Videos = () => {
+
 
   return (
     <section className="video container">
@@ -19,6 +18,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
+            <Video id={'1'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
@@ -32,6 +32,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
+            <Video id={'2'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
@@ -45,6 +46,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
+            <Video id={'3'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
@@ -58,6 +60,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
+            <Video id={'4'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
@@ -71,6 +74,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
+            <Video id={'5'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
@@ -84,19 +88,7 @@ const Videos: React.FC = () => {
         </li>
         <li className="video__card video__scroll">
           <div className="video__wrapper">
-          </div>
-          <div className="video__card-desc">
-            <div className="video__desc-wrapper">
-              <p className="video__desc">
-                Знакомство с языком программирования - <a href="#">C#</a>
-              </p>
-              <a className="video__link" href="#">Подробнее</a>
-            </div>
-            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
-          </div>
-        </li>
-        <li className="video__card video__scroll">
-          <div className="video__wrapper">
+            <Video id={'6'} />
           </div>
           <div className="video__card-desc">
             <div className="video__desc-wrapper">
