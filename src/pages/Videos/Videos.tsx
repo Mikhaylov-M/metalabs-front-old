@@ -2,92 +2,114 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import './videos.scss';
+import Link from 'next/link';
 
 const Videos: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number>(-1);
 
   return (
-    <div className="video">
-      <div className="video__container container">
-        <div className="video__top video-top">
+    <section className="video container">
+      <ul className="video__list">
+        <li className="video__title video__scroll">
           <h2 className="video-top__title">
-            Title
+            This is Video Page
           </h2>
           <p className="video-top__text">
-            Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto possimus accusantium adipisci laudantium culpa rerum, earum odio doloremque asperiores ea autem facilis dolor amet delectus aliquid velit sunt. Fugiat, labore? Tenetur, maxime ea est nihil sint mollitia in fuga cupiditate neque unde nemo id consequuntur perferendis saepe accusamus eum natus.
           </p>
-          <div className="video-top__wrapper">
-            <div className="video-top__video">
-            {/* THIS PLACE FOR VIDEO */}
-            </div>      
-            <div className="video-top__inner">
-              <p className="video-top__desc">
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
                 Знакомство с языком программирования - <a href="#">C#</a>
               </p>
-              <a className="video-top__link" href="#">Подробнее</a>
+              <a className="video__link" href="#">Подробнее</a>
             </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
           </div>
-          <button className="video-top__btn">Оставить заявку</button>
-        </div>
-        <ul className="video__list">
-            <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-            <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-            <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-            <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-            <li className="video__card">
-              <div className="video__wrapper">
-                {/* here will be your teg for video */}
-              </div>
-              <div className="video__desc-wrapper">
-                <p className="video__desc">
-                  Знакомство с языком программирования - <a href="#">C#</a>
-                </p>
-                <a className="video__link" href="#">Подробнее</a>
-              </div>
-            </li>
-        </ul>
-      </div>
-    </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+        <li className="video__card video__scroll">
+          <div className="video__wrapper">
+          </div>
+          <div className="video__card-desc">
+            <div className="video__desc-wrapper">
+              <p className="video__desc">
+                Знакомство с языком программирования - <a href="#">C#</a>
+              </p>
+              <a className="video__link" href="#">Подробнее</a>
+            </div>
+            <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
+          </div>
+        </li>
+      </ul>
+    </section>
   );
 };
 
