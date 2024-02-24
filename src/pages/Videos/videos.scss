@@ -19,7 +19,7 @@ html { /* body won't work ¯\_(ツ)_/¯ */
     margin-bottom: 30px;
   }
   &__list {
-    gap: 45px;
+    gap: 75px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
