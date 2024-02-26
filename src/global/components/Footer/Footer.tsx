@@ -27,7 +27,7 @@ function Footer () {
                 Об авторе  
               </Link>
               <Link className="footer__links" href="/#courses">
-                направления 
+                Направления 
               </Link>
               <Link className="footer__links" href="/#knowledges">
                 Набор знаний 

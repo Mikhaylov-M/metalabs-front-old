@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
-import * as pixel from "@/src/lib/fpixel";
 
 import blackLogo from '@/public/images/new-logo-black.svg'
 import whiteLogo from '@/public/images/new-logo-white.svg'
@@ -57,7 +56,7 @@ function Header () {
                 <a href="#courses">Направления</a>
               </li>
               <li className="header__item">
-                <a href="#testimonials">Отзывы</a>
+                <a href="#contacts">Записаться</a>
               </li>
               <li className="header__item">
                 <a href="#footer">Контакты</a>
@@ -90,7 +89,7 @@ function Header () {
                   <a href="#courses" onClick={offBurger}>Направления</a>
                 </li>
                 <li className="burger__item">
-                  <a href="#testimonials" onClick={offBurger}>Отзывы</a>
+                  <a href="#contacts" onClick={offBurger}>Записаться</a>
                 </li>
                 <li className="burger__item">
                   <a href="#footer" onClick={offBurger}>Контакты</a>
