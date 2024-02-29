@@ -9,8 +9,6 @@ import Social from '../global/components/Social/Social'
 
 import '../global/styles/_reset.scss'
 import '../global/styles/globals.scss'
-import { useState } from 'react'
-
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],

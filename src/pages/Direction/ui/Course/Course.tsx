@@ -50,7 +50,7 @@ const Course:FC<CourseProps> = ({
                 <h2 className="schedule__title">Оффлайн / Онлайн</h2>
                 <div className="schedule__content">
                   <ul className="schedule__text">
-                    Длительность:
+                    <p>Длительность:</p>
                     {scheduleDuration?.map((el, index) => 
                     <li key={index}>{el}</li>)}
                   </ul>
@@ -82,4 +82,5 @@ const Course:FC<CourseProps> = ({
     </section>
   )
 }
+
 export default Course

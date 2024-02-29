@@ -6,10 +6,12 @@ import './Video.scss'
 import YouTube from 'react-youtube';
 import Link from 'next/link';
 
-const Video = ({ id, videoId }) => {
+
+const Video = ({ videoId, autoplay, desc, link }) => {
 
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
+  const playerRef = useRef(null)
 
   const options = {
     root: null,
@@ -22,48 +24,38 @@ const Video = ({ id, videoId }) => {
     height: '100%',
     muted: '1',
     playerVars: {
+      autoplay,
+      enablejsapi: 1,
+      color: 'white',
+      iv_load_policy: 3,
+      origin: 'https://metalabs.kg/',
+      widget_referrer: 'https://metalabs.kg/',
+      playsinline: 1
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-      muted: '1'
     }
   }
 
   const isVisibile = useElementOnScreen(options, videoRef)
 
-  const onVideoClick = () => {
-    if (playing) {
-      console.log(`video pause ${id}`)
-      console.log(videoRef);
-      
-      // videoRef.current.pause()
-      setPlaying(!playing)
-    } else {
-      console.log(`video play ${id}`);
-      // videoRef.current.play()
-      setPlaying(!playing)
-    }
+  const onPlayerReady = (event) => {
+    playerRef.current = event.target
+    playerRef.current.mute()
   }
 
-  const onPlayerReady = (event) => {
-    event.target.mute()
-    event.target.playVideo()
-    console.log('play сработал');
-  }
   useEffect(() => {
-    if (isVisibile) {
-      if (!playing) {
-        console.log(`video play ${id}`);
-        // videoRef.current.contentWindow.postMessage(JSON.stringify(
-        //   { event: 'command', func: 'playVideo' }), 'https://www.youtube.com');
-        // videoRef.current.play()
-        setPlaying(true)
+    if (playerRef.current) {
+      if (isVisibile) {
+        if (!playing) {
+          playerRef.current?.mute()
+          playerRef.current?.playVideo()
+          setPlaying(true)
+        }
       }
-    }
-    else {
-      if (playing) {
-        console.log(`video pause ${id}`);
-        // videoRef.current.pause()
-        setPlaying(false)
+      else {
+        if (playing) {
+          playerRef.current?.stopVideo()
+          setPlaying(false)
+        }
       }
     }
   }, [isVisibile])
@@ -80,9 +72,9 @@ const Video = ({ id, videoId }) => {
         <div className="video__card-desc">
           <div className="video__desc-wrapper">
             <p className="video__desc">
-              Знакомство с языком программирования - <a href="#">C#</a>
+              {desc}
             </p>
-            <a className="video__link" href="#">Подробнее</a>
+            <Link className="video__link" href={link}>Подробнее</Link>
           </div>
           <Link href="/#contacts" className="video-top__btn">Оставить заявку</Link>
         </div>
@@ -92,7 +84,3 @@ const Video = ({ id, videoId }) => {
 }
 
 export default Video
-
-
-{/* <iframe enablejsapi='true' ref={videoRef} width="100%" height="100%" src="https://www.youtube.com/embed/ytl6TrroGis?si=pKtcTN3Vv_scYAqH&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowFullScreen origin="http://localhost:3000/videos"></iframe>
-      <button onClick={testClick}>Pause</button> */}

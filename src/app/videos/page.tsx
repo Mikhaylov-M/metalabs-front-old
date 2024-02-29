@@ -1,4 +1,4 @@
-import Videos from '@/src/pages/Videos/Videos'
+import Videos from "@/src/pages/Videos/Videos";
 
 export default function videos() {
   return (

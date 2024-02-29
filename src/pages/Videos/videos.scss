@@ -193,7 +193,7 @@
 @media (max-width:500px) {
   html {
     /* body won't work ¯\_(ツ)_/¯ */
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
   }
 
   .footer__container {

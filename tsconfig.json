@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "./src/global/types.d.ts", "src/pages/Videos/Video/Video.jsx", "src/hooks/useElementOnScreen.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "./src/global/types.d.ts", "src/pages/Videos/Video/Video.jsx", "src/hooks/useElementOnScreen.js", "src/pages/Videos/Videos.jsx"],
   "exclude": ["node_modules"]
 }
