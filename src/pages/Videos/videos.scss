@@ -1,6 +1,9 @@
-body {
-  background-color: var(--color-black);
-}
+//  NEED TO ACTIVATE THIS CLASS TO CANCLE THE SCROLL
+// .lock {
+//   overflow: hidden;
+//   touch-action: none;
+//   overscroll-behavior: none;
+// }
 
 .video {
   margin: 45px 0;
@@ -136,9 +139,15 @@ body {
     &__cancel {
       display: inline-block;
       position: absolute;
-      top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      top: -50px;
       right: 10px;
-      background-color: red;
+      background-color: #354199;
+      border-radius: 5px;
 
       &::after,
       &::before {
@@ -147,8 +156,7 @@ body {
         position: absolute;
         width: 32px;
         height: 2px;
-        right: 0;
-        background-color: red;
+        background-color: #fff;
       }
 
       &::after {

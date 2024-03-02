@@ -46,12 +46,17 @@ const Videos = () => {
           <Video videoId={'4OHmkOWN7_Y'} autoplay={0} desc={'Как MetaLabs помогает в трудоустройстве и развитии карьеры'} link={'/#contacts'} />
           <Video videoId={'xzykf-fd_rQ'} autoplay={0} desc={'У вас остались вопросы?'} link={'/#contacts'} />
         </ul>
-        <div className="video__pop-up pop-up">
-          <div className="pop-up__wrapper">
-          <span className="pop-up__cancel"></span>
-            <RegForm />
+
+        {/* THIS IS POP-UP */}
+        {/* <div className="video__pop-up pop-up">
+          <div className="container">
+            <div className="pop-up__wrapper">
+              <span className="pop-up__cancel"></span>
+              <RegForm />
+            </div>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </section>
   )
