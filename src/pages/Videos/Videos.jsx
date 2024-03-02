@@ -28,7 +28,7 @@ const Videos = () => {
               Серия коротких видеороликов о курсах программирования MetaLabs
             </p>
           </li>
-          <Video videoId={'W3AiplFRCek'} autoplay={1} desc={'Добро пожаловать в MetaLabs'} link={'/#contacts'} />
+          <Video videoId={'W3AiplFRCek'} autoplay={1} desc={'Добро пожаловать в MetaLabs!'} link={'/#contacts'} />
           <Video videoId={'7H8KLQKUY88'} autoplay={0} desc={'Почему стоит выбрать MetaLabs?'} link={'/#contacts'} />
           <Video videoId={'F9VFR8l2lm8'} autoplay={0} desc={'Из-за чего выбирают IT?'} link={'/#contacts'} />
           <Video videoId={'Jgq2Gihmbl4'} autoplay={0} desc={'Frontend - MetaLabs'} link={'/#contacts'} />

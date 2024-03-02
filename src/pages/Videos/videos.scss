@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-black);
+}
+
 .video {
   margin: 45px 0;
 
@@ -15,11 +19,10 @@
 
   &__title {
     grid-column: 1 / 4;
-    margin-bottom: 30px;
   }
 
   &__list {
-    gap: 75px;
+    gap: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
@@ -47,16 +50,11 @@
     }
   }
 
-  &__desc-wrapper {
-    gap: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__desc {
     font-size: 18px;
     line-height: 1.3em;
-    max-width: 240px;
+    text-align: center;
+    color: #fff;
 
     & a {
       font-weight: 500;
@@ -71,10 +69,15 @@
     text-decoration: underline;
   }
 
+  &__card-desc {
+    background-color: #1E1E1E;
+  }
+
   .video-top {
     margin-bottom: 100px;
 
     &__title {
+      text-align: center;
       font-weight: 600;
       font-size: 48px;
       line-height: 1.3em;
@@ -83,17 +86,18 @@
     }
 
     &__text {
+      text-align: center;
       font-weight: 400;
       font-size: 25px;
       line-height: 1.3em;
-      color: #000;
+      color: #fff;
       max-width: 848px;
     }
 
     &__btn {
       text-align: center;
       width: 100%;
-      max-width: 200px;
+      max-width: 325px;
       padding: 10px 20px;
       border-radius: 10px;
       backdrop-filter: blur(50px);
@@ -102,6 +106,7 @@
       font-size: 20px;
       line-height: 1.3em;
       color: #fff;
+      margin: 0 auto;
     }
   }
 }
@@ -217,10 +222,6 @@
     }
 
     .video-top {
-      &__title {
-        font-size: 23px;
-      }
-
       &__text {
         font-size: 17px;
       }

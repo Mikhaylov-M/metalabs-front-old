@@ -74,8 +74,8 @@ const Video = ({ videoId, autoplay, desc, link }) => {
             <p className="video__desc">
               {desc}
             </p>
-            <Link className="video__link" href={link}>Подробнее</Link>
           </div>
+          <Link className="video-top__btn" href="/#contacts">Записаться на консультацию</Link>
         </div>
       </li>
     </>
