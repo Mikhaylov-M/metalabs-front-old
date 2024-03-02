@@ -2,6 +2,8 @@
 
 import { useEffect } from 'react';
 import Video from './Video/Video';
+import { Form } from 'formik';
+import RegForm from '@/src/global/components/Contacts/Form/RegFormClient';
 import './videos.scss';
 
 const Videos = () => {
@@ -44,6 +46,12 @@ const Videos = () => {
           <Video videoId={'4OHmkOWN7_Y'} autoplay={0} desc={'Как MetaLabs помогает в трудоустройстве и развитии карьеры'} link={'/#contacts'} />
           <Video videoId={'xzykf-fd_rQ'} autoplay={0} desc={'У вас остались вопросы?'} link={'/#contacts'} />
         </ul>
+        <div className="video__pop-up pop-up">
+          <div className="pop-up__wrapper">
+          <span className="pop-up__cancel"></span>
+            <RegForm />
+          </div>
+        </div>
       </div>
     </section>
   )
