@@ -5,6 +5,10 @@
 //   overscroll-behavior: none;
 // }
 
+body {
+  background-color: #1E1E1E;
+}
+
 .video {
   margin: 45px 0;
 
@@ -94,7 +98,6 @@
       font-size: 25px;
       line-height: 1.3em;
       color: #fff;
-      max-width: 848px;
     }
 
     &__btn {
