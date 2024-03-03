@@ -6,18 +6,21 @@ import './videos.scss';
 
 const Videos = () => {
 
-  useEffect(() => {
-    const html = document.querySelector('html')
-    const body = document.querySelector('body')
-    body.style.backgroundColor = 'var(--color-black)'
-    if (window.innerWidth < 768) {
-      html.style.scrollSnapType = 'y mandatory'
-    }
-    return () => {
-      html.style.scrollSnapType = 'none'
-      body.style.backgroundColor = 'var(--color-light)'
-    }
-  }, [window.innerWidth])
+  if(typeof window !== 'undefined')
+  {
+    useEffect(() => {
+      const html = document.querySelector('html')
+      const body = document.querySelector('body')
+      body.style.backgroundColor = 'var(--color-black)'
+      if (window.innerWidth < 768) {
+        html.style.scrollSnapType = 'y mandatory'
+      }
+      return () => {
+        html.style.scrollSnapType = 'none'
+        body.style.backgroundColor = 'var(--color-light)'
+      }
+    }, [window.innerWidth])
+  }
 
   return (
     <section className="video">
