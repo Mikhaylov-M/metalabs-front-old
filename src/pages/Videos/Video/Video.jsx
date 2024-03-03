@@ -60,6 +60,14 @@ const Video = ({ videoId, autoplay, desc, link }) => {
     }
   }, [isVisibile])
 
+  const [ popup, setPopup ] = useState(false)
+
+  const handleClick = () => {
+    console.log('hello')
+    const form = document.querySelector('.pop-up')
+    form.classLists.add('active')
+  }
+
   return (
     <>
       <li className="video__card video__scroll" ref={videoRef}>
@@ -75,7 +83,7 @@ const Video = ({ videoId, autoplay, desc, link }) => {
               {desc}
             </p>
           </div>
-          <Link className="video-top__btn" href="/#contacts">Записаться на консультацию</Link>
+          <a className="video-top__btn" onClick={handleClick}>Записаться на консультацию</a>
         </div>
       </li>
     </>
