@@ -8,11 +8,14 @@ const Videos = () => {
 
   useEffect(() => {
     const html = document.querySelector('html')
+    const body = document.querySelector('body')
+    body.style.backgroundColor = 'var(--color-black)'
     if (window.innerWidth < 768) {
       html.style.scrollSnapType = 'y mandatory'
     }
     return () => {
       html.style.scrollSnapType = 'none'
+      body.style.backgroundColor = 'var(--color-light)'
     }
   }, [window.innerWidth])
 
@@ -22,10 +25,19 @@ const Videos = () => {
         <ul className="video__list">
           <li className="video__title video__scroll">
             <h2 className="video-top__title">
-              MetaLabs Videos
+              Приветствуем Вас!
             </h2>
             <p className="video-top__text">
-              Серия коротких видеороликов о курсах программирования MetaLabs
+              Здесь находятся короткие ролики, в которых мы разобрали все аспекты обучения в нашей компании Meta Labs!
+            </p>
+            <p className="video-top__text">
+              Мы затронули все спектры - начиная от преподавательского состава и до того, почему мы - Ваш ключ к успешной карьере!
+            </p>
+            <p className="video-top__text">
+              Выбирай интересующую тему и листай видео
+            </p>
+            <p className="video-top__text">
+              Приятного просмотра!
             </p>
           </li>
           <Video videoId={'W3AiplFRCek'} autoplay={1} desc={'Добро пожаловать в MetaLabs!'} link={'/#contacts'} />

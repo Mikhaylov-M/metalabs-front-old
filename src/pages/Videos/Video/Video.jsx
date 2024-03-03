@@ -7,7 +7,7 @@ import YouTube from 'react-youtube';
 import Link from 'next/link';
 
 
-const Video = ({ videoId, autoplay, desc, link }) => {
+const Video = ({ videoId, autoplay, desc }) => {
 
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
@@ -43,15 +43,14 @@ const Video = ({ videoId, autoplay, desc, link }) => {
   }
 
   useEffect(() => {
-    if (playerRef.current) {
+    if (playerRef.current && window.innerWidth <= 768) {
       if (isVisibile) {
         if (!playing) {
           playerRef.current?.mute()
           playerRef.current?.playVideo()
           setPlaying(true)
         }
-      }
-      else {
+      } else {
         if (playing) {
           playerRef.current?.stopVideo()
           setPlaying(false)

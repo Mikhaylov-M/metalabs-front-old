@@ -62,7 +62,7 @@ const Course:FC<CourseProps> = ({
                   <ul className="schedule__text">
                     Время:
                     {scheduleTime?.map((el, index) => 
-                    <><br /><span key={index} className="schedule__text-time">{el}</span></>)}
+                    <li key={index}><span className="schedule__text-time">{el}</span></li>)}
                   </ul>
                 </div>
               </div>
