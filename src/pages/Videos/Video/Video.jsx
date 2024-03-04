@@ -74,7 +74,7 @@ const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
               {desc}
             </p>
           </div>
-          <button className="video-top__btn" onClick={handleClickPopUp}>Записаться на консультацию</button>
+          <div className="video-top__btn" onClick={handleClickPopUp}>Записаться на консультацию</div>
         </div>
       </li>
     </>
