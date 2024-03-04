@@ -27,7 +27,7 @@ function Hero () {
       <div className="container">
         <div className="hero__wrapper">
           <div className="hero__text-wrapper"> 
-            <Image className='swiper-img' src={text} alt="" />
+            <Image className='swiper-img' src={text} alt="background image" />
           </div>
             <h1 className="hero__title">
               Открой новые горизонты в программировании

@@ -23,14 +23,17 @@ function Footer () {
             </li>
             <li className="footer__items">
               <h3 className="footer__title">О нас</h3>
+              <Link className="footer__links" href="/videos">
+                О нас
+              </Link>
               <Link className="footer__links" href="/#author">
-                Об авторе  
+                Об авторе
               </Link>
               <Link className="footer__links" href="/#courses">
-                Направления 
+                Направления
               </Link>
               <Link className="footer__links" href="/#knowledges">
-                Набор знаний 
+                Набор знаний
               </Link>
             </li>
             <li className="footer__items">

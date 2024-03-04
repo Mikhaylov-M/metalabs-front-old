@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react';
 import './Video.scss'
 import YouTube from 'react-youtube';
 
-
 const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
 
   const [playing, setPlaying] = useState(false)
@@ -42,15 +41,14 @@ const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
   }
 
   useEffect(() => {
-    if (playerRef.current) {
+    if (playerRef.current && window.innerWidth <= 768) {
       if (isVisibile) {
         if (!playing) {
           playerRef.current?.mute()
           playerRef.current?.playVideo()
           setPlaying(true)
         }
-      }
-      else {
+      } else {
         if (playing) {
           playerRef.current?.stopVideo()
           setPlaying(false)

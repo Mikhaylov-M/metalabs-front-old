@@ -19,7 +19,6 @@ export interface DirectionContentProps {
   course: CourseProps,
   costPrice: string
 }
-const a: string = 'hello'
 
 const Direction: FC<DirectionContentProps> = (
   {
@@ -575,11 +574,7 @@ const Direction: FC<DirectionContentProps> = (
         </div>
       </section>
       {/* SKILLS - END */}
-
-      {/* COURSE */}
       <Course {...course} />
-      {/* COURSE - END */}
-      
       {/* COST */}
       <section className="cost" id="cost">
         <div className="container">

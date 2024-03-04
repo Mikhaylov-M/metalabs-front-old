@@ -8,6 +8,7 @@ import './Videos.scss';
 const Videos = () => {
 
   const [ popup, setPopup ] = useState(false)
+  const html = document.querySelector('html')
   const body = document.querySelector('body')
 
   const handleClickPopUp = () => {
@@ -21,16 +22,20 @@ const Videos = () => {
       body.classList.remove('scroll-lock')
     }
   }
-
-  useEffect(() => {
-    const html = document.querySelector('html')
-    if (window.innerWidth < 768) {
-      html.style.scrollSnapType = 'y mandatory'
-    }
-    return () => {
-      html.style.scrollSnapType = 'none'
-    }
-  }, [window.innerWidth])
+  
+  if(typeof window !== 'undefined')
+  {
+    useEffect(() => {
+      body.style.backgroundColor = 'var(--color-black)'
+      if (window.innerWidth < 768) {
+        html.style.scrollSnapType = 'y mandatory'
+      }
+      return () => {
+        html.style.scrollSnapType = 'none'
+        body.style.backgroundColor = 'var(--color-light)'
+      }
+    }, [window.innerWidth])
+  }
 
   return (
     <>
@@ -38,13 +43,22 @@ const Videos = () => {
         <div className="container__container container">
           <ul className="video__list">
             <li className="video__title video__scroll">
-              <h2 className="video-top__title">
-                MetaLabs Videos
-              </h2>
-              <p className="video-top__text">
-                Серия коротких видеороликов о курсах программирования MetaLabs
-              </p>
-            </li>
+            <h2 className="video-top__title">
+              Приветствуем Вас!
+            </h2>
+            <p className="video-top__text">
+              Здесь находятся короткие ролики, в которых мы разобрали все аспекты обучения в нашей компании Meta Labs!
+            </p>
+            <p className="video-top__text">
+              Мы затронули все спектры - начиная от преподавательского состава и до того, почему мы - Ваш ключ к успешной карьере!
+            </p>
+            <p className="video-top__text">
+              Выбирай интересующую тему и листай видео
+            </p>
+            <p className="video-top__text">
+              Приятного просмотра!
+            </p>
+          </li>
             <Video videoId={'W3AiplFRCek'} autoplay={1} desc={'Добро пожаловать в MetaLabs!'} link={'/#contacts'} handleClickPopUp={handleClickPopUp} />
             <Video videoId={'7H8KLQKUY88'} autoplay={0} desc={'Почему стоит выбрать MetaLabs?'} link={'/#contacts'} handleClickPopUp={handleClickPopUp} />
             <Video videoId={'F9VFR8l2lm8'} autoplay={0} desc={'Из-за чего выбирают IT?'} link={'/#contacts'} handleClickPopUp={handleClickPopUp} />
@@ -72,7 +86,7 @@ const Videos = () => {
         </div>
       </section>
     </>
-  )
-}
+    )
+  }
 
 export default Videos;

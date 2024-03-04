@@ -53,10 +53,13 @@ function Header () {
           {url === '/' ?
             <ul className="header__list">
               <li className="header__item">
-                <a href="#courses">Направления</a>
+                <Link href="/videos">О нас</Link>
               </li>
               <li className="header__item">
-                <a href="#contacts">Записаться</a>
+                <Link href="/#courses">Направления</Link>
+              </li>
+              <li className="header__item">
+                <Link href="/#contacts">Получить консультацию</Link>
               </li>
               <li className="header__item">
                 <a href="#footer">Контакты</a>
@@ -65,10 +68,13 @@ function Header () {
           :
             <ul className="header__list">
               <li className="header__item">
-                <a href="#course">О курсе</a>
+                <Link href="/videos">О нас</Link>
               </li>
               <li className="header__item">
-                <a href="#cost">Стоимость</a>
+                <Link href="/#courses">Направления</Link>
+              </li>
+              <li className="header__item">
+                <Link href="/#cost">Стоимость</Link>
               </li>
               <li className="header__item">
                 <a href="#footer">Контакты</a>
@@ -86,10 +92,13 @@ function Header () {
             {url === '/' ?
               <ul className="burger__list">
                 <li className="burger__item">
-                  <a href="#courses" onClick={offBurger}>Направления</a>
+                  <Link href="/videos" onClick={offBurger}>О нас</Link>
                 </li>
                 <li className="burger__item">
-                  <a href="#contacts" onClick={offBurger}>Записаться</a>
+                  <Link href="/#courses" onClick={offBurger}>Направления</Link>
+                </li>
+                <li className="burger__item">
+                  <Link href="/#contacts" onClick={offBurger}>Получить консультацию</Link>
                 </li>
                 <li className="burger__item">
                   <a href="#footer" onClick={offBurger}>Контакты</a>
@@ -98,10 +107,13 @@ function Header () {
               :
               <ul className="burger__list">
                 <li className="burger__item">
-                  <a href="#course" onClick={offBurger}>О курсе</a>
+                  <Link href="/videos" onClick={offBurger}>О нас</Link>
                 </li>
                 <li className="burger__item">
-                  <a href="#cost" onClick={offBurger}>Стоимость</a>
+                  <Link href="/#course" onClick={offBurger}>О курсе</Link>
+                </li>
+                <li className="burger__item">
+                  <Link href="/#cost" onClick={offBurger}>Стоимость</Link>
                 </li>
                 <li className="burger__item">
                   <a href="#footer" onClick={offBurger}>Контакты</a>
