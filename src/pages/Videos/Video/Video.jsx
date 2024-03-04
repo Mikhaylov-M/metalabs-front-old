@@ -4,10 +4,8 @@ import useElementOnScreen from '@/src/hooks/useElementOnScreen'
 import { useEffect, useRef, useState } from 'react';
 import './Video.scss'
 import YouTube from 'react-youtube';
-import Link from 'next/link';
 
-
-const Video = ({ videoId, autoplay, desc }) => {
+const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
 
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
@@ -74,7 +72,7 @@ const Video = ({ videoId, autoplay, desc }) => {
               {desc}
             </p>
           </div>
-          <Link className="video-top__btn" href="/#contacts">Записаться на консультацию</Link>
+          <div className="video-top__btn" onClick={handleClickPopUp}>Записаться на консультацию</div>
         </div>
       </li>
     </>

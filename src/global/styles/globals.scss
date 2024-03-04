@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+
   @media (max-width: 1921px) {
     scroll-padding-top: 65px;
   }
@@ -49,4 +50,9 @@ button {
 
 .swiper-button-prev {
   color: var(--color-main)
+}
+
+.scroll-lock {
+  overflow: hidden;
+  touch-action: none;
 }

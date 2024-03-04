@@ -1,8 +1,5 @@
-body {
-  // background-color: var(--color-black);
-}
-
 .video {
+  position: relative;
   margin: 45px 0;
 
   &__scroll {
@@ -91,8 +88,6 @@ body {
       font-size: 25px;
       line-height: 1.3em;
       color: #fff;
-      max-width: 848px;
-      margin-bottom: 10px;
     }
 
     &__btn {
@@ -111,6 +106,84 @@ body {
     }
   }
 }
+
+.pop-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+  z-index: 101;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(30, 30, 30, .7);
+    z-index: -1;
+  }
+
+  &__cancel {
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    top: -50px;
+    right: 10px;
+    background-color: #354199;
+    border-radius: 5px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 32px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    &::after {
+      transform: translateY(0px) rotate(45deg);
+    }
+
+    &::before {
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #354199;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.pop-up-active {
+  display: flex;
+}
+
 
 @media (max-width:1200px) {
   .video {
