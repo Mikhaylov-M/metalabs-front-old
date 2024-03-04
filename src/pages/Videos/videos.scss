@@ -146,6 +146,7 @@
     right: 10px;
     background-color: #354199;
     border-radius: 5px;
+    cursor: pointer;
 
     &::after,
     &::before {
@@ -269,10 +270,6 @@
 }
 
 @media (max-width:500px) {
-  html {
-    /* body won't work ¯\_(ツ)_/¯ */
-    // scroll-snap-type: y mandatory;
-  }
 
   .footer__container {
     scroll-snap-align: start;

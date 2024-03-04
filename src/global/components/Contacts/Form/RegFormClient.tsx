@@ -5,7 +5,7 @@ import axios from 'axios';
 import * as pixel from "@/src/lib/fpixel";
 
 import './RegForm.scss'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 const RegFormSchema = Yup.object().shape({
@@ -23,8 +23,6 @@ const RegFormSchema = Yup.object().shape({
 function RegForm () {
 
   const [success, setSuccess] = useState(false)
-
-
 
   const sendForm = async (values: any) => {
     const URL = `${process.env.NEXT_PUBLIC_API_URL}/api/telegramBot/`

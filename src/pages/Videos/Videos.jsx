@@ -8,24 +8,26 @@ import './Videos.scss';
 const Videos = () => {
 
   const [ popup, setPopup ] = useState(false)
-  const html = document.querySelector('html')
-  const body = document.querySelector('body')
 
   const handleClickPopUp = () => {
-      console.log('click')
-    setPopup(prev => !prev)
-    if( !popup ) {
-      console.log('add')
-      body.classList.add('scroll-lock')
-    } else {
-      console.log('remove')
-      body.classList.remove('scroll-lock')
+    if(typeof document !== 'undefined') {
+      const body = document.querySelector('body')
+      setPopup(prev => !prev)
+      if( !popup ) {
+        console.log('add')
+        body.classList.add('scroll-lock')
+      } else {
+        console.log('remove')
+        body.classList.remove('scroll-lock')
+      }
     }
   }
   
   if(typeof window !== 'undefined')
   {
     useEffect(() => {
+      const html = document.querySelector('html')
+      const body = document.querySelector('body')
       body.style.backgroundColor = 'var(--color-black)'
       if (window.innerWidth < 768) {
         html.style.scrollSnapType = 'y mandatory'

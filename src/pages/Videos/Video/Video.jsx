@@ -2,7 +2,6 @@
 
 import useElementOnScreen from '@/src/hooks/useElementOnScreen'
 import { useEffect, useRef, useState } from 'react';
-import './Video.scss'
 import YouTube from 'react-youtube';
 
 const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
@@ -26,8 +25,8 @@ const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
       enablejsapi: 1,
       color: 'white',
       iv_load_policy: 3,
-      origin: 'https://metalabs.kg/',
-      widget_referrer: 'https://metalabs.kg/',
+      // origin: 'https://metalabs.kg/',
+      // widget_referrer: 'https://metalabs.kg/',
       playsinline: 1
       // https://developers.google.com/youtube/player_parameters
     }
@@ -72,7 +71,7 @@ const Video = ({ videoId, autoplay, desc, handleClickPopUp }) => {
               {desc}
             </p>
           </div>
-          <div className="video-top__btn" onClick={handleClickPopUp}>Записаться на консультацию</div>
+          <button className="video-top__btn" onClick={handleClickPopUp}>Записаться на консультацию</button>
         </div>
       </li>
     </>
