@@ -49,16 +49,10 @@ const Videos = () => {
               Приветствуем Вас!
             </h2>
             <p className="video-top__text">
-              Здесь находятся короткие ролики, в которых мы разобрали все аспекты обучения в нашей компании Meta Labs!
-            </p>
-            <p className="video-top__text">
               Мы затронули все спектры - начиная от преподавательского состава и до того, почему мы - Ваш ключ к успешной карьере!
             </p>
             <p className="video-top__text">
               Выбирай интересующую тему и листай видео
-            </p>
-            <p className="video-top__text">
-              Приятного просмотра!
             </p>
           </li>
             <Video videoId={'W3AiplFRCek'} autoplay={1} desc={'Добро пожаловать в MetaLabs!'} link={'/#contacts'} handleClickPopUp={handleClickPopUp} />
